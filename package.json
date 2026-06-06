@@ -8,6 +8,7 @@
     "data:build": "node scripts/build-pro-data.mjs",
     "build": "tsc -b && vite build",
     "deploy:cloudflare": "npm run build && npx -y wrangler@latest pages deploy dist --project-name superteam-lol",
+    "deploy:github": "npm run build && npx -y gh-pages@latest -d dist -b gh-pages -m \"Deploy Superteam\"",
     "lint": "eslint .",
     "preview": "vite preview"
   },

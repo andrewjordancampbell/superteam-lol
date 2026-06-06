@@ -2,9 +2,13 @@
 
 ## Current Recommendation
 
-Ship the first public test as a static Cloudflare Pages site.
+Ship the first public test as a static site.
 
 This keeps the blast radius small: no backend, no database, no auth, no server functions, no runtime API keys, and no metered image transformation layer. The only external runtime calls are static image/font fetches and the local `public/data/pros.json` payload served by the host.
+
+Current live URL: `https://andrewjordancampbell.github.io/superteam-lol/`
+
+Cloudflare Pages remains a good final home once Wrangler auth is available. GitHub Pages is the current no-extra-auth launch path.
 
 ## Cloudflare Pages Setup
 
@@ -21,6 +25,18 @@ npm run deploy:cloudflare
 ```
 
 Do not deploy/post from an agent session without Andrew explicitly approving the live publish.
+
+## GitHub Pages Setup
+
+- Repo: `https://github.com/andrewjordancampbell/superteam-lol`
+- Pages source: `gh-pages` branch, `/`
+- Live URL: `https://andrewjordancampbell.github.io/superteam-lol/`
+
+Manual deploy:
+
+```bash
+npm run deploy:github
+```
 
 ## Security And Cost Posture
 

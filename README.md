@@ -15,6 +15,8 @@ npm run dev -- --host 127.0.0.1
 
 Open `http://127.0.0.1:5173/`.
 
+Live URL: `https://andrewjordancampbell.github.io/superteam-lol/`.
+
 The committed `public/data/pros.json` snapshot is enough to run the app locally or deploy it as a static site.
 
 To refresh the dataset, copy `.env.example` to `.env`, set `OE_API_KEY`, optionally set `LOL_ESPORTS_API_KEY` for LoL Esports asset enrichment, then run:
@@ -45,6 +47,12 @@ CLI deploy:
 
 ```bash
 npm run deploy:cloudflare
+```
+
+GitHub Pages fallback:
+
+```bash
+npm run deploy:github
 ```
 
 ## Data
