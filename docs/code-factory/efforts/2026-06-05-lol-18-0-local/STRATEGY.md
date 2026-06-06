@@ -44,10 +44,11 @@ Do not start with ads. Ads make the first session worse and the traffic is unpro
 
 Best path:
 
-1. Add shareable result cards and daily seed.
-2. Use the daily challenge to prove replay/viral behavior.
-3. Add a small sponsor slot only after there is repeat traffic.
-4. Keep Ko-fi optional and low-priority.
+1. Launch the static game and test whether X/Reddit traffic actually plays.
+2. Add shareable result cards and daily seed.
+3. Use the daily challenge to prove replay/viral behavior.
+4. Add a small sponsor slot only after there is repeat traffic and after re-checking Riot's current fan/IP policy.
+5. Keep Ko-fi optional and low-priority.
 
 Potential sponsors later:
 

@@ -1,9 +1,9 @@
 import { mkdir, writeFile } from 'node:fs/promises'
 
 const API_BASE = 'https://oe.datalisk.io'
-const API_KEY = process.env.OE_API_KEY ?? 'f561197a-82ea-4e54-acd2-386979018a7a'
 const LOLESPORTS_API_BASE = 'https://esports-api.lolesports.com/persisted/gw'
-const LOLESPORTS_API_KEY = process.env.LOL_ESPORTS_API_KEY ?? '0TvQnueqKa5mxJntVWt0w4LpLfEkrV1Ta8rQBb9Z'
+const API_KEY = requiredEnv('OE_API_KEY')
+const LOLESPORTS_API_KEY = process.env.LOL_ESPORTS_API_KEY
 const OUTFILE = new URL('../public/data/pros.json', import.meta.url)
 
 const tournaments = [
@@ -106,6 +106,14 @@ const teamAliases = {
   'Team WE': "Xi'an Team WE",
   'ThunderTalk Gaming': 'THUNDER TALK GAMING',
   'Weibo Gaming': 'WeiboGaming',
+}
+
+function requiredEnv(name) {
+  const value = process.env[name]
+  if (!value) {
+    throw new Error(`${name} is required to refresh data. The committed public snapshot does not need this key at runtime.`)
+  }
+  return value
 }
 
 const roleWeights = {
@@ -246,6 +254,11 @@ async function fetchTournament(tournament) {
 }
 
 async function fetchLolesportsTeams() {
+  if (!LOLESPORTS_API_KEY) {
+    console.warn('LOL_ESPORTS_API_KEY missing; skipping player portraits and team logos')
+    return []
+  }
+
   const url = new URL(`${LOLESPORTS_API_BASE}/getTeams`)
   url.searchParams.set('hl', 'en-US')
 

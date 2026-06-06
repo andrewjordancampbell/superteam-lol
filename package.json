@@ -7,6 +7,7 @@
     "dev": "vite",
     "data:build": "node scripts/build-pro-data.mjs",
     "build": "tsc -b && vite build",
+    "deploy:cloudflare": "npm run build && npx -y wrangler@latest pages deploy dist --project-name worlds-run",
     "lint": "eslint .",
     "preview": "vite preview"
   },

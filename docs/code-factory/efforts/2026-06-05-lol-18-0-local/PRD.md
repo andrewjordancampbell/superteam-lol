@@ -10,6 +10,7 @@ Andrew wants an 82-0 style game for League of Legends esports, focused on winnin
 - Use current pro esports stats, not fictional ratings.
 - Show a clear roster projection that makes the goal feel concrete: win Worlds.
 - Keep the app static-deployable so a later Vercel/Render/Netlify deployment is simple.
+- Prepare the app for a low-cost public traffic test on Cloudflare Pages.
 
 ## Non-Goals
 
@@ -28,6 +29,8 @@ Andrew wants an 82-0 style game for League of Legends esports, focused on winnin
 - One-click player choice cards with player portraits for available roles from the rolled roster.
 - Draft board with five locked role slots: Top, Jungle, Mid, Bot, Support.
 - One reroll per run.
+- Abstract Summoner's Rift treatment in the central play surface: lanes, river, bases, brush, and objectives without adding gameplay controls.
+- Conspicuous Riot fan-project notice in the footer.
 
 ## Data Source
 
@@ -37,4 +40,11 @@ The current local snapshot was generated on `2026-06-06T03:42:40.413Z` and conta
 
 ## Deployment Shape
 
-The app is a Vite React static build. A later deployment can serve `dist/` after running `npm run build`.
+The app is a Vite React static build. Cloudflare Pages can serve `dist/` after running `npm run build`. Runtime does not require API keys, a backend, a database, auth, or server functions.
+
+Launch prep includes:
+
+- `wrangler.toml` for the `worlds-run` Pages project.
+- `public/_headers` for security and cache headers.
+- `.env.example` documenting data-refresh keys without committing secrets.
+- `npm run deploy:cloudflare` for a CLI deploy after Andrew approves a live publish.

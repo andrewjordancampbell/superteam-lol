@@ -7,6 +7,12 @@
 - `npm run build` passed.
 - `npx playwright test docs/code-factory/efforts/2026-06-05-lol-18-0-local/visual-capture.spec.js --reporter=line` passed.
 
+Launch-prep pass:
+
+- `npm run lint` passed after Cloudflare/header/Rift updates.
+- `npm run build` passed after Cloudflare/header/Rift updates.
+- `npx playwright test docs/code-factory/efforts/2026-06-05-lol-18-0-local/visual-capture.spec.js --reporter=line` passed after Cloudflare/header/Rift updates.
+
 ## Browser QA
 
 Local URL: `http://127.0.0.1:5173/`
@@ -21,6 +27,8 @@ Verified:
 - Active draw exposes the player choices without making desktop users hunt below the fold.
 - Spin dealt five pro choices with five loaded player portraits in the in-app browser QA pass.
 - In-app browser image QA loaded 11/11 LoL Esports images after a spin: five player portraits plus team-logo usages.
+- Launch-prep browser QA loaded 21/21 visible images after a spin, dealt five choice cards, showed the Rift layer, and confirmed the fan notice was visible.
+- Central panel now includes abstract Summoner's Rift lanes, river, bases, brush, and objective markers without adding extra decisions.
 - Blind mode hides stats and shows memory-based choice cards.
 - Reroll remains available once per run.
 - Picking a pro advances the roster and preserves the drafted team/timeframe.
@@ -37,6 +45,14 @@ Verified:
 - Reference screenshots: `docs/code-factory/efforts/2026-06-05-lol-18-0-local/research/`
 - Build artifact: `dist/`
 
+## Launch Prep
+
+- Runtime remains static-only: no backend, auth, database, server functions, or runtime secrets.
+- Data refresh requires local env vars, but deploys use the committed static JSON snapshot.
+- `public/_headers` adds CSP, frame blocking, MIME sniffing protection, referrer policy, permission policy, and cache rules.
+- `wrangler.toml` targets Cloudflare Pages with `dist` as the output directory.
+- Footer and README include the Riot fan-project notice.
+
 ## Notes
 
-The app is intentionally frontend-only for the local milestone. Deployment can stay simple unless we later need scheduled data refreshes, daily seeded challenges, or user-created saved rosters.
+The app is intentionally frontend-only for the local milestone. Deployment should stay static unless we later need scheduled data refreshes, daily seeded challenges, or user-created saved rosters.

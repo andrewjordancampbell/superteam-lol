@@ -10,11 +10,18 @@ Classic mode shows player stats. Blind mode hides them so the pick is based on e
 
 ```bash
 npm install
-npm run data:build
 npm run dev -- --host 127.0.0.1
 ```
 
 Open `http://127.0.0.1:5173/`.
+
+The committed `public/data/pros.json` snapshot is enough to run the app locally or deploy it as a static site.
+
+To refresh the dataset, copy `.env.example` to `.env`, set `OE_API_KEY`, optionally set `LOL_ESPORTS_API_KEY` for LoL Esports asset enrichment, then run:
+
+```bash
+npm run data:build
+```
 
 ## Checks
 
@@ -22,6 +29,22 @@ Open `http://127.0.0.1:5173/`.
 npm run lint
 npm run build
 npx playwright test docs/code-factory/efforts/2026-06-05-lol-18-0-local/visual-capture.spec.js --reporter=line
+```
+
+## Deploy
+
+The app is static-only: no server, no database, no runtime API keys.
+
+Cloudflare Pages settings:
+
+- Build command: `npm run build`
+- Output directory: `dist`
+- Headers: `public/_headers`
+
+CLI deploy:
+
+```bash
+npm run deploy:cloudflare
 ```
 
 ## Data
@@ -37,4 +60,4 @@ Current generated snapshot:
 - Tournaments: `12`
 - Pools: `Worlds`, `International`, `Current Form`, `Americas`
 
-This is an unofficial fan prototype and is not endorsed by Riot Games.
+Worlds Run was created under Riot Games' Legal Jibber Jabber policy using assets owned by Riot Games. Riot Games does not endorse or sponsor this project.

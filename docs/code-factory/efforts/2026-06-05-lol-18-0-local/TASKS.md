@@ -23,6 +23,11 @@
 - [x] Review basketball, football, soccer, hockey, college football, and adjacent 82-0-style variants for mechanics and monetization patterns.
 - [x] Enrich the local dataset with LoL Esports team logos and player portraits.
 - [x] Add logo/portrait treatments to the roll, player choices, and drafted roster.
+- [x] Add Cloudflare Pages deploy config and static hosting headers.
+- [x] Remove committed data-builder API keys and document `.env` refresh flow.
+- [x] Add the Riot fan-project notice to the app and README.
+- [x] Add an abstract Summoner's Rift visual layer to the main round panel.
+- [x] Write launch checklist for Reddit/X traffic testing.
 
 ## Later
 
@@ -30,5 +35,5 @@
 - [ ] Add social-card export for drafted rosters.
 - [ ] Add daily seeded challenge mode.
 - [ ] Add leaderboard/history only after the local loop proves replay value.
-- [ ] Add deployment config once the local prototype direction is approved.
+- [ ] Deploy to Cloudflare Pages after Andrew approves a live publish.
 - [ ] Revisit the rating formula with more domain tuning after hands-on use.

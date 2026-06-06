@@ -160,6 +160,7 @@ button:hover:not(:disabled) {
   position: absolute;
   inset: auto -12% -44% -12%;
   height: 72%;
+  z-index: 0;
   background:
     radial-gradient(circle at 50% 20%, rgba(224, 177, 81, 0.2), transparent 36%),
     linear-gradient(90deg, rgba(55, 177, 157, 0.08), rgba(190, 63, 72, 0.08));
@@ -168,6 +169,131 @@ button:hover:not(:disabled) {
 
 .round-panel > * {
   position: relative;
+  z-index: 1;
+}
+
+.rift-backdrop {
+  position: absolute;
+  inset: 18px;
+  z-index: 0;
+  overflow: hidden;
+  border: 1px solid rgba(224, 177, 81, 0.1);
+  border-radius: 8px;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.rift-backdrop::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(145deg, rgba(21, 88, 66, 0.22), transparent 38%),
+    linear-gradient(325deg, rgba(94, 35, 41, 0.2), transparent 42%),
+    repeating-linear-gradient(45deg, transparent 0 20px, rgba(255, 255, 255, 0.025) 20px 21px);
+}
+
+.rift-base {
+  position: absolute;
+  width: 54px;
+  height: 54px;
+  border: 1px solid rgba(224, 177, 81, 0.28);
+  transform: rotate(45deg);
+}
+
+.rift-blue-base {
+  left: -20px;
+  bottom: -20px;
+  background: rgba(55, 177, 157, 0.1);
+}
+
+.rift-red-base {
+  top: -20px;
+  right: -20px;
+  background: rgba(190, 63, 72, 0.12);
+}
+
+.rift-lane,
+.rift-river {
+  position: absolute;
+  height: 3px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, transparent, rgba(224, 177, 81, 0.42), transparent);
+  transform-origin: center;
+}
+
+.rift-lane-top {
+  top: 22%;
+  left: 7%;
+  width: 82%;
+  transform: rotate(-22deg);
+}
+
+.rift-lane-mid {
+  top: 48%;
+  left: 14%;
+  width: 72%;
+  transform: rotate(-8deg);
+}
+
+.rift-lane-bot {
+  right: 6%;
+  bottom: 22%;
+  width: 84%;
+  transform: rotate(22deg);
+}
+
+.rift-river {
+  top: 50%;
+  left: -8%;
+  width: 116%;
+  height: 26px;
+  background: linear-gradient(90deg, transparent, rgba(55, 177, 157, 0.12), rgba(55, 177, 157, 0.28), transparent);
+  transform: rotate(27deg);
+}
+
+.rift-brush {
+  position: absolute;
+  width: 104px;
+  height: 22px;
+  border-block: 1px solid rgba(55, 177, 157, 0.32);
+  background: repeating-linear-gradient(
+    90deg,
+    rgba(55, 177, 157, 0.02) 0 7px,
+    rgba(55, 177, 157, 0.18) 7px 9px
+  );
+  transform: rotate(-18deg);
+}
+
+.rift-brush-top {
+  top: 25%;
+  right: 16%;
+}
+
+.rift-brush-bot {
+  bottom: 25%;
+  left: 14%;
+}
+
+.rift-objective {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border: 1px solid rgba(255, 247, 223, 0.42);
+  background: rgba(224, 177, 81, 0.2);
+  transform: rotate(45deg);
+}
+
+.rift-baron {
+  top: 35%;
+  left: 31%;
+  box-shadow: 0 0 22px rgba(190, 63, 72, 0.28);
+}
+
+.rift-dragon {
+  right: 30%;
+  bottom: 33%;
+  box-shadow: 0 0 22px rgba(55, 177, 157, 0.28);
 }
 
 .round-kicker {

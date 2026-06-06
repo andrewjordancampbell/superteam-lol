@@ -172,6 +172,19 @@ function App() {
 
       <section className="playmat">
         <section className={`round-panel ${offer ? 'has-offer' : ''}`} aria-label="Current round">
+          <div className="rift-backdrop" aria-hidden="true">
+            <span className="rift-base rift-blue-base" />
+            <span className="rift-base rift-red-base" />
+            <span className="rift-lane rift-lane-top" />
+            <span className="rift-lane rift-lane-mid" />
+            <span className="rift-lane rift-lane-bot" />
+            <span className="rift-river" />
+            <span className="rift-brush rift-brush-top" />
+            <span className="rift-brush rift-brush-bot" />
+            <span className="rift-objective rift-baron" />
+            <span className="rift-objective rift-dragon" />
+          </div>
+
           <div className="round-kicker">
             <span>Round {runComplete ? roles.length : filled + 1}/5</span>
             <span>{runComplete ? 'Roster locked' : showStats ? 'Classic' : 'Scout IQ'}</span>
@@ -321,7 +334,10 @@ function App() {
           Oracle&apos;s Elixir stats · {data ? `${data.players.length} pros` : '-'} · Generated{' '}
           {data ? new Date(data.generatedAt).toLocaleDateString() : '-'}
         </span>
-        <span>Unofficial fan prototype. Not endorsed by Riot Games.</span>
+        <span>
+          Worlds Run was created under Riot Games&apos; Legal Jibber Jabber policy using assets owned by Riot Games. Riot
+          Games does not endorse or sponsor this project.
+        </span>
       </footer>
     </main>
   )
