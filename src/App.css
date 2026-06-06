@@ -223,6 +223,36 @@ button:hover:not(:disabled) {
   box-shadow: 0 16px 42px rgba(224, 177, 81, 0.08);
 }
 
+.roll-cards .roll-team-card {
+  grid-template-columns: 58px minmax(0, 1fr);
+  place-content: stretch;
+  align-items: center;
+  text-align: left;
+}
+
+.team-logo,
+.team-fallback {
+  grid-row: 1 / 4;
+  width: 50px;
+  height: 50px;
+}
+
+.team-logo {
+  object-fit: contain;
+  filter: drop-shadow(0 10px 18px rgba(0, 0, 0, 0.36));
+}
+
+.team-fallback {
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(224, 177, 81, 0.5);
+  border-radius: 8px;
+  color: var(--gold);
+  font-family: var(--heading);
+  font-size: 24px;
+  font-weight: 800;
+}
+
 .round-panel.has-offer .roll-cards div {
   min-height: 74px;
 }
@@ -240,6 +270,14 @@ button:hover:not(:disabled) {
   font-family: var(--heading);
   font-size: clamp(24px, 3.6vw, 42px);
   line-height: 0.95;
+}
+
+.roll-cards em {
+  color: var(--muted);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 800;
+  letter-spacing: 0.08em;
 }
 
 .round-panel.has-offer .roll-cards strong {
@@ -317,7 +355,7 @@ button:hover:not(:disabled) {
 .roster-slot {
   min-height: 70px;
   display: grid;
-  grid-template-columns: 30px minmax(0, 1fr) auto;
+  grid-template-columns: 42px minmax(0, 1fr) auto;
   gap: 10px;
   align-items: center;
   padding: 10px;
@@ -330,14 +368,42 @@ button:hover:not(:disabled) {
   border-color: var(--teal);
 }
 
-.roster-slot img,
-.choice-topline img {
+.roster-avatar,
+.player-avatar {
+  position: relative;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background:
+    radial-gradient(circle at 50% 18%, rgba(224, 177, 81, 0.2), transparent 45%),
+    #0f1317;
+  color: var(--gold);
+  font-family: var(--heading);
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.roster-avatar {
+  width: 42px;
+  height: 42px;
+}
+
+.roster-avatar > img:first-child,
+.player-avatar > img:first-child {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.roster-avatar > img:first-child[src*='Icon'],
+.choice-copy small img {
   filter: brightness(0) invert(1);
   opacity: 0.82;
 }
 
-.roster-slot img,
-.choice-topline img {
+.roster-avatar > img:first-child[src*='Icon'] {
   width: 24px;
   height: 24px;
   object-fit: contain;
@@ -358,7 +424,7 @@ button:hover:not(:disabled) {
   font-style: normal;
 }
 
-.choice-topline small {
+.choice-copy small {
   display: flex;
   gap: 6px;
   align-items: center;
@@ -368,8 +434,14 @@ button:hover:not(:disabled) {
   text-transform: uppercase;
 }
 
+.choice-copy small img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
 .roster-slot strong,
-.choice-topline strong {
+.choice-copy strong {
   overflow: hidden;
   color: var(--text-strong);
   text-overflow: ellipsis;
@@ -405,13 +477,13 @@ button:hover:not(:disabled) {
 .choice-grid {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(132px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(166px, 1fr));
   gap: 10px;
   margin-top: 2px;
 }
 
 .choice-card {
-  min-height: 128px;
+  min-height: 144px;
   display: grid;
   align-content: space-between;
   gap: 10px;
@@ -432,15 +504,50 @@ button:hover:not(:disabled) {
   align-items: start;
 }
 
-.choice-topline span {
+.choice-identity {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 52px minmax(0, 1fr);
+  gap: 10px;
+  align-items: center;
+  min-width: 0;
+}
+
+.choice-copy {
   display: grid;
   gap: 4px;
   min-width: 0;
 }
 
+.player-avatar {
+  width: 52px;
+  height: 52px;
+}
+
+.avatar-team-logo,
+.roster-team-logo {
+  position: absolute;
+  right: -2px;
+  bottom: -2px;
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  padding: 2px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: rgba(8, 10, 13, 0.92);
+}
+
+.roster-team-logo {
+  width: 18px;
+  height: 18px;
+  border-radius: 5px;
+}
+
 .choice-topline b {
+  flex: 0 0 auto;
   color: var(--gold);
-  font-size: 30px;
+  font-size: 28px;
   line-height: 1;
 }
 

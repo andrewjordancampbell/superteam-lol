@@ -2,6 +2,8 @@ import { mkdir, writeFile } from 'node:fs/promises'
 
 const API_BASE = 'https://oe.datalisk.io'
 const API_KEY = process.env.OE_API_KEY ?? 'f561197a-82ea-4e54-acd2-386979018a7a'
+const LOLESPORTS_API_BASE = 'https://esports-api.lolesports.com/persisted/gw'
+const LOLESPORTS_API_KEY = process.env.LOL_ESPORTS_API_KEY ?? '0TvQnueqKa5mxJntVWt0w4LpLfEkrV1Ta8rQBb9Z'
 const OUTFILE = new URL('../public/data/pros.json', import.meta.url)
 
 const tournaments = [
@@ -81,6 +83,31 @@ const tournaments = [
 
 const roleOrder = ['Top', 'Jungle', 'Mid', 'Bot', 'Support']
 
+const lolesportsRoleMap = {
+  top: 'Top',
+  jungle: 'Jungle',
+  mid: 'Mid',
+  middle: 'Mid',
+  bottom: 'Bot',
+  bot: 'Bot',
+  support: 'Support',
+}
+
+const teamAliases = {
+  Cloud9: 'Cloud9 Kia',
+  'Deep Cross Gaming': 'Relove Deep Cross Gaming',
+  'Fluxo W7M': 'Fluxo',
+  'Gen.G': 'Gen.G Esports',
+  'JD Gaming': 'Beijing JDG Esports',
+  Leviatan: 'LEVIATÁN',
+  'LNG Esports': 'Suzhou LNG Esports',
+  'Nongshim RedForce': 'NONGSHIM RED FORCE',
+  'Team Liquid': 'Team Liquid Alienware',
+  'Team WE': "Xi'an Team WE",
+  'ThunderTalk Gaming': 'THUNDER TALK GAMING',
+  'Weibo Gaming': 'WeiboGaming',
+}
+
 const roleWeights = {
   Top: {
     winRate: 0.12,
@@ -153,6 +180,36 @@ function normalizeRole(position) {
   return position
 }
 
+function normalizeKey(value) {
+  return String(value)
+    .toLowerCase()
+    .normalize('NFKD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/&/g, 'and')
+    .replace(/[^a-z0-9]+/g, '')
+}
+
+function secureAssetUrl(value) {
+  if (!value) return undefined
+  return String(value).replace(/^http:\/\//, 'https://')
+}
+
+function usefulPlayerImage(value) {
+  const url = secureAssetUrl(value)
+  if (!url) return undefined
+  const lower = url.toLowerCase()
+  if (lower.includes('default-headshot') || lower.includes('silhouette')) return undefined
+  return url
+}
+
+function sortTeamMatches(a, b) {
+  if (a.status !== b.status) return a.status === 'active' ? -1 : 1
+  const aPlayers = a.players?.length ?? 0
+  const bPlayers = b.players?.length ?? 0
+  if (aPlayers !== bPlayers) return bPlayers - aPlayers
+  return String(a.name).length - String(b.name).length
+}
+
 function weightedAverage(values) {
   const usable = values.filter((entry) => entry.value !== null && Number.isFinite(entry.value))
   const totalWeight = usable.reduce((sum, entry) => sum + entry.weight, 0)
@@ -186,6 +243,161 @@ async function fetchTournament(tournament) {
   }
   const rows = await response.json()
   return rows.map((row) => ({ ...row, __tournament: tournament }))
+}
+
+async function fetchLolesportsTeams() {
+  const url = new URL(`${LOLESPORTS_API_BASE}/getTeams`)
+  url.searchParams.set('hl', 'en-US')
+
+  try {
+    const response = await fetch(url, {
+      headers: {
+        Accept: 'application/json',
+        'User-Agent': 'Mozilla/5.0',
+        'x-api-key': LOLESPORTS_API_KEY,
+      },
+    })
+    if (!response.ok) throw new Error(`HTTP ${response.status}`)
+    const payload = await response.json()
+    return payload?.data?.teams ?? []
+  } catch (error) {
+    console.warn(`LoL Esports asset fetch failed: ${error instanceof Error ? error.message : error}`)
+    return []
+  }
+}
+
+function makeAssetIndex(lolesportsTeams) {
+  const teams = lolesportsTeams.filter((team) => team.name && team.name !== 'TBD')
+  const teamsByKey = new Map()
+  const playersByKey = new Map()
+
+  for (const team of teams) {
+    const key = normalizeKey(team.name)
+    const current = teamsByKey.get(key) ?? []
+    current.push(team)
+    teamsByKey.set(key, current)
+
+    for (const player of team.players ?? []) {
+      const image = usefulPlayerImage(player.image)
+      if (!player.summonerName || !image) continue
+      const playerKey = normalizeKey(player.summonerName)
+      const currentPlayers = playersByKey.get(playerKey) ?? []
+      currentPlayers.push({
+        ...player,
+        image,
+        teamCode: team.code,
+        teamName: team.name,
+        teamStatus: team.status,
+      })
+      playersByKey.set(playerKey, currentPlayers)
+    }
+  }
+
+  return { teams, teamsByKey, playersByKey }
+}
+
+function findTeamAsset(teamName, assetIndex) {
+  const alias = teamAliases[teamName]
+  const exact =
+    assetIndex.teamsByKey.get(normalizeKey(alias ?? teamName))?.sort(sortTeamMatches)[0] ??
+    assetIndex.teamsByKey.get(normalizeKey(teamName))?.sort(sortTeamMatches)[0]
+
+  if (exact) {
+    return {
+      code: exact.code,
+      logo: secureAssetUrl(exact.image ?? exact.alternativeImage),
+      name: exact.name,
+    }
+  }
+
+  const desired = normalizeKey(teamName)
+  const fuzzy = assetIndex.teams
+    .map((team) => {
+      const candidate = normalizeKey(team.name)
+      let score = 0
+      if (candidate.startsWith(desired) || desired.startsWith(candidate)) score = 90
+      else if (desired.length > 4 && candidate.includes(desired)) score = 80
+      else if (candidate.length > 4 && desired.includes(candidate)) score = 75
+      return { team, score }
+    })
+    .filter((match) => match.score > 0)
+    .sort((a, b) => b.score - a.score || sortTeamMatches(a.team, b.team))[0]?.team
+
+  if (!fuzzy) return undefined
+
+  return {
+    code: fuzzy.code,
+    logo: secureAssetUrl(fuzzy.image ?? fuzzy.alternativeImage),
+    name: fuzzy.name,
+  }
+}
+
+function findPlayerAsset(player, assetIndex) {
+  const candidates = assetIndex.playersByKey.get(normalizeKey(player.name)) ?? []
+  if (candidates.length === 0) return undefined
+
+  const playerTeams = new Set(player.teams.map((team) => normalizeKey(team.name)))
+  const playerRole = player.role
+  const [best] = candidates.sort((a, b) => {
+    const aRole = lolesportsRoleMap[a.role] === playerRole ? 1 : 0
+    const bRole = lolesportsRoleMap[b.role] === playerRole ? 1 : 0
+    if (aRole !== bRole) return bRole - aRole
+
+    const aTeam = playerTeams.has(normalizeKey(a.teamName)) ? 1 : 0
+    const bTeam = playerTeams.has(normalizeKey(b.teamName)) ? 1 : 0
+    if (aTeam !== bTeam) return bTeam - aTeam
+
+    if (a.teamStatus !== b.teamStatus) return a.teamStatus === 'active' ? -1 : 1
+    return 0
+  })
+
+  return {
+    firstName: best.firstName,
+    image: best.image,
+    lastName: best.lastName,
+  }
+}
+
+function attachAssets(players, lolesportsTeams) {
+  const assetIndex = makeAssetIndex(lolesportsTeams)
+  const teamAssetCache = new Map()
+  const teamAsset = (teamName) => {
+    if (!teamAssetCache.has(teamName)) {
+      teamAssetCache.set(teamName, findTeamAsset(teamName, assetIndex))
+    }
+    return teamAssetCache.get(teamName)
+  }
+
+  const enriched = players.map((player) => {
+    const playerAsset = findPlayerAsset(player, assetIndex)
+    return {
+      ...player,
+      image: playerAsset?.image,
+      realName: [playerAsset?.firstName, playerAsset?.lastName].filter(Boolean).join(' ') || undefined,
+      teams: player.teams.map((team) => {
+        const asset = teamAsset(team.name)
+        return {
+          ...team,
+          code: asset?.code,
+          logo: asset?.logo,
+        }
+      }),
+      tournaments: player.tournaments.map((tournament) => {
+        const asset = teamAsset(tournament.team)
+        return {
+          ...tournament,
+          teamCode: asset?.code,
+          teamLogo: asset?.logo,
+        }
+      }),
+    }
+  })
+
+  const teamsWithLogos = Array.from(teamAssetCache.values()).filter((asset) => asset?.logo).length
+  const playersWithImages = enriched.filter((player) => player.image).length
+  console.log(`LoL Esports assets: ${playersWithImages}/${players.length} player portraits, ${teamsWithLogos}/${teamAssetCache.size} team logos`)
+
+  return enriched
 }
 
 function aggregate(rows) {
@@ -340,7 +552,8 @@ for (const tournament of tournaments) {
   rows.push(...result)
 }
 
-const players = ratePlayers(aggregate(rows)).sort((a, b) => b.rating - a.rating)
+const lolesportsTeams = await fetchLolesportsTeams()
+const players = attachAssets(ratePlayers(aggregate(rows)).sort((a, b) => b.rating - a.rating), lolesportsTeams)
 
 await mkdir(new URL('../public/data', import.meta.url), { recursive: true })
 await writeFile(

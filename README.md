@@ -26,12 +26,14 @@ npx playwright test docs/code-factory/efforts/2026-06-05-lol-18-0-local/visual-c
 
 ## Data
 
-The local dataset is generated into `public/data/pros.json` from Oracle's Elixir aggregated player stats via `scripts/build-pro-data.mjs`.
+The local dataset is generated into `public/data/pros.json` from Oracle's Elixir aggregated player stats via `scripts/build-pro-data.mjs`. The builder also enriches the snapshot with hosted LoL Esports team logos and player portraits when available.
 
 Current generated snapshot:
 
-- Generated: `2026-06-06T02:39:14.100Z`
+- Generated: `2026-06-06T03:42:40.413Z`
 - Players: `317`
+- Player portraits: `301`
+- Team logos: `59`
 - Tournaments: `12`
 - Pools: `Worlds`, `International`, `Current Form`, `Americas`
 

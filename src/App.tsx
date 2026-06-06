@@ -17,6 +17,8 @@ type Offer = {
   timeframe: string
   pool: string
   team: string
+  teamCode?: string
+  teamLogo?: string
   players: Player[]
 }
 
@@ -26,6 +28,15 @@ function shuffled<T>(items: T[]) {
 
 function freshDraft(): Draft {
   return { ...emptyDraft }
+}
+
+function initials(name: string) {
+  return name
+    .split(/\s+/)
+    .filter(Boolean)
+    .slice(0, 2)
+    .map((part) => part[0]?.toUpperCase())
+    .join('')
 }
 
 function tournamentEntry(player: Player, tournamentId: string) {
@@ -38,16 +49,22 @@ function dealOffer(draft: Draft, players: Player[], data: ProsData): Offer | nul
     const playersByTeam = players.reduce((teams, player) => {
       const entry = tournamentEntry(player, tournament.id)
       if (!openRoles.has(player.role) || !entry?.team) return teams
-      const teamPlayers = teams.get(entry.team) ?? []
-      teamPlayers.push(player)
-      teams.set(entry.team, teamPlayers)
+      const teamRoll = teams.get(entry.team) ?? {
+        players: [],
+        teamCode: entry.teamCode,
+        teamLogo: entry.teamLogo,
+      }
+      teamRoll.players.push(player)
+      teams.set(entry.team, teamRoll)
       return teams
-    }, new Map<string, Player[]>())
+    }, new Map<string, { players: Player[]; teamCode?: string; teamLogo?: string }>())
 
-    return Array.from(playersByTeam.entries()).map(([team, candidates]) => ({
+    return Array.from(playersByTeam.entries()).map(([team, roll]) => ({
       tournament,
       team,
-      candidates: candidates.sort((a, b) => b.rating - a.rating || b.gp - a.gp),
+      teamCode: roll.teamCode,
+      teamLogo: roll.teamLogo,
+      candidates: roll.players.sort((a, b) => b.rating - a.rating || b.gp - a.gp),
     }))
   })
 
@@ -59,6 +76,8 @@ function dealOffer(draft: Draft, players: Player[], data: ProsData): Offer | nul
     timeframe: roll.tournament.label,
     pool: roll.tournament.pool,
     team: roll.team,
+    teamCode: roll.teamCode,
+    teamLogo: roll.teamLogo,
     players: roll.candidates,
   }
 }
@@ -102,6 +121,8 @@ function App() {
       [player.role]: {
         ...player,
         draftTeam: offer?.team,
+        draftTeamCode: offer?.teamCode,
+        draftTeamLogo: offer?.teamLogo,
         draftTimeframe: offer?.timeframe,
       },
     }))
@@ -166,9 +187,15 @@ function App() {
           </div>
 
           <div className="roll-cards" aria-label="Current roll">
-            <div>
+            <div className={offer ? 'roll-team-card' : undefined}>
+              {offer?.teamLogo ? (
+                <img className="team-logo" src={offer.teamLogo} alt="" />
+              ) : offer ? (
+                <span className="team-fallback">{initials(offer.team)}</span>
+              ) : null}
               <span>Team</span>
               <strong>{offer ? offer.team : '?'}</strong>
+              {offer?.teamCode ? <em>{offer.teamCode}</em> : null}
             </div>
             <div>
               <span>Timeframe</span>
@@ -209,13 +236,19 @@ function App() {
               {offer.players.map((player) => (
                 <button type="button" className="choice-card" key={player.id} onClick={() => pickPlayer(player)}>
                   <span className="choice-topline">
-                    <span>
-                      <small>
-                        <img src={roleIcons[player.role]} alt="" />
-                        {roleLabels[player.role]}
-                      </small>
-                      <strong>{player.name}</strong>
-                      <em>{offer.team}</em>
+                    <span className="choice-identity">
+                      <span className="player-avatar">
+                        {player.image ? <img src={player.image} alt="" /> : <span>{initials(player.name)}</span>}
+                        {offer.teamLogo ? <img className="avatar-team-logo" src={offer.teamLogo} alt="" /> : null}
+                      </span>
+                      <span className="choice-copy">
+                        <small>
+                          <img src={roleIcons[player.role]} alt="" />
+                          {roleLabels[player.role]}
+                        </small>
+                        <strong>{player.name}</strong>
+                        <em>{offer.team}</em>
+                      </span>
                     </span>
                     {showStats ? <b>{player.rating}</b> : <b>?</b>}
                   </span>
@@ -255,7 +288,10 @@ function App() {
               const active = !player && !runComplete
               return (
                 <div className={`roster-slot ${active ? 'active' : ''}`} key={role}>
-                  <img src={roleIcons[role]} alt="" />
+                  <span className="roster-avatar">
+                    {player?.image ? <img src={player.image} alt="" /> : <img src={roleIcons[role]} alt="" />}
+                    {player?.draftTeamLogo ? <img className="roster-team-logo" src={player.draftTeamLogo} alt="" /> : null}
+                  </span>
                   <span>
                     <small>{roleLabels[role]}</small>
                     <strong>{player ? player.name : 'Empty'}</strong>

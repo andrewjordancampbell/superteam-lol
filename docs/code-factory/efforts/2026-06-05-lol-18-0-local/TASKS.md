@@ -21,6 +21,8 @@
 - [x] Add Stats/Blind mode so users can draft with or without visible player stats.
 - [x] Preserve each player's actual team for each tournament/timeframe in the generated data.
 - [x] Review basketball, football, soccer, hockey, college football, and adjacent 82-0-style variants for mechanics and monetization patterns.
+- [x] Enrich the local dataset with LoL Esports team logos and player portraits.
+- [x] Add logo/portrait treatments to the roll, player choices, and drafted roster.
 
 ## Later
 

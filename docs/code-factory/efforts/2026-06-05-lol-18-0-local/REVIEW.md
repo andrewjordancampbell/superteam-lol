@@ -2,7 +2,7 @@
 
 ## Machine Checks
 
-- `npm run data:build` generated `public/data/pros.json` with 317 players and per-tournament team mappings.
+- `npm run data:build` generated `public/data/pros.json` with 317 players, per-tournament team mappings, 301 player portraits, and 59 team logos.
 - `npm run lint` passed.
 - `npm run build` passed.
 - `npx playwright test docs/code-factory/efforts/2026-06-05-lol-18-0-local/visual-capture.spec.js --reporter=line` passed.
@@ -17,8 +17,10 @@ Verified:
 - No browser console errors or warnings during core flows.
 - First screen now exposes the core `Spin` action.
 - Spin deals a real team plus timeframe.
+- Active roll displays the rolled team logo.
 - Active draw exposes the player choices without making desktop users hunt below the fold.
-- Spin dealt five pro choices in the in-app browser QA pass.
+- Spin dealt five pro choices with five loaded player portraits in the in-app browser QA pass.
+- In-app browser image QA loaded 11/11 LoL Esports images after a spin: five player portraits plus team-logo usages.
 - Blind mode hides stats and shows memory-based choice cards.
 - Reroll remains available once per run.
 - Picking a pro advances the roster and preserves the drafted team/timeframe.

@@ -26,12 +26,16 @@ export type TournamentRef = {
   label: string
   pool: string
   team: string
+  teamCode?: string
+  teamLogo?: string
   games: number
 }
 
 export type TeamRef = {
   name: string
+  code?: string
   games: number
+  logo?: string
 }
 
 export type Player = {
@@ -40,7 +44,11 @@ export type Player = {
   role: Role
   team: string
   draftTeam?: string
+  draftTeamCode?: string
+  draftTeamLogo?: string
   draftTimeframe?: string
+  image?: string
+  realName?: string
   teams: TeamRef[]
   tournaments: TournamentRef[]
   gp: number
