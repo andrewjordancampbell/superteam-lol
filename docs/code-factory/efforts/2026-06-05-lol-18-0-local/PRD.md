@@ -23,12 +23,13 @@ Andrew wants an 82-0 style game for League of Legends esports, focused on winnin
 ## Product Surface
 
 - Score band with result, score, title odds, and filled slots.
+- Match lobby inspired by the polish bar of `7a0.com.br/en` and `38-0.app/game`: large 18-0 identity, first-screen Rift board, difficulty, scouting mode, and direct Start Draft action.
 - One central spin panel that deals a team plus timeframe.
 - Team logo treatment on the active roll.
 - Stats/Blind toggle: Classic shows player stats; Blind hides the stat grid and ratings context.
 - One-click player choice cards with player portraits for available roles from the rolled roster.
-- Draft board with five locked role slots: Top, Jungle, Mid, Bot, Support.
-- One reroll per run.
+- Draft board with a compact Summoner's Rift map plus five locked role slots: Top, Jungle, Mid, Bot, Support.
+- Difficulty controls rerolls: Easy has two, Normal has one, Hard has none.
 - Abstract Summoner's Rift treatment in the central play surface: lanes, river, bases, brush, and objectives without adding gameplay controls.
 - Conspicuous Riot fan-project notice in the footer.
 

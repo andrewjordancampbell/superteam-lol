@@ -9,6 +9,8 @@ test('capture redesigned states', async ({ page }) => {
     fullPage: false,
   })
 
+  await page.getByRole('button', { name: 'Start draft' }).click()
+  await page.waitForTimeout(250)
   await page.getByRole('button', { name: 'Spin' }).click()
   await page.waitForTimeout(500)
   await page.screenshot({
@@ -32,6 +34,8 @@ test('capture redesigned states', async ({ page }) => {
 
   await page.setViewportSize({ width: 390, height: 844 })
   await page.goto('http://127.0.0.1:5173/')
+  await page.getByRole('button', { name: 'Start draft' }).click()
+  await page.waitForTimeout(250)
   await page.getByRole('button', { name: 'Spin' }).click()
   await page.waitForTimeout(500)
   await page.screenshot({

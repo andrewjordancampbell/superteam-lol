@@ -28,6 +28,10 @@
 - [x] Add the Riot fan-project notice to the app and README.
 - [x] Add an abstract Summoner's Rift visual layer to the main round panel.
 - [x] Write launch checklist for Reddit/X traffic testing.
+- [x] Benchmark the target polish level against `7a0.com.br/en` and `38-0.app/game`.
+- [x] Add an 18-0 match lobby with difficulty, scouting mode, Start Draft, and a first-screen Rift board.
+- [x] Add a compact Summoner's Rift roster map to the in-game draft panel.
+- [x] Refresh visual evidence screenshots after the lobby upgrade.
 
 ## Later
 

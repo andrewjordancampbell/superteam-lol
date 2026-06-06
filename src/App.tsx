@@ -22,6 +22,34 @@ type Offer = {
   players: Player[]
 }
 
+type Difficulty = 'easy' | 'normal' | 'hard'
+
+const difficultyOptions: Record<Difficulty, { label: string; hint: string; rerolls: number }> = {
+  easy: {
+    label: 'Easy',
+    hint: '2 rerolls',
+    rerolls: 2,
+  },
+  normal: {
+    label: 'Normal',
+    hint: '1 reroll',
+    rerolls: 1,
+  },
+  hard: {
+    label: 'Hard',
+    hint: 'No rerolls',
+    rerolls: 0,
+  },
+}
+
+const roleAbbrevs = {
+  Top: 'TOP',
+  Jungle: 'JNG',
+  Mid: 'MID',
+  Bot: 'BOT',
+  Support: 'SUP',
+}
+
 function shuffled<T>(items: T[]) {
   return [...items].sort(() => Math.random() - 0.5)
 }
@@ -41,6 +69,33 @@ function initials(name: string) {
 
 function tournamentEntry(player: Player, tournamentId: string) {
   return player.tournaments.find((tournament) => tournament.id === tournamentId)
+}
+
+function DraftMap({ draft, preview = false }: { draft?: Draft; preview?: boolean }) {
+  return (
+    <div className={`draft-map ${preview ? 'draft-map-preview' : ''}`} aria-label="Summoner's Rift draft map">
+      <span className="map-base map-blue-base" />
+      <span className="map-base map-red-base" />
+      <span className="map-lane map-lane-top" />
+      <span className="map-lane map-lane-mid" />
+      <span className="map-lane map-lane-bot" />
+      <span className="map-river" />
+      <span className="map-objective map-baron" />
+      <span className="map-objective map-dragon" />
+
+      {roles.map((role) => {
+        const player = draft?.[role]
+        return (
+          <span className={`map-role map-role-${role.toLowerCase()}`} key={role}>
+            <span className="map-role-icon">
+              {player?.image ? <img src={player.image} alt="" /> : <img src={roleIcons[role]} alt="" />}
+            </span>
+            <strong>{player ? player.name : roleAbbrevs[role]}</strong>
+          </span>
+        )
+      })}
+    </div>
+  )
 }
 
 function dealOffer(draft: Draft, players: Player[], data: ProsData): Offer | null {
@@ -87,6 +142,8 @@ function App() {
   const [loadError, setLoadError] = useState<string | null>(null)
   const [draft, setDraft] = useState<Draft>(freshDraft)
   const [offer, setOffer] = useState<Offer | null>(null)
+  const [gameStarted, setGameStarted] = useState(false)
+  const [difficulty, setDifficulty] = useState<Difficulty>('normal')
   const [rerollsLeft, setRerollsLeft] = useState(1)
   const [showStats, setShowStats] = useState(true)
 
@@ -106,6 +163,7 @@ function App() {
   const projection = useMemo(() => projectRoster(draft), [draft])
   const filled = projection.filled
   const runComplete = filled === roles.length
+  const difficultyOption = difficultyOptions[difficulty]
 
   function spin(useReroll = false) {
     if (!data || runComplete) return
@@ -129,10 +187,116 @@ function App() {
     setOffer(null)
   }
 
+  function startRun() {
+    setDraft(freshDraft())
+    setOffer(null)
+    setRerollsLeft(difficultyOption.rerolls)
+    setGameStarted(true)
+  }
+
   function newRun() {
     setDraft(freshDraft())
     setOffer(null)
-    setRerollsLeft(1)
+    setRerollsLeft(difficultyOption.rerolls)
+  }
+
+  const statusNotice = (
+    <>
+      {loadError ? <div className="notice">Data load failed: {loadError}</div> : null}
+      {!data && !loadError ? <div className="notice">Loading pro data...</div> : null}
+    </>
+  )
+
+  const sourceNote = (
+    <footer className="source-note">
+      <span>
+        Oracle&apos;s Elixir stats · {data ? `${data.players.length} pros` : '-'} · Generated{' '}
+        {data ? new Date(data.generatedAt).toLocaleDateString() : '-'}
+      </span>
+      <span>
+        Worlds Run was created under Riot Games&apos; Legal Jibber Jabber policy using assets owned by Riot Games. Riot
+        Games does not endorse or sponsor this project.
+      </span>
+    </footer>
+  )
+
+  if (!gameStarted) {
+    return (
+      <main className="game-shell lobby-shell">
+        <section className="lobby-hero" aria-label="Worlds Run setup">
+          <div className="lobby-copy">
+            <p className="eyebrow">Worlds Run · League esports · current form</p>
+            <div className="brand-score" aria-label="18-0">
+              <span>18</span>
+              <i />
+              <span>0</span>
+            </div>
+            <h1>Build a roster that can win Worlds.</h1>
+            <p>
+              Spin a team and timeframe, steal one pro who was actually there, fill the Rift, then see if the lineup
+              clears the title test.
+            </p>
+            <div className="lobby-actions">
+              <button type="button" className="primary-action big-action" onClick={startRun} disabled={!data}>
+                Start draft
+              </button>
+              <span>{data ? `${data.players.length} pros · ${data.tournaments.length} timeframes` : 'Loading pro pool'}</span>
+            </div>
+          </div>
+
+          <aside className="lobby-map-panel" aria-label="Draft board preview">
+            <DraftMap preview />
+            <div className="map-caption">
+              <strong>Top · Jungle · Mid · Bot · Support</strong>
+              <span>Five roles. Five rolls. One Worlds run.</span>
+            </div>
+          </aside>
+        </section>
+
+        {statusNotice}
+
+        <section className="setup-panel" aria-label="Run settings">
+          <div className="setup-group difficulty-group">
+            <p className="panel-title">Difficulty</p>
+            <div className="option-row">
+              {(Object.keys(difficultyOptions) as Difficulty[]).map((option) => (
+                <button
+                  type="button"
+                  className={`option-card ${difficulty === option ? 'active' : ''}`}
+                  key={option}
+                  onClick={() => setDifficulty(option)}
+                >
+                  <strong>{difficultyOptions[option].label}</strong>
+                  <span>{difficultyOptions[option].hint}</span>
+                </button>
+              ))}
+            </div>
+          </div>
+
+          <div className="setup-group">
+            <p className="panel-title">Show ratings</p>
+            <div className="option-row two-up">
+              <button type="button" className={`option-card ${showStats ? 'active purple' : ''}`} onClick={() => setShowStats(true)}>
+                <strong>On</strong>
+                <span>Stats visible</span>
+              </button>
+              <button type="button" className={`option-card ${!showStats ? 'active purple' : ''}`} onClick={() => setShowStats(false)}>
+                <strong>Off</strong>
+                <span>Blind scout mode</span>
+              </button>
+            </div>
+          </div>
+
+          <div className="setup-summary">
+            <span>Draft mode</span>
+            <strong>Team first</strong>
+            <p>Spin a roster, pick one player, choose their role by locking them.</p>
+          </div>
+        </section>
+
+        {sourceNote}
+      </main>
+    )
   }
 
   return (
@@ -167,8 +331,7 @@ function App() {
         </div>
       </section>
 
-      {loadError ? <div className="notice">Data load failed: {loadError}</div> : null}
-      {!data && !loadError ? <div className="notice">Loading pro data...</div> : null}
+      {statusNotice}
 
       <section className="playmat">
         <section className={`round-panel ${offer ? 'has-offer' : ''}`} aria-label="Current round">
@@ -187,7 +350,7 @@ function App() {
 
           <div className="round-kicker">
             <span>Round {runComplete ? roles.length : filled + 1}/5</span>
-            <span>{runComplete ? 'Roster locked' : showStats ? 'Classic' : 'Scout IQ'}</span>
+            <span>{runComplete ? 'Roster locked' : `${difficultyOption.label} · ${showStats ? 'Stats' : 'Blind'}`}</span>
           </div>
 
           <div className="mode-toggle" aria-label="Stats mode">
@@ -295,6 +458,8 @@ function App() {
             <strong>{filled}/5</strong>
           </div>
 
+          <DraftMap draft={draft} />
+
           <div className="roster-slots">
             {roles.map((role) => {
               const player = draft[role]
@@ -329,16 +494,7 @@ function App() {
         </aside>
       </section>
 
-      <footer className="source-note">
-        <span>
-          Oracle&apos;s Elixir stats · {data ? `${data.players.length} pros` : '-'} · Generated{' '}
-          {data ? new Date(data.generatedAt).toLocaleDateString() : '-'}
-        </span>
-        <span>
-          Worlds Run was created under Riot Games&apos; Legal Jibber Jabber policy using assets owned by Riot Games. Riot
-          Games does not endorse or sponsor this project.
-        </span>
-      </footer>
+      {sourceNote}
     </main>
   )
 }

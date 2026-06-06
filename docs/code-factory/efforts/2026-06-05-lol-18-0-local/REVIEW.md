@@ -13,6 +13,12 @@ Launch-prep pass:
 - `npm run build` passed after Cloudflare/header/Rift updates.
 - `npx playwright test docs/code-factory/efforts/2026-06-05-lol-18-0-local/visual-capture.spec.js --reporter=line` passed after Cloudflare/header/Rift updates.
 
+Reference-polish pass:
+
+- `npm run lint` passed after the 18-0 lobby upgrade.
+- `npm run build` passed after the 18-0 lobby upgrade.
+- `npx playwright test docs/code-factory/efforts/2026-06-05-lol-18-0-local/visual-capture.spec.js --reporter=line` passed after updating the capture flow for Start Draft.
+
 ## Browser QA
 
 Local URL: `http://127.0.0.1:5173/`
@@ -21,7 +27,7 @@ Verified:
 
 - Page loads as `Worlds Run`.
 - No browser console errors or warnings during core flows.
-- First screen now exposes the core `Spin` action.
+- First screen now presents an 18-0 match lobby with Start Draft, difficulty, scouting mode, and a Rift draft board.
 - Spin deals a real team plus timeframe.
 - Active roll displays the rolled team logo.
 - Active draw exposes the player choices without making desktop users hunt below the fold.
@@ -29,6 +35,7 @@ Verified:
 - In-app browser image QA loaded 11/11 LoL Esports images after a spin: five player portraits plus team-logo usages.
 - Launch-prep browser QA loaded 21/21 visible images after a spin, dealt five choice cards, showed the Rift layer, and confirmed the fan notice was visible.
 - Central panel now includes abstract Summoner's Rift lanes, river, bases, brush, and objective markers without adding extra decisions.
+- Roster panel now includes a compact Summoner's Rift map that fills with drafted players.
 - Blind mode hides stats and shows memory-based choice cards.
 - Reroll remains available once per run.
 - Picking a pro advances the roster and preserves the drafted team/timeframe.

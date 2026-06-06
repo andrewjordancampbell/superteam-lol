@@ -4,7 +4,7 @@ Local-first League of Legends esports roster game inspired by the 82-0 team-buil
 
 The app gives you five rolls to draft a Worlds roster from pro player stats. Each round spins a real team plus timeframe, lets you choose one available pro, then projects whether that lineup is a play-in risk, knockout roster, semifinal roster, finals threat, or world champion.
 
-Classic mode shows player stats. Blind mode hides them so the pick is based on esports memory and taste.
+The first screen is a match lobby with an 18-0 challenge identity, difficulty selection, scouting mode, and a Summoner's Rift draft map. Stats mode shows player ratings and mini-stats. Blind mode hides them so the pick is based on esports memory and taste.
 
 ## Local Setup
 

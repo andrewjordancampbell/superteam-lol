@@ -27,11 +27,15 @@ Reference URLs reviewed:
 
 Our first prototype exposed too much: full search, filters, sorting, autodraft, shuffle, and a large card grid. That makes it feel like an analytics tool. The fun version should feel like being dealt a hand.
 
+The newer reference bar from 7a0 and 38-0 adds another product lesson: the game can feel premium before the first roll if the first screen has a strong challenge identity, a visible board, and only a few high-leverage settings.
+
 ## Product Direction
 
 Build a five-roll LoL esports game:
 
 - Five roles: Top, Jungle, Mid, Bot, Support.
+- Open with an 18-0 match lobby, not a stats dashboard.
+- Let difficulty control rerolls and scouting control visible ratings.
 - Each round rolls a team plus tournament/timeframe.
 - The player gets the available pros from that rolled roster.
 - Pick one pro, lock that role, advance.
