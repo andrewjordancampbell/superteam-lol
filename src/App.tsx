@@ -148,7 +148,7 @@ function App() {
   const [showStats, setShowStats] = useState(true)
 
   useEffect(() => {
-    fetch('/data/pros.json')
+    fetch(`${import.meta.env.BASE_URL}data/pros.json`)
       .then((response) => {
         if (!response.ok) throw new Error(`HTTP ${response.status}`)
         return response.json() as Promise<ProsData>
