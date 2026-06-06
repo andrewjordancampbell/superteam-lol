@@ -14,11 +14,15 @@
 - [x] Add README local setup and checks.
 - [x] Run lint and production build.
 - [x] Capture browser evidence screenshot.
+- [x] Research 82-0, 20-0, 82-0+, and NHL 82-0 reference patterns.
+- [x] Simplify the app from a player-browser dashboard into a five-roll draft game.
+- [x] Add repeatable Playwright visual capture for home, draw, final, and mobile states.
 
 ## Later
 
 - [ ] Add shareable roster URLs.
 - [ ] Add social-card export for drafted rosters.
+- [ ] Add daily seeded challenge mode.
 - [ ] Add tournament/region weighting controls.
 - [ ] Add deployment config once the local prototype direction is approved.
 - [ ] Revisit the rating formula with more domain tuning after hands-on use.

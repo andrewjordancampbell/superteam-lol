@@ -3,8 +3,6 @@ import './App.css'
 import {
   emptyDraft,
   formatStat,
-  pickBestRoster,
-  pickContenderRoster,
   projectRoster,
   roleIcons,
   roleLabels,
@@ -15,14 +13,57 @@ import {
   type Role,
 } from './game'
 
+type Offer = {
+  tournamentId: string
+  label: string
+  pool: string
+  players: Player[]
+}
+
+function shuffled<T>(items: T[]) {
+  return [...items].sort(() => Math.random() - 0.5)
+}
+
+function freshDraft(): Draft {
+  return { ...emptyDraft }
+}
+
+function tournamentPlayer(player: Player, tournamentId: string) {
+  return player.tournaments.some((tournament) => tournament.id === tournamentId)
+}
+
+function dealOffer(role: Role, players: Player[], data: ProsData): Offer | null {
+  const eligible = data.tournaments
+    .map((tournament) => {
+      const candidates = players.filter((player) => player.role === role && tournamentPlayer(player, tournament.id))
+      return { tournament, candidates }
+    })
+    .filter(({ candidates }) => candidates.length > 0)
+
+  const roll = shuffled(eligible)[0]
+  if (!roll) return null
+
+  const strongPool = roll.candidates
+    .sort((a, b) => b.rating - a.rating || b.gp - a.gp)
+    .slice(0, Math.min(18, roll.candidates.length))
+  const options = shuffled(strongPool)
+    .slice(0, Math.min(4, strongPool.length))
+    .sort((a, b) => b.rating - a.rating || b.gp - a.gp)
+
+  return {
+    tournamentId: roll.tournament.id,
+    label: roll.tournament.label,
+    pool: roll.tournament.pool,
+    players: options,
+  }
+}
+
 function App() {
   const [data, setData] = useState<ProsData | null>(null)
   const [loadError, setLoadError] = useState<string | null>(null)
-  const [draft, setDraft] = useState<Draft>(emptyDraft)
-  const [activeRole, setActiveRole] = useState<Role>('Top')
-  const [query, setQuery] = useState('')
-  const [poolFilter, setPoolFilter] = useState('All')
-  const [sortBy, setSortBy] = useState('rating')
+  const [draft, setDraft] = useState<Draft>(freshDraft)
+  const [offer, setOffer] = useState<Offer | null>(null)
+  const [rerollsLeft, setRerollsLeft] = useState(1)
 
   useEffect(() => {
     fetch('/data/pros.json')
@@ -36,112 +77,62 @@ function App() {
       })
   }, [])
 
-  const projection = useMemo(() => projectRoster(draft), [draft])
-
-  const pools = useMemo(() => {
-    if (!data) return ['All']
-    const poolNames = new Set(data.tournaments.map((tournament) => tournament.pool))
-    return ['All', ...Array.from(poolNames)]
-  }, [data])
-
   const players = useMemo(() => data?.players ?? [], [data])
+  const projection = useMemo(() => projectRoster(draft), [draft])
+  const filled = projection.filled
+  const currentRole = roles.find((role) => !draft[role]) ?? null
+  const runComplete = filled === roles.length
 
-  const candidates = useMemo(() => {
-    const normalizedQuery = query.trim().toLowerCase()
-    const filtered = players.filter((player) => {
-      const matchesRole = player.role === activeRole
-      const matchesPool =
-        poolFilter === 'All' || player.tournaments.some((tournament) => tournament.pool === poolFilter)
-      const matchesQuery =
-        normalizedQuery.length === 0 ||
-        player.name.toLowerCase().includes(normalizedQuery) ||
-        player.team.toLowerCase().includes(normalizedQuery)
-      return matchesRole && matchesPool && matchesQuery
-    })
+  function spin(useReroll = false) {
+    if (!data || !currentRole) return
+    const nextOffer = dealOffer(currentRole, players, data)
+    if (!nextOffer) return
+    setOffer(nextOffer)
+    if (useReroll) setRerollsLeft((current) => Math.max(0, current - 1))
+  }
 
-    return filtered.sort((a, b) => {
-      if (sortBy === 'kda') return (b.stats.kda ?? 0) - (a.stats.kda ?? 0)
-      if (sortBy === 'dpm') return (b.stats.dpm ?? 0) - (a.stats.dpm ?? 0)
-      if (sortBy === 'vision') return (b.stats.vision ?? 0) - (a.stats.vision ?? 0)
-      if (sortBy === 'lane') return (b.stats.lane ?? 0) - (a.stats.lane ?? 0)
-      return b.rating - a.rating || b.gp - a.gp
-    })
-  }, [activeRole, players, poolFilter, query, sortBy])
-
-  function draftPlayer(player: Player) {
+  function pickPlayer(player: Player) {
     setDraft((current) => ({
       ...current,
       [player.role]: player,
     }))
-    const nextRole = roles.find((role) => role !== player.role && !draft[role])
-    if (nextRole) setActiveRole(nextRole)
+    setOffer(null)
   }
 
-  function clearRole(role: Role) {
-    setDraft((current) => ({
-      ...current,
-      [role]: null,
-    }))
-    setActiveRole(role)
-  }
-
-  function resetFilters() {
-    setActiveRole('Top')
-    setQuery('')
-    setPoolFilter('All')
-    setSortBy('rating')
-  }
-
-  function setGlobalDraft(nextDraft: Draft) {
-    setDraft(nextDraft)
-    resetFilters()
-  }
-
-  function resetDraft() {
-    setDraft(emptyDraft)
-    resetFilters()
+  function newRun() {
+    setDraft(freshDraft())
+    setOffer(null)
+    setRerollsLeft(1)
   }
 
   return (
-    <main className="app-shell">
-      <header className="topbar">
+    <main className="game-shell">
+      <header className="hero">
         <div>
-          <p className="eyebrow">LoL esports roster lab</p>
-          <h1>Worlds Run</h1>
+          <p className="eyebrow">LoL esports roster game</p>
+          <h1>Win Worlds in five rolls.</h1>
         </div>
-        <div className="topbar-actions">
-          <button type="button" onClick={() => setGlobalDraft(pickBestRoster(players))} disabled={!data}>
-            Autodraft ceiling
-          </button>
-          <button type="button" onClick={() => setGlobalDraft(pickContenderRoster(players))} disabled={!data}>
-            Shuffle contenders
-          </button>
-          <button type="button" className="ghost" onClick={resetDraft}>
-            Reset
-          </button>
-        </div>
+        <button type="button" className="quiet-action" onClick={newRun}>
+          New run
+        </button>
       </header>
 
-      <section className="score-band">
-        <div className="score-main">
-          <span className="score-label">Worlds projection</span>
+      <section className="score-strip" aria-label="Worlds projection">
+        <div>
+          <span>Projection</span>
           <strong>{projection.result}</strong>
         </div>
-        <div className="score-meter" aria-label={`Worlds score ${projection.score}`}>
-          <div style={{ width: `${projection.score}%` }} />
+        <div className="meter" aria-label={`Worlds score ${projection.score}`}>
+          <i style={{ width: `${projection.score}%` }} />
         </div>
-        <div className="score-stats">
+        <div className="score-pair">
           <span>
-            <strong>{projection.score}</strong>
+            <b>{projection.score}</b>
             score
           </span>
           <span>
-            <strong>{projection.titleOdds}%</strong>
+            <b>{projection.titleOdds}%</b>
             title odds
-          </span>
-          <span>
-            <strong>{projection.filled}/5</strong>
-            locked
           </span>
         </div>
       </section>
@@ -149,104 +140,57 @@ function App() {
       {loadError ? <div className="notice">Data load failed: {loadError}</div> : null}
       {!data && !loadError ? <div className="notice">Loading pro data...</div> : null}
 
-      <section className="workspace">
-        <aside className="draft-panel" aria-label="Draft board">
-          <div className="panel-heading">
-            <h2>Roster</h2>
-            <span>{data ? `${data.players.length} pros` : '-'}</span>
+      <section className="playmat">
+        <section className="round-panel" aria-label="Current round">
+          <div className="round-kicker">
+            <span>Round {runComplete ? roles.length : filled + 1}/5</span>
+            <span>{runComplete ? 'Roster locked' : roleLabels[currentRole ?? 'Top']}</span>
           </div>
 
-          <div className="role-tabs">
-            {roles.map((role) => (
-              <button
-                type="button"
-                key={role}
-                className={activeRole === role ? 'active' : ''}
-                onClick={() => setActiveRole(role)}
-              >
-                <img src={roleIcons[role]} alt="" />
-                {roleLabels[role]}
+          <div className="role-orb">
+            <img src={currentRole ? roleIcons[currentRole] : roleIcons.Support} alt="" />
+          </div>
+
+          <div className="draw-copy">
+            <span>{runComplete ? 'Final result' : offer ? offer.pool : 'Roll the draw'}</span>
+            <strong>{runComplete ? projection.result : offer ? offer.label : 'Find your next Worlds piece'}</strong>
+            <p>
+              {runComplete
+                ? 'Your roster is locked. Start a new run or chase a cleaner title score.'
+                : offer
+                  ? 'Pick one pro from this roll to lock the role.'
+                  : 'One tournament pool. Four pro options. No spreadsheet hunting.'}
+            </p>
+          </div>
+
+          <div className="round-actions">
+            {runComplete ? (
+              <button type="button" className="primary-action" onClick={newRun}>
+                Run it back
               </button>
-            ))}
+            ) : offer ? (
+              <button type="button" className="quiet-action" onClick={() => spin(true)} disabled={rerollsLeft === 0}>
+                Reroll ({rerollsLeft})
+              </button>
+            ) : (
+              <button type="button" className="primary-action" onClick={() => spin()} disabled={!data}>
+                Spin
+              </button>
+            )}
           </div>
 
-          <div className="draft-slots">
-            {roles.map((role) => {
-              const player = draft[role]
-              return (
-                <button
-                  type="button"
-                  key={role}
-                  className={`draft-slot ${activeRole === role ? 'selected' : ''}`}
-                  onClick={() => setActiveRole(role)}
-                >
-                  <img src={roleIcons[role]} alt="" />
-                  <span>
-                    <small>{roleLabels[role]}</small>
-                    <strong>{player ? player.name : 'Open slot'}</strong>
-                    <em>{player ? player.team : 'Pick a pro'}</em>
-                  </span>
-                  {player ? <b>{player.rating}</b> : null}
-                </button>
-              )
-            })}
-          </div>
-
-          <div className="projection-grid">
-            {projection.breakdown.map((item) => (
-              <div key={item.label}>
-                <span>{item.label}</span>
-                <strong>{item.value}</strong>
-              </div>
-            ))}
-          </div>
-        </aside>
-
-        <section className="pool-panel" aria-label="Player pool">
-          <div className="panel-heading pool-heading">
-            <div>
-              <h2>{roleLabels[activeRole]} pool</h2>
-              <span>{candidates.length} matching pros</span>
-            </div>
-            <div className="filters">
-              <input
-                type="search"
-                value={query}
-                onChange={(event) => setQuery(event.target.value)}
-                placeholder="Search player or team"
-              />
-              <select value={poolFilter} onChange={(event) => setPoolFilter(event.target.value)}>
-                {pools.map((pool) => (
-                  <option key={pool}>{pool}</option>
-                ))}
-              </select>
-              <select value={sortBy} onChange={(event) => setSortBy(event.target.value)}>
-                <option value="rating">Rating</option>
-                <option value="kda">KDA</option>
-                <option value="dpm">DPM</option>
-                <option value="vision">Vision</option>
-                <option value="lane">Lane</option>
-              </select>
-            </div>
-          </div>
-
-          <div className="player-grid">
-            {candidates.map((player) => {
-              const drafted = draft[player.role]?.id === player.id
-              return (
-                <article key={player.id} className={`player-card ${drafted ? 'drafted' : ''}`}>
-                  <button type="button" className="card-main" onClick={() => draftPlayer(player)}>
-                    <span className="avatar">
-                      <img src={roleIcons[player.role]} alt="" />
-                    </span>
-                    <span className="identity">
+          {offer ? (
+            <div className="choice-grid" aria-label={`${roleLabels[currentRole ?? 'Top']} choices`}>
+              {offer.players.map((player) => (
+                <button type="button" className="choice-card" key={player.id} onClick={() => pickPlayer(player)}>
+                  <span className="choice-topline">
+                    <span>
                       <strong>{player.name}</strong>
                       <em>{player.team}</em>
                     </span>
-                    <span className="rating">{player.rating}</span>
-                  </button>
-
-                  <div className="stat-row">
+                    <b>{player.rating}</b>
+                  </span>
+                  <span className="mini-stats">
                     <span>
                       GP <strong>{player.gp}</strong>
                     </span>
@@ -259,37 +203,52 @@ function App() {
                     <span>
                       DPM <strong>{formatStat(player.stats.dpm)}</strong>
                     </span>
-                  </div>
+                  </span>
+                </button>
+              ))}
+            </div>
+          ) : null}
+        </section>
 
-                  <div className="card-actions">
-                    <span>{player.tournaments[0]?.label ?? 'Tournament data'}</span>
-                    {drafted ? (
-                      <button type="button" onClick={() => clearRole(player.role)}>
-                        Remove
-                      </button>
-                    ) : (
-                      <button type="button" onClick={() => draftPlayer(player)}>
-                        Draft
-                      </button>
-                    )}
-                  </div>
-                </article>
+        <aside className="roster-panel" aria-label="Roster">
+          <div className="panel-title">
+            <span>Your roster</span>
+            <strong>{filled}/5</strong>
+          </div>
+
+          <div className="roster-slots">
+            {roles.map((role) => {
+              const player = draft[role]
+              const active = currentRole === role && !runComplete
+              return (
+                <div className={`roster-slot ${active ? 'active' : ''}`} key={role}>
+                  <img src={roleIcons[role]} alt="" />
+                  <span>
+                    <small>{roleLabels[role]}</small>
+                    <strong>{player ? player.name : 'Empty'}</strong>
+                    <em>{player ? player.team : 'Awaiting roll'}</em>
+                  </span>
+                  {player ? <b>{player.rating}</b> : null}
+                </div>
               )
             })}
-            {data && candidates.length === 0 ? (
-              <div className="empty-pool">
-                <strong>No matching pros</strong>
-                <span>Clear search or change the pool.</span>
-              </div>
-            ) : null}
           </div>
-        </section>
+
+          <div className="breakdown">
+            {projection.breakdown.map((item) => (
+              <div key={item.label}>
+                <span>{item.label}</span>
+                <strong>{item.value}</strong>
+              </div>
+            ))}
+          </div>
+        </aside>
       </section>
 
       <footer className="source-note">
         <span>
-          Data: Oracle's Elixir aggregated player stats. Generated{' '}
-          {data ? new Date(data.generatedAt).toLocaleDateString() : '-'}.
+          Oracle&apos;s Elixir stats · {data ? `${data.players.length} pros` : '-'} · Generated{' '}
+          {data ? new Date(data.generatedAt).toLocaleDateString() : '-'}
         </span>
         <span>Unofficial fan prototype. Not endorsed by Riot Games.</span>
       </footer>

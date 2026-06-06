@@ -1,8 +1,8 @@
 # Worlds Run
 
-Local-first League of Legends esports roster builder inspired by the 82-0 team-building format.
+Local-first League of Legends esports roster game inspired by the 82-0 team-building format.
 
-The app lets you draft a five-player Worlds roster from pro player stats, then projects whether that lineup is a play-in risk, knockout roster, semifinal roster, finals threat, or world champion.
+The app gives you five rolls to draft a Worlds roster from pro player stats, then projects whether that lineup is a play-in risk, knockout roster, semifinal roster, finals threat, or world champion.
 
 ## Local Setup
 
@@ -19,6 +19,7 @@ Open `http://127.0.0.1:5173/`.
 ```bash
 npm run lint
 npm run build
+npx playwright test docs/code-factory/efforts/2026-06-05-lol-18-0-local/visual-capture.spec.js --reporter=line
 ```
 
 ## Data
