@@ -1,4 +1,4 @@
-# Review: Worlds Run Local Prototype
+# Review: Superteam Local Prototype
 
 ## Machine Checks
 
@@ -15,9 +15,16 @@ Launch-prep pass:
 
 Reference-polish pass:
 
-- `npm run lint` passed after the 18-0 lobby upgrade.
-- `npm run build` passed after the 18-0 lobby upgrade.
+- `npm run lint` passed after the Superteam lobby upgrade.
+- `npm run build` passed after the Superteam lobby upgrade.
 - `npx playwright test docs/code-factory/efforts/2026-06-05-lol-18-0-local/visual-capture.spec.js --reporter=line` passed after updating the capture flow for Start Draft.
+
+Brand rename pass:
+
+- `npm run lint` passed after renaming the public brand to Superteam.
+- `npm run build` passed after renaming metadata, package names, and Cloudflare project config.
+- `npx playwright test docs/code-factory/efforts/2026-06-05-lol-18-0-local/visual-capture.spec.js --reporter=line` passed and refreshed the evidence screenshots.
+- Mobile lobby screenshot confirmed the Superteam wordmark fits at 390px width.
 
 ## Browser QA
 
@@ -25,9 +32,9 @@ Local URL: `http://127.0.0.1:5173/`
 
 Verified:
 
-- Page loads as `Worlds Run`.
+- Page loads as `Superteam`.
 - No browser console errors or warnings during core flows.
-- First screen now presents an 18-0 match lobby with Start Draft, difficulty, scouting mode, and a Rift draft board.
+- First screen now presents a Superteam match lobby with Start Draft, difficulty, scouting mode, and a Rift draft board.
 - Spin deals a real team plus timeframe.
 - Active roll displays the rolled team logo.
 - Active draw exposes the player choices without making desktop users hunt below the fold.
@@ -58,7 +65,7 @@ Verified:
 - Data refresh requires local env vars, but deploys use the committed static JSON snapshot.
 - `public/_headers` adds CSP, frame blocking, MIME sniffing protection, referrer policy, permission policy, and cache rules.
 - `wrangler.toml` targets Cloudflare Pages with `dist` as the output directory.
-- Footer and README include the Riot fan-project notice.
+- Footer and README include the Riot fan-project notice under the Superteam name.
 
 ## Notes
 

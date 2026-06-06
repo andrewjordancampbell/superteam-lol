@@ -1,4 +1,4 @@
-# Launch Checklist: Worlds Run
+# Launch Checklist: Superteam
 
 ## Current Recommendation
 
@@ -8,7 +8,7 @@ This keeps the blast radius small: no backend, no database, no auth, no server f
 
 ## Cloudflare Pages Setup
 
-- Project name: `worlds-run`
+- Project name: `superteam-lol`
 - Build command: `npm run build`
 - Output directory: `dist`
 - Config: `wrangler.toml`
@@ -58,7 +58,7 @@ Primary cost worry is not the app itself; it is accidentally adding metered serv
 
 Start with X because the loop is quick to explain and easy to reshare:
 
-> I made an 82-0 style League of Legends esports game: spin a team + timeframe, take one pro, build a roster, try to win Worlds.
+> I made Superteam, an 82-0 style League of Legends esports game: spin a team + timeframe, take one pro, build a roster, try to win Worlds.
 
 Then post to a targeted subreddit only after the first live sanity pass. Ask for brutal feedback on the draft loop, not generic promotion.
 

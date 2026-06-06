@@ -1,5 +1,5 @@
 {
-  "name": "lol-18-0",
+  "name": "superteam",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,7 +7,7 @@
     "dev": "vite",
     "data:build": "node scripts/build-pro-data.mjs",
     "build": "tsc -b && vite build",
-    "deploy:cloudflare": "npm run build && npx -y wrangler@latest pages deploy dist --project-name worlds-run",
+    "deploy:cloudflare": "npm run build && npx -y wrangler@latest pages deploy dist --project-name superteam-lol",
     "lint": "eslint .",
     "preview": "vite preview"
   },

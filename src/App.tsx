@@ -214,8 +214,8 @@ function App() {
         {data ? new Date(data.generatedAt).toLocaleDateString() : '-'}
       </span>
       <span>
-        Worlds Run was created under Riot Games&apos; Legal Jibber Jabber policy using assets owned by Riot Games. Riot
-        Games does not endorse or sponsor this project.
+        Superteam was created under Riot Games&apos; Legal Jibber Jabber policy using assets owned by Riot Games. Riot Games
+        does not endorse or sponsor this project.
       </span>
     </footer>
   )
@@ -223,17 +223,13 @@ function App() {
   if (!gameStarted) {
     return (
       <main className="game-shell lobby-shell">
-        <section className="lobby-hero" aria-label="Worlds Run setup">
+        <section className="lobby-hero" aria-label="Superteam setup">
           <div className="lobby-copy">
-            <p className="eyebrow">Worlds Run · League esports · current form</p>
-            <div className="brand-score" aria-label="18-0">
-              <span>18</span>
-              <i />
-              <span>0</span>
-            </div>
+            <p className="eyebrow">Superteam · League esports · current form</p>
+            <div className="brand-word" aria-label="Superteam">Superteam</div>
             <h1>Build a roster that can win Worlds.</h1>
             <p>
-              Spin a team and timeframe, steal one pro who was actually there, fill the Rift, then see if the lineup
+              Spin a team and timeframe, draft one pro who was actually there, fill the Rift, then see if the lineup
               clears the title test.
             </p>
             <div className="lobby-actions">
@@ -248,7 +244,7 @@ function App() {
             <DraftMap preview />
             <div className="map-caption">
               <strong>Top · Jungle · Mid · Bot · Support</strong>
-              <span>Five roles. Five rolls. One Worlds run.</span>
+              <span>Five roles. Five rolls. One title run.</span>
             </div>
           </aside>
         </section>
@@ -303,8 +299,8 @@ function App() {
     <main className="game-shell">
       <header className="hero">
         <div>
-          <p className="eyebrow">LoL esports roster game</p>
-          <h1>Spin a team. Steal one pro. Win Worlds.</h1>
+          <p className="eyebrow">Superteam draft</p>
+          <h1>Spin a team. Draft one pro. Win Worlds.</h1>
         </div>
         <button type="button" className="quiet-action" onClick={newRun}>
           New run

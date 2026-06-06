@@ -1,8 +1,8 @@
-# Strategy: Simplify Worlds Run
+# Strategy: Simplify Superteam
 
 ## Decision
 
-Worlds Run should be a constraint game, not a searchable stats dashboard.
+Superteam should be a constraint game, not a searchable stats dashboard.
 
 The reference pattern from 82-0, 82-0+, 20-0, RoadTo38, Hockey 82-0, 17-0 football, CFB Labs, and the SportsStack 38-0/7-0 variants is:
 
@@ -34,7 +34,7 @@ The newer reference bar from 7a0 and 38-0 adds another product lesson: the game 
 Build a five-roll LoL esports game:
 
 - Five roles: Top, Jungle, Mid, Bot, Support.
-- Open with an 18-0 match lobby, not a stats dashboard.
+- Open with a Superteam match lobby, not a stats dashboard.
 - Let difficulty control rerolls and scouting control visible ratings.
 - Each round rolls a team plus tournament/timeframe.
 - The player gets the available pros from that rolled roster.

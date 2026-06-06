@@ -1,8 +1,8 @@
-# PRD: Worlds Run Local Prototype
+# PRD: Superteam Local Prototype
 
 ## Context
 
-Andrew wants an 82-0 style game for League of Legends esports, focused on winning Worlds with pro players using their real stats. The first milestone is a local prototype; deployment comes later after the gameplay loop is proven.
+Andrew wants an 82-0 style game for League of Legends esports, focused on winning Worlds with pro players using their real stats. The public product name is Superteam. The first milestone is a local prototype; deployment comes later after the gameplay loop is proven.
 
 ## Goals
 
@@ -23,7 +23,7 @@ Andrew wants an 82-0 style game for League of Legends esports, focused on winnin
 ## Product Surface
 
 - Score band with result, score, title odds, and filled slots.
-- Match lobby inspired by the polish bar of `7a0.com.br/en` and `38-0.app/game`: large 18-0 identity, first-screen Rift board, difficulty, scouting mode, and direct Start Draft action.
+- Match lobby inspired by the polish bar of `7a0.com.br/en` and `38-0.app/game`: large Superteam identity, first-screen Rift board, difficulty, scouting mode, and direct Start Draft action.
 - One central spin panel that deals a team plus timeframe.
 - Team logo treatment on the active roll.
 - Stats/Blind toggle: Classic shows player stats; Blind hides the stat grid and ratings context.
@@ -45,7 +45,7 @@ The app is a Vite React static build. Cloudflare Pages can serve `dist/` after r
 
 Launch prep includes:
 
-- `wrangler.toml` for the `worlds-run` Pages project.
+- `wrangler.toml` for the `superteam-lol` Pages project.
 - `public/_headers` for security and cache headers.
 - `.env.example` documenting data-refresh keys without committing secrets.
 - `npm run deploy:cloudflare` for a CLI deploy after Andrew approves a live publish.

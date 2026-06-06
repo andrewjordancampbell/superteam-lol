@@ -1,10 +1,10 @@
-# Worlds Run
+# Superteam
 
 Local-first League of Legends esports roster game inspired by the 82-0 team-building format.
 
 The app gives you five rolls to draft a Worlds roster from pro player stats. Each round spins a real team plus timeframe, lets you choose one available pro, then projects whether that lineup is a play-in risk, knockout roster, semifinal roster, finals threat, or world champion.
 
-The first screen is a match lobby with an 18-0 challenge identity, difficulty selection, scouting mode, and a Summoner's Rift draft map. Stats mode shows player ratings and mini-stats. Blind mode hides them so the pick is based on esports memory and taste.
+The first screen is a match lobby with a Superteam identity, difficulty selection, scouting mode, and a Summoner's Rift draft map. Stats mode shows player ratings and mini-stats. Blind mode hides them so the pick is based on esports memory and taste.
 
 ## Local Setup
 
@@ -60,4 +60,4 @@ Current generated snapshot:
 - Tournaments: `12`
 - Pools: `Worlds`, `International`, `Current Form`, `Americas`
 
-Worlds Run was created under Riot Games' Legal Jibber Jabber policy using assets owned by Riot Games. Riot Games does not endorse or sponsor this project.
+Superteam was created under Riot Games' Legal Jibber Jabber policy using assets owned by Riot Games. Riot Games does not endorse or sponsor this project.

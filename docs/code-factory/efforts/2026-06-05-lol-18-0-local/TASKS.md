@@ -1,4 +1,4 @@
-# Tasks: Worlds Run Local Prototype
+# Tasks: Superteam Local Prototype
 
 ## Completed
 
@@ -9,7 +9,7 @@
 - [x] Generate local pro dataset with 317 players.
 - [x] Implement role-aware roster projection model.
 - [x] Build the draft board, player pool, filters, sorting, search, and global roster actions.
-- [x] Replace starter Vite UI with Worlds Run product UI.
+- [x] Replace starter Vite UI with Superteam product UI.
 - [x] Fix reset/shuffle/autodraft filter clearing after browser QA found stale-search empty states.
 - [x] Add README local setup and checks.
 - [x] Run lint and production build.
@@ -29,7 +29,8 @@
 - [x] Add an abstract Summoner's Rift visual layer to the main round panel.
 - [x] Write launch checklist for Reddit/X traffic testing.
 - [x] Benchmark the target polish level against `7a0.com.br/en` and `38-0.app/game`.
-- [x] Add an 18-0 match lobby with difficulty, scouting mode, Start Draft, and a first-screen Rift board.
+- [x] Add a Superteam match lobby with difficulty, scouting mode, Start Draft, and a first-screen Rift board.
+- [x] Rename the public brand to Superteam.
 - [x] Add a compact Summoner's Rift roster map to the in-game draft panel.
 - [x] Refresh visual evidence screenshots after the lobby upgrade.
 
