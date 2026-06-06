@@ -240,6 +240,7 @@ function aggregate(rows) {
       id: row.__tournament.id,
       label: row.__tournament.label,
       pool: row.__tournament.pool,
+      team: row.Team,
       games,
     })
 

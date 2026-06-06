@@ -25,6 +25,7 @@ export type TournamentRef = {
   id: string
   label: string
   pool: string
+  team: string
   games: number
 }
 
@@ -38,6 +39,8 @@ export type Player = {
   name: string
   role: Role
   team: string
+  draftTeam?: string
+  draftTimeframe?: string
   teams: TeamRef[]
   tournaments: TournamentRef[]
   gp: number
@@ -121,7 +124,11 @@ function rolePlayer(draft: Draft, role: Role) {
 }
 
 function sameTeam(a: Player | null, b: Player | null) {
-  return Boolean(a && b && a.team === b.team)
+  return Boolean(a && b && rosterTeam(a) === rosterTeam(b))
+}
+
+function rosterTeam(player: Player) {
+  return player.draftTeam ?? player.team
 }
 
 function worldsExperience(player: Player) {
@@ -155,7 +162,7 @@ export function projectRoster(draft: Draft): Projection {
   const mid = rolePlayer(draft, 'Mid')
   const bot = rolePlayer(draft, 'Bot')
   const support = rolePlayer(draft, 'Support')
-  const teams = selected.map((player) => player.team)
+  const teams = selected.map(rosterTeam)
   const maxTeamCount = Math.max(...teams.map((team) => teams.filter((candidate) => candidate === team).length))
   const uniqueTeams = new Set(teams).size
 

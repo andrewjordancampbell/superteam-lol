@@ -17,12 +17,16 @@
 - [x] Research 82-0, 20-0, 82-0+, and NHL 82-0 reference patterns.
 - [x] Simplify the app from a player-browser dashboard into a five-roll draft game.
 - [x] Add repeatable Playwright visual capture for home, draw, final, and mobile states.
+- [x] Update the game to spin team + timeframe, matching the core 82-0 mechanic.
+- [x] Add Stats/Blind mode so users can draft with or without visible player stats.
+- [x] Preserve each player's actual team for each tournament/timeframe in the generated data.
+- [x] Review basketball, football, soccer, hockey, college football, and adjacent 82-0-style variants for mechanics and monetization patterns.
 
 ## Later
 
 - [ ] Add shareable roster URLs.
 - [ ] Add social-card export for drafted rosters.
 - [ ] Add daily seeded challenge mode.
-- [ ] Add tournament/region weighting controls.
+- [ ] Add leaderboard/history only after the local loop proves replay value.
 - [ ] Add deployment config once the local prototype direction is approved.
 - [ ] Revisit the rating formula with more domain tuning after hands-on use.

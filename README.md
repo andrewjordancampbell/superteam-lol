@@ -2,7 +2,9 @@
 
 Local-first League of Legends esports roster game inspired by the 82-0 team-building format.
 
-The app gives you five rolls to draft a Worlds roster from pro player stats, then projects whether that lineup is a play-in risk, knockout roster, semifinal roster, finals threat, or world champion.
+The app gives you five rolls to draft a Worlds roster from pro player stats. Each round spins a real team plus timeframe, lets you choose one available pro, then projects whether that lineup is a play-in risk, knockout roster, semifinal roster, finals threat, or world champion.
+
+Classic mode shows player stats. Blind mode hides them so the pick is based on esports memory and taste.
 
 ## Local Setup
 
@@ -28,7 +30,7 @@ The local dataset is generated into `public/data/pros.json` from Oracle's Elixir
 
 Current generated snapshot:
 
-- Generated: `2026-06-06T01:32:27.545Z`
+- Generated: `2026-06-06T02:39:14.100Z`
 - Players: `317`
 - Tournaments: `12`
 - Pools: `Worlds`, `International`, `Current Form`, `Americas`

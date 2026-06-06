@@ -27,9 +27,9 @@
 }
 
 .hero h1 {
-  max-width: 820px;
+  max-width: 1040px;
   margin: 0;
-  font-size: clamp(42px, 5.4vw, 66px);
+  font-size: clamp(36px, 4.2vw, 52px);
   line-height: 0.96;
 }
 
@@ -71,8 +71,8 @@ button:hover:not(:disabled) {
   grid-template-columns: minmax(180px, 0.75fr) minmax(240px, 1fr) minmax(210px, 0.55fr);
   gap: 18px;
   align-items: center;
-  margin-bottom: 14px;
-  padding: 12px 14px;
+  margin-bottom: 12px;
+  padding: 10px 14px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: rgba(15, 19, 23, 0.78);
@@ -132,9 +132,14 @@ button:hover:not(:disabled) {
 }
 
 .round-panel,
-.roster-panel,
+.roster-panel {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(15, 19, 23, 0.88);
+}
+
 .round-panel {
-  min-height: 430px;
+  min-height: 500px;
   display: grid;
   place-items: center;
   align-content: start;
@@ -143,6 +148,11 @@ button:hover:not(:disabled) {
   text-align: center;
   position: relative;
   overflow: hidden;
+}
+
+.round-panel.has-offer {
+  gap: 8px;
+  padding: 20px;
 }
 
 .round-panel::before {
@@ -173,20 +183,67 @@ button:hover:not(:disabled) {
   background: rgba(255, 255, 255, 0.03);
 }
 
-.role-orb {
-  width: 88px;
-  height: 88px;
+.mode-toggle {
   display: grid;
-  place-items: center;
-  border: 1px solid rgba(224, 177, 81, 0.52);
-  border-radius: 50%;
-  background: #181410;
-  box-shadow: 0 0 0 8px rgba(224, 177, 81, 0.08);
+  grid-template-columns: 1fr 1fr;
+  width: min(320px, 100%);
+  padding: 4px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #0f1317;
 }
 
-.role-orb img {
-  width: 46px;
-  height: 46px;
+.mode-toggle button {
+  min-height: 36px;
+  border: 0;
+  background: transparent;
+}
+
+.mode-toggle button.active {
+  background: var(--gold);
+  color: #171107;
+}
+
+.roll-cards {
+  width: min(560px, 100%);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.roll-cards div {
+  min-height: 108px;
+  display: grid;
+  place-content: center;
+  gap: 8px;
+  padding: 14px;
+  border: 2px solid rgba(224, 177, 81, 0.58);
+  border-radius: 8px;
+  background: #181410;
+  box-shadow: 0 16px 42px rgba(224, 177, 81, 0.08);
+}
+
+.round-panel.has-offer .roll-cards div {
+  min-height: 74px;
+}
+
+.roll-cards span {
+  color: var(--gold);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.roll-cards strong {
+  color: var(--text-strong);
+  font-family: var(--heading);
+  font-size: clamp(24px, 3.6vw, 42px);
+  line-height: 0.95;
+}
+
+.round-panel.has-offer .roll-cards strong {
+  font-size: clamp(22px, 2.6vw, 34px);
 }
 
 .draw-copy {
@@ -211,6 +268,22 @@ button:hover:not(:disabled) {
 .draw-copy p {
   color: var(--muted);
   font-size: 18px;
+}
+
+.round-panel.has-offer .draw-copy {
+  gap: 4px;
+}
+
+.round-panel.has-offer .draw-copy strong {
+  font-size: clamp(28px, 3vw, 38px);
+}
+
+.round-panel.has-offer .draw-copy p {
+  display: none;
+}
+
+.round-panel.has-offer .round-actions button {
+  min-height: 36px;
 }
 
 .round-actions {
@@ -258,12 +331,13 @@ button:hover:not(:disabled) {
 }
 
 .roster-slot img,
-.role-orb img {
+.choice-topline img {
   filter: brightness(0) invert(1);
   opacity: 0.82;
 }
 
-.roster-slot img {
+.roster-slot img,
+.choice-topline img {
   width: 24px;
   height: 24px;
   object-fit: contain;
@@ -277,10 +351,21 @@ button:hover:not(:disabled) {
 
 .roster-slot small,
 .roster-slot em,
+.choice-topline small,
 .choice-topline em,
 .source-note {
   color: var(--muted);
   font-style: normal;
+}
+
+.choice-topline small {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .roster-slot strong,
@@ -320,7 +405,7 @@ button:hover:not(:disabled) {
 .choice-grid {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(132px, 1fr));
   gap: 10px;
   margin-top: 2px;
 }
@@ -381,6 +466,17 @@ button:hover:not(:disabled) {
   font-size: 14px;
 }
 
+.blind-note {
+  display: grid;
+  min-height: 58px;
+  place-content: center;
+  border: 1px dashed var(--line);
+  border-radius: 6px;
+  color: var(--muted);
+  font-weight: 800;
+  text-align: center;
+}
+
 .source-note {
   display: flex;
   justify-content: space-between;
@@ -403,7 +499,6 @@ button:hover:not(:disabled) {
   }
 
   .score-strip,
-  .playmat,
   .playmat {
     grid-template-columns: 1fr;
   }
@@ -438,8 +533,7 @@ button:hover:not(:disabled) {
     grid-template-columns: 1fr;
   }
 
-  .role-orb {
-    width: 88px;
-    height: 88px;
+  .roll-cards {
+    grid-template-columns: 1fr;
   }
 }

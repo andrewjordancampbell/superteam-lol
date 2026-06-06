@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-06T01:32:27.545Z",
+  "generatedAt": "2026-06-06T02:39:14.100Z",
   "source": {
     "name": "Oracle's Elixir",
     "api": "https://oe.datalisk.io",
@@ -103,24 +103,28 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "Gen.G",
           "games": 13
         },
         {
           "id": "2026 First Stand",
           "label": "First Stand 2026",
           "pool": "International",
+          "team": "Gen.G",
           "games": 9
         },
         {
           "id": "LCK/2026 Season/Rounds 1-2",
           "label": "LCK 2026 Rounds 1-2",
           "pool": "Current Form",
+          "team": "Gen.G",
           "games": 41
         },
         {
           "id": "LCK/2026 Season/Cup",
           "label": "LCK Cup 2026",
           "pool": "Current Form",
+          "team": "Gen.G",
           "games": 22
         }
       ],
@@ -175,24 +179,28 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "Bilibili Gaming",
           "games": 8
         },
         {
           "id": "2026 First Stand",
           "label": "First Stand 2026",
           "pool": "International",
+          "team": "Bilibili Gaming",
           "games": 15
         },
         {
           "id": "LPL/2026 Season/Split 2 Playoffs",
           "label": "LPL 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "Bilibili Gaming",
           "games": 7
         },
         {
           "id": "LPL/2026 Season/Split 2",
           "label": "LPL 2026 Split 2",
           "pool": "Current Form",
+          "team": "Bilibili Gaming",
           "games": 32
         }
       ],
@@ -247,24 +255,28 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "Gen.G",
           "games": 13
         },
         {
           "id": "2026 First Stand",
           "label": "First Stand 2026",
           "pool": "International",
+          "team": "Gen.G",
           "games": 9
         },
         {
           "id": "LCK/2026 Season/Rounds 1-2",
           "label": "LCK 2026 Rounds 1-2",
           "pool": "Current Form",
+          "team": "Gen.G",
           "games": 41
         },
         {
           "id": "LCK/2026 Season/Cup",
           "label": "LCK Cup 2026",
           "pool": "Current Form",
+          "team": "Gen.G",
           "games": 22
         }
       ],
@@ -319,24 +331,28 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "Gen.G",
           "games": 13
         },
         {
           "id": "2026 First Stand",
           "label": "First Stand 2026",
           "pool": "International",
+          "team": "Gen.G",
           "games": 9
         },
         {
           "id": "LCK/2026 Season/Rounds 1-2",
           "label": "LCK 2026 Rounds 1-2",
           "pool": "Current Form",
+          "team": "Gen.G",
           "games": 41
         },
         {
           "id": "LCK/2026 Season/Cup",
           "label": "LCK Cup 2026",
           "pool": "Current Form",
+          "team": "Gen.G",
           "games": 22
         }
       ],
@@ -391,18 +407,21 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "KT Rolster",
           "games": 16
         },
         {
           "id": "LCK/2026 Season/Rounds 1-2",
           "label": "LCK 2026 Rounds 1-2",
           "pool": "Current Form",
+          "team": "KT Rolster",
           "games": 41
         },
         {
           "id": "LCK/2026 Season/Cup",
           "label": "LCK Cup 2026",
           "pool": "Current Form",
+          "team": "KT Rolster",
           "games": 17
         }
       ],
@@ -457,6 +476,7 @@
           "id": "LTA South/2025 Season/Split 3",
           "label": "LTA South 2025 Split 3",
           "pool": "Americas",
+          "team": "RED Canids",
           "games": 27
         }
       ],
@@ -511,12 +531,14 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "FlyQuest",
           "games": 8
         },
         {
           "id": "LTA North/2025 Season/Split 3",
           "label": "LTA North 2025 Split 3",
           "pool": "Americas",
+          "team": "FlyQuest",
           "games": 15
         }
       ],
@@ -571,18 +593,21 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "Movistar KOI",
           "games": 10
         },
         {
           "id": "LEC/2026 Season/Spring Playoffs",
           "label": "LEC 2026 Spring Playoffs",
           "pool": "Current Form",
+          "team": "Movistar KOI",
           "games": 8
         },
         {
           "id": "LEC/2026 Season/Spring Season",
           "label": "LEC 2026 Spring",
           "pool": "Current Form",
+          "team": "Movistar KOI",
           "games": 23
         }
       ],
@@ -637,18 +662,21 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "Anyone's Legend",
           "games": 10
         },
         {
           "id": "LPL/2026 Season/Split 2 Playoffs",
           "label": "LPL 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "Anyone's Legend",
           "games": 9
         },
         {
           "id": "LPL/2026 Season/Split 2",
           "label": "LPL 2026 Split 2",
           "pool": "Current Form",
+          "team": "Anyone's Legend",
           "games": 31
         }
       ],
@@ -707,24 +735,28 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "Hanwha Life Esports",
           "games": 9
         },
         {
           "id": "2026 First Stand",
           "label": "First Stand 2026",
           "pool": "International",
+          "team": "Bilibili Gaming",
           "games": 15
         },
         {
           "id": "LPL/2026 Season/Split 2 Playoffs",
           "label": "LPL 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "Bilibili Gaming",
           "games": 7
         },
         {
           "id": "LPL/2026 Season/Split 2",
           "label": "LPL 2026 Split 2",
           "pool": "Current Form",
+          "team": "Bilibili Gaming",
           "games": 32
         }
       ],
@@ -779,18 +811,21 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "Hanwha Life Esports",
           "games": 9
         },
         {
           "id": "LCK/2026 Season/Rounds 1-2",
           "label": "LCK 2026 Rounds 1-2",
           "pool": "Current Form",
+          "team": "Hanwha Life Esports",
           "games": 43
         },
         {
           "id": "LCK/2026 Season/Cup",
           "label": "LCK Cup 2026",
           "pool": "Current Form",
+          "team": "Hanwha Life Esports",
           "games": 14
         }
       ],
@@ -845,12 +880,14 @@
           "id": "LCK/2026 Season/Rounds 1-2",
           "label": "LCK 2026 Rounds 1-2",
           "pool": "Current Form",
+          "team": "T1",
           "games": 40
         },
         {
           "id": "LCK/2026 Season/Cup",
           "label": "LCK Cup 2026",
           "pool": "Current Form",
+          "team": "T1",
           "games": 23
         }
       ],
@@ -905,18 +942,21 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "Anyone's Legend",
           "games": 10
         },
         {
           "id": "LPL/2026 Season/Split 2 Playoffs",
           "label": "LPL 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "Anyone's Legend",
           "games": 9
         },
         {
           "id": "LPL/2026 Season/Split 2",
           "label": "LPL 2026 Split 2",
           "pool": "Current Form",
+          "team": "Anyone's Legend",
           "games": 31
         }
       ],
@@ -971,12 +1011,14 @@
           "id": "LEC/2026 Season/Spring Playoffs",
           "label": "LEC 2026 Spring Playoffs",
           "pool": "Current Form",
+          "team": "Karmine Corp",
           "games": 11
         },
         {
           "id": "LEC/2026 Season/Spring Season",
           "label": "LEC 2026 Spring",
           "pool": "Current Form",
+          "team": "Karmine Corp",
           "games": 23
         }
       ],
@@ -1031,24 +1073,28 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "Team Secret Whales",
           "games": 6
         },
         {
           "id": "2026 First Stand",
           "label": "First Stand 2026",
           "pool": "International",
+          "team": "Team Secret Whales",
           "games": 6
         },
         {
           "id": "LCP/2026 Season/Split 2 Playoffs",
           "label": "LCP 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "Team Secret Whales",
           "games": 8
         },
         {
           "id": "LCP/2026 Season/Split 2",
           "label": "LCP 2026 Split 2",
           "pool": "Current Form",
+          "team": "Team Secret Whales",
           "games": 17
         }
       ],
@@ -1103,18 +1149,21 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "T1",
           "games": 20
         },
         {
           "id": "LCK/2026 Season/Rounds 1-2",
           "label": "LCK 2026 Rounds 1-2",
           "pool": "Current Form",
+          "team": "T1",
           "games": 40
         },
         {
           "id": "LCK/2026 Season/Cup",
           "label": "LCK Cup 2026",
           "pool": "Current Form",
+          "team": "T1",
           "games": 23
         }
       ],
@@ -1169,24 +1218,28 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "Bilibili Gaming",
           "games": 8
         },
         {
           "id": "2026 First Stand",
           "label": "First Stand 2026",
           "pool": "International",
+          "team": "Bilibili Gaming",
           "games": 15
         },
         {
           "id": "LPL/2026 Season/Split 2 Playoffs",
           "label": "LPL 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "Bilibili Gaming",
           "games": 7
         },
         {
           "id": "LPL/2026 Season/Split 2",
           "label": "LPL 2026 Split 2",
           "pool": "Current Form",
+          "team": "Bilibili Gaming",
           "games": 32
         }
       ],
@@ -1245,18 +1298,21 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "T1",
           "games": 20
         },
         {
           "id": "LCK/2026 Season/Rounds 1-2",
           "label": "LCK 2026 Rounds 1-2",
           "pool": "Current Form",
+          "team": "Hanwha Life Esports",
           "games": 43
         },
         {
           "id": "LCK/2026 Season/Cup",
           "label": "LCK Cup 2026",
           "pool": "Current Form",
+          "team": "Hanwha Life Esports",
           "games": 14
         }
       ],
@@ -1311,12 +1367,14 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "FlyQuest",
           "games": 8
         },
         {
           "id": "LTA North/2025 Season/Split 3",
           "label": "LTA North 2025 Split 3",
           "pool": "Americas",
+          "team": "FlyQuest",
           "games": 17
         }
       ],
@@ -1371,12 +1429,14 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "100 Thieves",
           "games": 5
         },
         {
           "id": "LTA North/2025 Season/Split 3",
           "label": "LTA North 2025 Split 3",
           "pool": "Americas",
+          "team": "100 Thieves",
           "games": 26
         }
       ],
@@ -1431,6 +1491,7 @@
           "id": "LCK/2026 Season/Rounds 1-2",
           "label": "LCK 2026 Rounds 1-2",
           "pool": "Current Form",
+          "team": "KT Rolster",
           "games": 41
         }
       ],
@@ -1485,12 +1546,14 @@
           "id": "LEC/2026 Season/Spring Playoffs",
           "label": "LEC 2026 Spring Playoffs",
           "pool": "Current Form",
+          "team": "Team Vitality",
           "games": 6
         },
         {
           "id": "LEC/2026 Season/Spring Season",
           "label": "LEC 2026 Spring",
           "pool": "Current Form",
+          "team": "Team Vitality",
           "games": 24
         }
       ],
@@ -1545,12 +1608,14 @@
           "id": "LCP/2026 Season/Split 2 Playoffs",
           "label": "LCP 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "Deep Cross Gaming",
           "games": 12
         },
         {
           "id": "LCP/2026 Season/Split 2",
           "label": "LCP 2026 Split 2",
           "pool": "Current Form",
+          "team": "Deep Cross Gaming",
           "games": 18
         }
       ],
@@ -1605,6 +1670,7 @@
           "id": "LTA South/2025 Season/Split 3",
           "label": "LTA South 2025 Split 3",
           "pool": "Americas",
+          "team": "RED Canids",
           "games": 27
         }
       ],
@@ -1659,24 +1725,28 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "G2 Esports",
           "games": 10
         },
         {
           "id": "2026 First Stand",
           "label": "First Stand 2026",
           "pool": "International",
+          "team": "G2 Esports",
           "games": 16
         },
         {
           "id": "LEC/2026 Season/Spring Playoffs",
           "label": "LEC 2026 Spring Playoffs",
           "pool": "Current Form",
+          "team": "G2 Esports",
           "games": 9
         },
         {
           "id": "LEC/2026 Season/Spring Season",
           "label": "LEC 2026 Spring",
           "pool": "Current Form",
+          "team": "G2 Esports",
           "games": 21
         }
       ],
@@ -1731,18 +1801,21 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "Top Esports",
           "games": 16
         },
         {
           "id": "LPL/2026 Season/Split 2 Playoffs",
           "label": "LPL 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "Top Esports",
           "games": 7
         },
         {
           "id": "LPL/2026 Season/Split 2",
           "label": "LPL 2026 Split 2",
           "pool": "Current Form",
+          "team": "Top Esports",
           "games": 30
         }
       ],
@@ -1797,12 +1870,14 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "Vivo Keyd Stars",
           "games": 7
         },
         {
           "id": "LTA South/2025 Season/Split 3",
           "label": "LTA South 2025 Split 3",
           "pool": "Americas",
+          "team": "Vivo Keyd Stars",
           "games": 18
         }
       ],
@@ -1857,18 +1932,21 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "KT Rolster",
           "games": 16
         },
         {
           "id": "LCK/2026 Season/Rounds 1-2",
           "label": "LCK 2026 Rounds 1-2",
           "pool": "Current Form",
+          "team": "KT Rolster",
           "games": 41
         },
         {
           "id": "LCK/2026 Season/Cup",
           "label": "LCK Cup 2026",
           "pool": "Current Form",
+          "team": "KT Rolster",
           "games": 17
         }
       ],
@@ -1923,18 +2001,21 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "Anyone's Legend",
           "games": 10
         },
         {
           "id": "LPL/2026 Season/Split 2 Playoffs",
           "label": "LPL 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "Anyone's Legend",
           "games": 9
         },
         {
           "id": "LPL/2026 Season/Split 2",
           "label": "LPL 2026 Split 2",
           "pool": "Current Form",
+          "team": "Anyone's Legend",
           "games": 31
         }
       ],
@@ -1989,12 +2070,14 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "Fnatic",
           "games": 5
         },
         {
           "id": "LEC/2026 Season/Spring Season",
           "label": "LEC 2026 Spring",
           "pool": "Current Form",
+          "team": "Fnatic",
           "games": 23
         }
       ],
@@ -2049,18 +2132,21 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "Hanwha Life Esports",
           "games": 9
         },
         {
           "id": "LCK/2026 Season/Rounds 1-2",
           "label": "LCK 2026 Rounds 1-2",
           "pool": "Current Form",
+          "team": "Hanwha Life Esports",
           "games": 43
         },
         {
           "id": "LCK/2026 Season/Cup",
           "label": "LCK Cup 2026",
           "pool": "Current Form",
+          "team": "Hanwha Life Esports",
           "games": 14
         }
       ],
@@ -2115,12 +2201,14 @@
           "id": "LPL/2026 Season/Split 2 Playoffs",
           "label": "LPL 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "Top Esports",
           "games": 7
         },
         {
           "id": "LPL/2026 Season/Split 2",
           "label": "LPL 2026 Split 2",
           "pool": "Current Form",
+          "team": "Top Esports",
           "games": 30
         }
       ],
@@ -2175,24 +2263,28 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "Gen.G",
           "games": 13
         },
         {
           "id": "2026 First Stand",
           "label": "First Stand 2026",
           "pool": "International",
+          "team": "Gen.G",
           "games": 9
         },
         {
           "id": "LCK/2026 Season/Rounds 1-2",
           "label": "LCK 2026 Rounds 1-2",
           "pool": "Current Form",
+          "team": "Gen.G",
           "games": 41
         },
         {
           "id": "LCK/2026 Season/Cup",
           "label": "LCK Cup 2026",
           "pool": "Current Form",
+          "team": "Gen.G",
           "games": 22
         }
       ],
@@ -2247,12 +2339,14 @@
           "id": "LPL/2026 Season/Split 2 Playoffs",
           "label": "LPL 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "ThunderTalk Gaming",
           "games": 12
         },
         {
           "id": "LPL/2026 Season/Split 2",
           "label": "LPL 2026 Split 2",
           "pool": "Current Form",
+          "team": "ThunderTalk Gaming",
           "games": 14
         }
       ],
@@ -2307,12 +2401,14 @@
           "id": "LCP/2026 Season/Split 2 Playoffs",
           "label": "LCP 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "Fukuoka SoftBank HAWKS gaming",
           "games": 3
         },
         {
           "id": "LCP/2026 Season/Split 2",
           "label": "LCP 2026 Split 2",
           "pool": "Current Form",
+          "team": "Fukuoka SoftBank HAWKS gaming",
           "games": 17
         }
       ],
@@ -2367,24 +2463,28 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "Gen.G",
           "games": 13
         },
         {
           "id": "2026 First Stand",
           "label": "First Stand 2026",
           "pool": "International",
+          "team": "Gen.G",
           "games": 9
         },
         {
           "id": "LCK/2026 Season/Rounds 1-2",
           "label": "LCK 2026 Rounds 1-2",
           "pool": "Current Form",
+          "team": "Gen.G",
           "games": 41
         },
         {
           "id": "LCK/2026 Season/Cup",
           "label": "LCK Cup 2026",
           "pool": "Current Form",
+          "team": "Gen.G",
           "games": 22
         }
       ],
@@ -2439,12 +2539,14 @@
           "id": "LPL/2026 Season/Split 2 Playoffs",
           "label": "LPL 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "LNG Esports",
           "games": 5
         },
         {
           "id": "LPL/2026 Season/Split 2",
           "label": "LPL 2026 Split 2",
           "pool": "Current Form",
+          "team": "LNG Esports",
           "games": 13
         }
       ],
@@ -2499,13 +2601,15 @@
           "id": "LPL/2026 Season/Split 2",
           "label": "LPL 2026 Split 2",
           "pool": "Current Form",
-          "games": 2
+          "team": "Ultra Prime",
+          "games": 10
         },
         {
           "id": "LPL/2026 Season/Split 2",
           "label": "LPL 2026 Split 2",
           "pool": "Current Form",
-          "games": 10
+          "team": "Ultra Prime",
+          "games": 2
         }
       ],
       "gp": 12,
@@ -2559,12 +2663,14 @@
           "id": "LCP/2026 Season/Split 2 Playoffs",
           "label": "LCP 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "GAM Esports",
           "games": 7
         },
         {
           "id": "LCP/2026 Season/Split 2",
           "label": "LCP 2026 Split 2",
           "pool": "Current Form",
+          "team": "GAM Esports",
           "games": 18
         }
       ],
@@ -2619,12 +2725,14 @@
           "id": "LCP/2026 Season/Split 2 Playoffs",
           "label": "LCP 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "MVK Esports",
           "games": 1
         },
         {
           "id": "LCP/2026 Season/Split 2",
           "label": "LCP 2026 Split 2",
           "pool": "Current Form",
+          "team": "MVK Esports",
           "games": 12
         }
       ],
@@ -2679,6 +2787,7 @@
           "id": "LCP/2026 Season/Split 2",
           "label": "LCP 2026 Split 2",
           "pool": "Current Form",
+          "team": "Ground Zero Gaming",
           "games": 15
         }
       ],
@@ -2733,6 +2842,7 @@
           "id": "LTA North/2025 Season/Split 3",
           "label": "LTA North 2025 Split 3",
           "pool": "Americas",
+          "team": "Cloud9",
           "games": 21
         }
       ],
@@ -2787,6 +2897,7 @@
           "id": "LTA North/2025 Season/Split 3",
           "label": "LTA North 2025 Split 3",
           "pool": "Americas",
+          "team": "Cloud9",
           "games": 21
         }
       ],
@@ -2841,24 +2952,28 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "Team Secret Whales",
           "games": 6
         },
         {
           "id": "2026 First Stand",
           "label": "First Stand 2026",
           "pool": "International",
+          "team": "Team Secret Whales",
           "games": 6
         },
         {
           "id": "LCP/2026 Season/Split 2 Playoffs",
           "label": "LCP 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "Team Secret Whales",
           "games": 8
         },
         {
           "id": "LCP/2026 Season/Split 2",
           "label": "LCP 2026 Split 2",
           "pool": "Current Form",
+          "team": "Team Secret Whales",
           "games": 17
         }
       ],
@@ -2913,18 +3028,21 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "Movistar KOI",
           "games": 10
         },
         {
           "id": "LEC/2026 Season/Spring Playoffs",
           "label": "LEC 2026 Spring Playoffs",
           "pool": "Current Form",
+          "team": "Movistar KOI",
           "games": 8
         },
         {
           "id": "LEC/2026 Season/Spring Season",
           "label": "LEC 2026 Spring",
           "pool": "Current Form",
+          "team": "Movistar KOI",
           "games": 23
         }
       ],
@@ -2979,24 +3097,28 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "Bilibili Gaming",
           "games": 8
         },
         {
           "id": "2026 First Stand",
           "label": "First Stand 2026",
           "pool": "International",
+          "team": "Bilibili Gaming",
           "games": 15
         },
         {
           "id": "LPL/2026 Season/Split 2 Playoffs",
           "label": "LPL 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "Bilibili Gaming",
           "games": 7
         },
         {
           "id": "LPL/2026 Season/Split 2",
           "label": "LPL 2026 Split 2",
           "pool": "Current Form",
+          "team": "Bilibili Gaming",
           "games": 32
         }
       ],
@@ -3051,24 +3173,28 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "Team Secret Whales",
           "games": 2
         },
         {
           "id": "2026 First Stand",
           "label": "First Stand 2026",
           "pool": "International",
+          "team": "Team Secret Whales",
           "games": 6
         },
         {
           "id": "LCP/2026 Season/Split 2 Playoffs",
           "label": "LCP 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "Team Secret Whales",
           "games": 8
         },
         {
           "id": "LCP/2026 Season/Split 2",
           "label": "LCP 2026 Split 2",
           "pool": "Current Form",
+          "team": "Team Secret Whales",
           "games": 17
         }
       ],
@@ -3123,18 +3249,21 @@
           "id": "2026 First Stand",
           "label": "First Stand 2026",
           "pool": "International",
+          "team": "JD Gaming",
           "games": 13
         },
         {
           "id": "LPL/2026 Season/Split 2 Playoffs",
           "label": "LPL 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "JD Gaming",
           "games": 8
         },
         {
           "id": "LPL/2026 Season/Split 2",
           "label": "LPL 2026 Split 2",
           "pool": "Current Form",
+          "team": "JD Gaming",
           "games": 35
         }
       ],
@@ -3189,12 +3318,14 @@
           "id": "LCK/2026 Season/Rounds 1-2",
           "label": "LCK 2026 Rounds 1-2",
           "pool": "Current Form",
+          "team": "KT Rolster",
           "games": 38
         },
         {
           "id": "LCK/2026 Season/Cup",
           "label": "LCK Cup 2026",
           "pool": "Current Form",
+          "team": "KT Rolster",
           "games": 17
         }
       ],
@@ -3249,6 +3380,7 @@
           "id": "LPL/2026 Season/Split 2",
           "label": "LPL 2026 Split 2",
           "pool": "Current Form",
+          "team": "Ultra Prime",
           "games": 12
         }
       ],
@@ -3303,12 +3435,14 @@
           "id": "LEC/2026 Season/Spring Playoffs",
           "label": "LEC 2026 Spring Playoffs",
           "pool": "Current Form",
+          "team": "Karmine Corp",
           "games": 11
         },
         {
           "id": "LEC/2026 Season/Spring Season",
           "label": "LEC 2026 Spring",
           "pool": "Current Form",
+          "team": "Karmine Corp",
           "games": 23
         }
       ],
@@ -3363,12 +3497,14 @@
           "id": "LCP/2026 Season/Split 2 Playoffs",
           "label": "LCP 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "GAM Esports",
           "games": 7
         },
         {
           "id": "LCP/2026 Season/Split 2",
           "label": "LCP 2026 Split 2",
           "pool": "Current Form",
+          "team": "GAM Esports",
           "games": 18
         }
       ],
@@ -3423,24 +3559,28 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "G2 Esports",
           "games": 10
         },
         {
           "id": "2026 First Stand",
           "label": "First Stand 2026",
           "pool": "International",
+          "team": "G2 Esports",
           "games": 16
         },
         {
           "id": "LEC/2026 Season/Spring Playoffs",
           "label": "LEC 2026 Spring Playoffs",
           "pool": "Current Form",
+          "team": "G2 Esports",
           "games": 9
         },
         {
           "id": "LEC/2026 Season/Spring Season",
           "label": "LEC 2026 Spring",
           "pool": "Current Form",
+          "team": "G2 Esports",
           "games": 21
         }
       ],
@@ -3495,18 +3635,21 @@
           "id": "2026 First Stand",
           "label": "First Stand 2026",
           "pool": "International",
+          "team": "Team Secret Whales",
           "games": 6
         },
         {
           "id": "LCP/2026 Season/Split 2 Playoffs",
           "label": "LCP 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "Team Secret Whales",
           "games": 8
         },
         {
           "id": "LCP/2026 Season/Split 2",
           "label": "LCP 2026 Split 2",
           "pool": "Current Form",
+          "team": "Team Secret Whales",
           "games": 17
         }
       ],
@@ -3561,12 +3704,14 @@
           "id": "LPL/2026 Season/Split 2 Playoffs",
           "label": "LPL 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "LNG Esports",
           "games": 5
         },
         {
           "id": "LPL/2026 Season/Split 2",
           "label": "LPL 2026 Split 2",
           "pool": "Current Form",
+          "team": "LNG Esports",
           "games": 13
         }
       ],
@@ -3621,12 +3766,14 @@
           "id": "LPL/2026 Season/Split 2 Playoffs",
           "label": "LPL 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "Top Esports",
           "games": 7
         },
         {
           "id": "LPL/2026 Season/Split 2",
           "label": "LPL 2026 Split 2",
           "pool": "Current Form",
+          "team": "Top Esports",
           "games": 30
         }
       ],
@@ -3681,6 +3828,7 @@
           "id": "LTA North/2025 Season/Split 3",
           "label": "LTA North 2025 Split 3",
           "pool": "Americas",
+          "team": "Shopify Rebellion",
           "games": 20
         }
       ],
@@ -3735,18 +3883,21 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "KT Rolster",
           "games": 16
         },
         {
           "id": "LCK/2026 Season/Rounds 1-2",
           "label": "LCK 2026 Rounds 1-2",
           "pool": "Current Form",
+          "team": "KT Rolster",
           "games": 41
         },
         {
           "id": "LCK/2026 Season/Cup",
           "label": "LCK Cup 2026",
           "pool": "Current Form",
+          "team": "KT Rolster",
           "games": 17
         }
       ],
@@ -3801,18 +3952,21 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "Hanwha Life Esports",
           "games": 9
         },
         {
           "id": "LCK/2026 Season/Rounds 1-2",
           "label": "LCK 2026 Rounds 1-2",
           "pool": "Current Form",
+          "team": "Hanwha Life Esports",
           "games": 40
         },
         {
           "id": "LCK/2026 Season/Cup",
           "label": "LCK Cup 2026",
           "pool": "Current Form",
+          "team": "Hanwha Life Esports",
           "games": 14
         }
       ],
@@ -3867,18 +4021,21 @@
           "id": "2026 First Stand",
           "label": "First Stand 2026",
           "pool": "International",
+          "team": "BNK FEARX",
           "games": 11
         },
         {
           "id": "LCK/2026 Season/Rounds 1-2",
           "label": "LCK 2026 Rounds 1-2",
           "pool": "Current Form",
+          "team": "BNK FEARX",
           "games": 39
         },
         {
           "id": "LCK/2026 Season/Cup",
           "label": "LCK Cup 2026",
           "pool": "Current Form",
+          "team": "BNK FEARX",
           "games": 33
         }
       ],
@@ -3933,12 +4090,14 @@
           "id": "LCK/2026 Season/Rounds 1-2",
           "label": "LCK 2026 Rounds 1-2",
           "pool": "Current Form",
+          "team": "Dplus Kia",
           "games": 39
         },
         {
           "id": "LCK/2026 Season/Cup",
           "label": "LCK Cup 2026",
           "pool": "Current Form",
+          "team": "Dplus Kia",
           "games": 35
         }
       ],
@@ -3993,12 +4152,14 @@
           "id": "LPL/2026 Season/Split 2 Playoffs",
           "label": "LPL 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "ThunderTalk Gaming",
           "games": 12
         },
         {
           "id": "LPL/2026 Season/Split 2",
           "label": "LPL 2026 Split 2",
           "pool": "Current Form",
+          "team": "ThunderTalk Gaming",
           "games": 14
         }
       ],
@@ -4053,12 +4214,14 @@
           "id": "LPL/2026 Season/Split 2 Playoffs",
           "label": "LPL 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "EDward Gaming",
           "games": 11
         },
         {
           "id": "LPL/2026 Season/Split 2",
           "label": "LPL 2026 Split 2",
           "pool": "Current Form",
+          "team": "EDward Gaming",
           "games": 14
         }
       ],
@@ -4113,12 +4276,14 @@
           "id": "LPL/2026 Season/Split 2 Playoffs",
           "label": "LPL 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "Ninjas in Pyjamas",
           "games": 5
         },
         {
           "id": "LPL/2026 Season/Split 2",
           "label": "LPL 2026 Split 2",
           "pool": "Current Form",
+          "team": "Ninjas in Pyjamas",
           "games": 33
         }
       ],
@@ -4173,12 +4338,14 @@
           "id": "LEC/2026 Season/Spring Playoffs",
           "label": "LEC 2026 Spring Playoffs",
           "pool": "Current Form",
+          "team": "Team Vitality",
           "games": 6
         },
         {
           "id": "LEC/2026 Season/Spring Season",
           "label": "LEC 2026 Spring",
           "pool": "Current Form",
+          "team": "Team Vitality",
           "games": 24
         }
       ],
@@ -4233,6 +4400,7 @@
           "id": "LEC/2026 Season/Spring Season",
           "label": "LEC 2026 Spring",
           "pool": "Current Form",
+          "team": "Shifters",
           "games": 22
         }
       ],
@@ -4287,12 +4455,14 @@
           "id": "LCP/2026 Season/Split 2 Playoffs",
           "label": "LCP 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "GAM Esports",
           "games": 7
         },
         {
           "id": "LCP/2026 Season/Split 2",
           "label": "LCP 2026 Split 2",
           "pool": "Current Form",
+          "team": "GAM Esports",
           "games": 18
         }
       ],
@@ -4347,12 +4517,14 @@
           "id": "LCP/2026 Season/Split 2 Playoffs",
           "label": "LCP 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "MVK Esports",
           "games": 11
         },
         {
           "id": "LCP/2026 Season/Split 2",
           "label": "LCP 2026 Split 2",
           "pool": "Current Form",
+          "team": "MVK Esports",
           "games": 17
         }
       ],
@@ -4407,12 +4579,14 @@
           "id": "LCP/2026 Season/Split 2 Playoffs",
           "label": "LCP 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "Deep Cross Gaming",
           "games": 12
         },
         {
           "id": "LCP/2026 Season/Split 2",
           "label": "LCP 2026 Split 2",
           "pool": "Current Form",
+          "team": "Deep Cross Gaming",
           "games": 17
         }
       ],
@@ -4467,6 +4641,7 @@
           "id": "LTA South/2025 Season/Split 3",
           "label": "LTA South 2025 Split 3",
           "pool": "Americas",
+          "team": "LOUD",
           "games": 19
         }
       ],
@@ -4521,18 +4696,21 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "Movistar KOI",
           "games": 10
         },
         {
           "id": "LEC/2026 Season/Spring Playoffs",
           "label": "LEC 2026 Spring Playoffs",
           "pool": "Current Form",
+          "team": "Movistar KOI",
           "games": 8
         },
         {
           "id": "LEC/2026 Season/Spring Season",
           "label": "LEC 2026 Spring",
           "pool": "Current Form",
+          "team": "Movistar KOI",
           "games": 23
         }
       ],
@@ -4587,12 +4765,14 @@
           "id": "LPL/2026 Season/Split 2 Playoffs",
           "label": "LPL 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "LNG Esports",
           "games": 5
         },
         {
           "id": "LPL/2026 Season/Split 2",
           "label": "LPL 2026 Split 2",
           "pool": "Current Form",
+          "team": "LNG Esports",
           "games": 13
         }
       ],
@@ -4647,12 +4827,14 @@
           "id": "LEC/2026 Season/Spring Playoffs",
           "label": "LEC 2026 Spring Playoffs",
           "pool": "Current Form",
+          "team": "Team Vitality",
           "games": 6
         },
         {
           "id": "LEC/2026 Season/Spring Season",
           "label": "LEC 2026 Spring",
           "pool": "Current Form",
+          "team": "Team Vitality",
           "games": 24
         }
       ],
@@ -4707,6 +4889,7 @@
           "id": "LTA North/2025 Season/Split 3",
           "label": "LTA North 2025 Split 3",
           "pool": "Americas",
+          "team": "Disguised",
           "games": 17
         }
       ],
@@ -4761,6 +4944,7 @@
           "id": "LTA South/2025 Season/Split 3",
           "label": "LTA South 2025 Split 3",
           "pool": "Americas",
+          "team": "Leviatan",
           "games": 15
         }
       ],
@@ -4819,24 +5003,28 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "FlyQuest",
           "games": 8
         },
         {
           "id": "LEC/2026 Season/Spring Playoffs",
           "label": "LEC 2026 Spring Playoffs",
           "pool": "Current Form",
+          "team": "Karmine Corp",
           "games": 11
         },
         {
           "id": "LEC/2026 Season/Spring Season",
           "label": "LEC 2026 Spring",
           "pool": "Current Form",
+          "team": "Karmine Corp",
           "games": 23
         },
         {
           "id": "LTA North/2025 Season/Split 3",
           "label": "LTA North 2025 Split 3",
           "pool": "Americas",
+          "team": "FlyQuest",
           "games": 17
         }
       ],
@@ -4891,18 +5079,21 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "T1",
           "games": 20
         },
         {
           "id": "LCK/2026 Season/Rounds 1-2",
           "label": "LCK 2026 Rounds 1-2",
           "pool": "Current Form",
+          "team": "T1",
           "games": 40
         },
         {
           "id": "LCK/2026 Season/Cup",
           "label": "LCK Cup 2026",
           "pool": "Current Form",
+          "team": "T1",
           "games": 23
         }
       ],
@@ -4957,18 +5148,21 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "T1",
           "games": 20
         },
         {
           "id": "LCK/2026 Season/Rounds 1-2",
           "label": "LCK 2026 Rounds 1-2",
           "pool": "Current Form",
+          "team": "T1",
           "games": 40
         },
         {
           "id": "LCK/2026 Season/Cup",
           "label": "LCK Cup 2026",
           "pool": "Current Form",
+          "team": "T1",
           "games": 23
         }
       ],
@@ -5027,18 +5221,21 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "Bilibili Gaming",
           "games": 6
         },
         {
           "id": "LCP/2026 Season/Split 2 Playoffs",
           "label": "LCP 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "CTBC Flying Oyster",
           "games": 5
         },
         {
           "id": "LCP/2026 Season/Split 2",
           "label": "LCP 2026 Split 2",
           "pool": "Current Form",
+          "team": "CTBC Flying Oyster",
           "games": 18
         }
       ],
@@ -5093,12 +5290,14 @@
           "id": "LCK/2026 Season/Rounds 1-2",
           "label": "LCK 2026 Rounds 1-2",
           "pool": "Current Form",
+          "team": "Nongshim RedForce",
           "games": 41
         },
         {
           "id": "LCK/2026 Season/Cup",
           "label": "LCK Cup 2026",
           "pool": "Current Form",
+          "team": "Nongshim RedForce",
           "games": 21
         }
       ],
@@ -5153,12 +5352,14 @@
           "id": "LCK/2026 Season/Rounds 1-2",
           "label": "LCK 2026 Rounds 1-2",
           "pool": "Current Form",
+          "team": "Dplus Kia",
           "games": 42
         },
         {
           "id": "LCK/2026 Season/Cup",
           "label": "LCK Cup 2026",
           "pool": "Current Form",
+          "team": "Dplus Kia",
           "games": 35
         }
       ],
@@ -5213,6 +5414,7 @@
           "id": "LPL/2026 Season/Split 2",
           "label": "LPL 2026 Split 2",
           "pool": "Current Form",
+          "team": "Oh My God",
           "games": 13
         }
       ],
@@ -5267,12 +5469,14 @@
           "id": "LEC/2026 Season/Spring Playoffs",
           "label": "LEC 2026 Spring Playoffs",
           "pool": "Current Form",
+          "team": "GiantX",
           "games": 6
         },
         {
           "id": "LEC/2026 Season/Spring Season",
           "label": "LEC 2026 Spring",
           "pool": "Current Form",
+          "team": "GiantX",
           "games": 22
         }
       ],
@@ -5327,6 +5531,7 @@
           "id": "LEC/2026 Season/Spring Season",
           "label": "LEC 2026 Spring",
           "pool": "Current Form",
+          "team": "Fnatic",
           "games": 23
         }
       ],
@@ -5381,12 +5586,14 @@
           "id": "LCP/2026 Season/Split 2 Playoffs",
           "label": "LCP 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "Deep Cross Gaming",
           "games": 12
         },
         {
           "id": "LCP/2026 Season/Split 2",
           "label": "LCP 2026 Split 2",
           "pool": "Current Form",
+          "team": "Deep Cross Gaming",
           "games": 18
         }
       ],
@@ -5441,6 +5648,7 @@
           "id": "LTA North/2025 Season/Split 3",
           "label": "LTA North 2025 Split 3",
           "pool": "Americas",
+          "team": "Disguised",
           "games": 17
         }
       ],
@@ -5495,6 +5703,7 @@
           "id": "LTA South/2025 Season/Split 3",
           "label": "LTA South 2025 Split 3",
           "pool": "Americas",
+          "team": "RED Canids",
           "games": 27
         }
       ],
@@ -5549,6 +5758,7 @@
           "id": "LTA South/2025 Season/Split 3",
           "label": "LTA South 2025 Split 3",
           "pool": "Americas",
+          "team": "paiN Gaming",
           "games": 18
         }
       ],
@@ -5603,12 +5813,14 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "Vivo Keyd Stars",
           "games": 7
         },
         {
           "id": "LTA South/2025 Season/Split 3",
           "label": "LTA South 2025 Split 3",
           "pool": "Americas",
+          "team": "Vivo Keyd Stars",
           "games": 18
         }
       ],
@@ -5667,24 +5879,28 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "CTBC Flying Oyster",
           "games": 12
         },
         {
           "id": "2026 First Stand",
           "label": "First Stand 2026",
           "pool": "International",
+          "team": "JD Gaming",
           "games": 13
         },
         {
           "id": "LPL/2026 Season/Split 2 Playoffs",
           "label": "LPL 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "JD Gaming",
           "games": 8
         },
         {
           "id": "LPL/2026 Season/Split 2",
           "label": "LPL 2026 Split 2",
           "pool": "Current Form",
+          "team": "JD Gaming",
           "games": 35
         }
       ],
@@ -5739,18 +5955,21 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "T1",
           "games": 20
         },
         {
           "id": "LCK/2026 Season/Rounds 1-2",
           "label": "LCK 2026 Rounds 1-2",
           "pool": "Current Form",
+          "team": "T1",
           "games": 40
         },
         {
           "id": "LCK/2026 Season/Cup",
           "label": "LCK Cup 2026",
           "pool": "Current Form",
+          "team": "T1",
           "games": 23
         }
       ],
@@ -5809,18 +6028,21 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "Team Secret Whales",
           "games": 6
         },
         {
           "id": "LCP/2026 Season/Split 2 Playoffs",
           "label": "LCP 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "GAM Esports",
           "games": 7
         },
         {
           "id": "LCP/2026 Season/Split 2",
           "label": "LCP 2026 Split 2",
           "pool": "Current Form",
+          "team": "GAM Esports",
           "games": 18
         }
       ],
@@ -5875,12 +6097,14 @@
           "id": "LCK/2026 Season/Rounds 1-2",
           "label": "LCK 2026 Rounds 1-2",
           "pool": "Current Form",
+          "team": "Kiwoom DRX",
           "games": 5
         },
         {
           "id": "LCK/2026 Season/Cup",
           "label": "LCK Cup 2026",
           "pool": "Current Form",
+          "team": "Kiwoom DRX",
           "games": 33
         }
       ],
@@ -5935,12 +6159,14 @@
           "id": "LCK/2026 Season/Rounds 1-2",
           "label": "LCK 2026 Rounds 1-2",
           "pool": "Current Form",
+          "team": "Dplus Kia",
           "games": 42
         },
         {
           "id": "LCK/2026 Season/Cup",
           "label": "LCK Cup 2026",
           "pool": "Current Form",
+          "team": "Dplus Kia",
           "games": 35
         }
       ],
@@ -5999,18 +6225,21 @@
           "id": "LCK/2026 Season/Rounds 1-2",
           "label": "LCK 2026 Rounds 1-2",
           "pool": "Current Form",
+          "team": "Nongshim RedForce",
           "games": 20
         },
         {
           "id": "LCK/2026 Season/Rounds 1-2",
           "label": "LCK 2026 Rounds 1-2",
           "pool": "Current Form",
+          "team": "BNK FEARX",
           "games": 20
         },
         {
           "id": "LCK/2026 Season/Cup",
           "label": "LCK Cup 2026",
           "pool": "Current Form",
+          "team": "Nongshim RedForce",
           "games": 21
         }
       ],
@@ -6065,12 +6294,14 @@
           "id": "LPL/2026 Season/Split 2 Playoffs",
           "label": "LPL 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "Weibo Gaming",
           "games": 5
         },
         {
           "id": "LPL/2026 Season/Split 2",
           "label": "LPL 2026 Split 2",
           "pool": "Current Form",
+          "team": "Weibo Gaming",
           "games": 35
         }
       ],
@@ -6125,12 +6356,14 @@
           "id": "LPL/2026 Season/Split 2 Playoffs",
           "label": "LPL 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "Top Esports",
           "games": 7
         },
         {
           "id": "LPL/2026 Season/Split 2",
           "label": "LPL 2026 Split 2",
           "pool": "Current Form",
+          "team": "Top Esports",
           "games": 30
         }
       ],
@@ -6185,6 +6418,7 @@
           "id": "LTA North/2025 Season/Split 3",
           "label": "LTA North 2025 Split 3",
           "pool": "Americas",
+          "team": "Cloud9",
           "games": 21
         }
       ],
@@ -6239,6 +6473,7 @@
           "id": "LTA South/2025 Season/Split 3",
           "label": "LTA South 2025 Split 3",
           "pool": "Americas",
+          "team": "LOUD",
           "games": 19
         }
       ],
@@ -6293,6 +6528,7 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "Top Esports",
           "games": 16
         }
       ],
@@ -6347,12 +6583,14 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "Vivo Keyd Stars",
           "games": 7
         },
         {
           "id": "LTA South/2025 Season/Split 3",
           "label": "LTA South 2025 Split 3",
           "pool": "Americas",
+          "team": "Vivo Keyd Stars",
           "games": 18
         }
       ],
@@ -6407,18 +6645,21 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "CTBC Flying Oyster",
           "games": 12
         },
         {
           "id": "LCP/2026 Season/Split 2 Playoffs",
           "label": "LCP 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "CTBC Flying Oyster",
           "games": 5
         },
         {
           "id": "LCP/2026 Season/Split 2",
           "label": "LCP 2026 Split 2",
           "pool": "Current Form",
+          "team": "CTBC Flying Oyster",
           "games": 18
         }
       ],
@@ -6477,18 +6718,21 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "Bilibili Gaming",
           "games": 8
         },
         {
           "id": "LPL/2026 Season/Split 2 Playoffs",
           "label": "LPL 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "Weibo Gaming",
           "games": 5
         },
         {
           "id": "LPL/2026 Season/Split 2",
           "label": "LPL 2026 Split 2",
           "pool": "Current Form",
+          "team": "Weibo Gaming",
           "games": 35
         }
       ],
@@ -6543,24 +6787,28 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "G2 Esports",
           "games": 10
         },
         {
           "id": "2026 First Stand",
           "label": "First Stand 2026",
           "pool": "International",
+          "team": "G2 Esports",
           "games": 16
         },
         {
           "id": "LEC/2026 Season/Spring Playoffs",
           "label": "LEC 2026 Spring Playoffs",
           "pool": "Current Form",
+          "team": "G2 Esports",
           "games": 9
         },
         {
           "id": "LEC/2026 Season/Spring Season",
           "label": "LEC 2026 Spring",
           "pool": "Current Form",
+          "team": "G2 Esports",
           "games": 21
         }
       ],
@@ -6619,18 +6867,21 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "Top Esports",
           "games": 16
         },
         {
           "id": "LCK/2026 Season/Rounds 1-2",
           "label": "LCK 2026 Rounds 1-2",
           "pool": "Current Form",
+          "team": "Hanwha Life Esports",
           "games": 43
         },
         {
           "id": "LCK/2026 Season/Cup",
           "label": "LCK Cup 2026",
           "pool": "Current Form",
+          "team": "Hanwha Life Esports",
           "games": 14
         }
       ],
@@ -6685,18 +6936,21 @@
           "id": "2026 First Stand",
           "label": "First Stand 2026",
           "pool": "International",
+          "team": "Bilibili Gaming",
           "games": 15
         },
         {
           "id": "LPL/2026 Season/Split 2 Playoffs",
           "label": "LPL 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "Bilibili Gaming",
           "games": 7
         },
         {
           "id": "LPL/2026 Season/Split 2",
           "label": "LPL 2026 Split 2",
           "pool": "Current Form",
+          "team": "Bilibili Gaming",
           "games": 32
         }
       ],
@@ -6751,12 +7005,14 @@
           "id": "LPL/2026 Season/Split 2 Playoffs",
           "label": "LPL 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "Ninjas in Pyjamas",
           "games": 5
         },
         {
           "id": "LPL/2026 Season/Split 2",
           "label": "LPL 2026 Split 2",
           "pool": "Current Form",
+          "team": "Ninjas in Pyjamas",
           "games": 33
         }
       ],
@@ -6811,12 +7067,14 @@
           "id": "LPL/2026 Season/Split 2 Playoffs",
           "label": "LPL 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "ThunderTalk Gaming",
           "games": 12
         },
         {
           "id": "LPL/2026 Season/Split 2",
           "label": "LPL 2026 Split 2",
           "pool": "Current Form",
+          "team": "ThunderTalk Gaming",
           "games": 14
         }
       ],
@@ -6871,12 +7129,14 @@
           "id": "LPL/2026 Season/Split 2 Playoffs",
           "label": "LPL 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "LNG Esports",
           "games": 5
         },
         {
           "id": "LPL/2026 Season/Split 2",
           "label": "LPL 2026 Split 2",
           "pool": "Current Form",
+          "team": "LNG Esports",
           "games": 13
         }
       ],
@@ -6931,6 +7191,7 @@
           "id": "LEC/2026 Season/Spring Season",
           "label": "LEC 2026 Spring",
           "pool": "Current Form",
+          "team": "SK Gaming",
           "games": 21
         }
       ],
@@ -6985,12 +7246,14 @@
           "id": "LCP/2026 Season/Split 2 Playoffs",
           "label": "LCP 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "GAM Esports",
           "games": 4
         },
         {
           "id": "LCP/2026 Season/Split 2",
           "label": "LCP 2026 Split 2",
           "pool": "Current Form",
+          "team": "GAM Esports",
           "games": 18
         }
       ],
@@ -7045,6 +7308,7 @@
           "id": "LTA North/2025 Season/Split 3",
           "label": "LTA North 2025 Split 3",
           "pool": "Americas",
+          "team": "Team Liquid",
           "games": 13
         }
       ],
@@ -7099,6 +7363,7 @@
           "id": "LTA South/2025 Season/Split 3",
           "label": "LTA South 2025 Split 3",
           "pool": "Americas",
+          "team": "LOUD",
           "games": 19
         }
       ],
@@ -7153,6 +7418,7 @@
           "id": "LTA South/2025 Season/Split 3",
           "label": "LTA South 2025 Split 3",
           "pool": "Americas",
+          "team": "Isurus",
           "games": 5
         }
       ],
@@ -7207,6 +7473,7 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "CTBC Flying Oyster",
           "games": 12
         }
       ],
@@ -7261,18 +7528,21 @@
           "id": "2026 First Stand",
           "label": "First Stand 2026",
           "pool": "International",
+          "team": "JD Gaming",
           "games": 13
         },
         {
           "id": "LPL/2026 Season/Split 2 Playoffs",
           "label": "LPL 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "JD Gaming",
           "games": 8
         },
         {
           "id": "LPL/2026 Season/Split 2",
           "label": "LPL 2026 Split 2",
           "pool": "Current Form",
+          "team": "JD Gaming",
           "games": 35
         }
       ],
@@ -7327,12 +7597,14 @@
           "id": "LCK/2026 Season/Rounds 1-2",
           "label": "LCK 2026 Rounds 1-2",
           "pool": "Current Form",
+          "team": "HANJIN BRION",
           "games": 40
         },
         {
           "id": "LCK/2026 Season/Cup",
           "label": "LCK Cup 2026",
           "pool": "Current Form",
+          "team": "HANJIN BRION",
           "games": 19
         }
       ],
@@ -7387,12 +7659,14 @@
           "id": "LCK/2026 Season/Rounds 1-2",
           "label": "LCK 2026 Rounds 1-2",
           "pool": "Current Form",
+          "team": "HANJIN BRION",
           "games": 40
         },
         {
           "id": "LCK/2026 Season/Cup",
           "label": "LCK Cup 2026",
           "pool": "Current Form",
+          "team": "HANJIN BRION",
           "games": 19
         }
       ],
@@ -7447,12 +7721,14 @@
           "id": "LCK/2026 Season/Rounds 1-2",
           "label": "LCK 2026 Rounds 1-2",
           "pool": "Current Form",
+          "team": "Kiwoom DRX",
           "games": 44
         },
         {
           "id": "LCK/2026 Season/Cup",
           "label": "LCK Cup 2026",
           "pool": "Current Form",
+          "team": "Kiwoom DRX",
           "games": 33
         }
       ],
@@ -7507,12 +7783,14 @@
           "id": "LCK/2026 Season/Rounds 1-2",
           "label": "LCK 2026 Rounds 1-2",
           "pool": "Current Form",
+          "team": "Kiwoom DRX",
           "games": 44
         },
         {
           "id": "LCK/2026 Season/Cup",
           "label": "LCK Cup 2026",
           "pool": "Current Form",
+          "team": "Kiwoom DRX",
           "games": 33
         }
       ],
@@ -7567,12 +7845,14 @@
           "id": "LPL/2026 Season/Split 2 Playoffs",
           "label": "LPL 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "LNG Esports",
           "games": 5
         },
         {
           "id": "LPL/2026 Season/Split 2",
           "label": "LPL 2026 Split 2",
           "pool": "Current Form",
+          "team": "LNG Esports",
           "games": 13
         }
       ],
@@ -7627,12 +7907,14 @@
           "id": "LPL/2026 Season/Split 2 Playoffs",
           "label": "LPL 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "LGD Gaming",
           "games": 16
         },
         {
           "id": "LPL/2026 Season/Split 2",
           "label": "LPL 2026 Split 2",
           "pool": "Current Form",
+          "team": "LGD Gaming",
           "games": 12
         }
       ],
@@ -7687,12 +7969,14 @@
           "id": "LPL/2026 Season/Split 2 Playoffs",
           "label": "LPL 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "EDward Gaming",
           "games": 11
         },
         {
           "id": "LPL/2026 Season/Split 2",
           "label": "LPL 2026 Split 2",
           "pool": "Current Form",
+          "team": "EDward Gaming",
           "games": 14
         }
       ],
@@ -7747,12 +8031,14 @@
           "id": "LEC/2026 Season/Spring Playoffs",
           "label": "LEC 2026 Spring Playoffs",
           "pool": "Current Form",
+          "team": "GiantX",
           "games": 6
         },
         {
           "id": "LEC/2026 Season/Spring Season",
           "label": "LEC 2026 Spring",
           "pool": "Current Form",
+          "team": "GiantX",
           "games": 22
         }
       ],
@@ -7807,12 +8093,14 @@
           "id": "LEC/2026 Season/Spring Playoffs",
           "label": "LEC 2026 Spring Playoffs",
           "pool": "Current Form",
+          "team": "Karmine Corp",
           "games": 11
         },
         {
           "id": "LEC/2026 Season/Spring Season",
           "label": "LEC 2026 Spring",
           "pool": "Current Form",
+          "team": "Karmine Corp",
           "games": 23
         }
       ],
@@ -7867,12 +8155,14 @@
           "id": "LEC/2026 Season/Spring Playoffs",
           "label": "LEC 2026 Spring Playoffs",
           "pool": "Current Form",
+          "team": "Natus Vincere",
           "games": 4
         },
         {
           "id": "LEC/2026 Season/Spring Season",
           "label": "LEC 2026 Spring",
           "pool": "Current Form",
+          "team": "Natus Vincere",
           "games": 23
         }
       ],
@@ -7927,12 +8217,14 @@
           "id": "LEC/2026 Season/Spring Playoffs",
           "label": "LEC 2026 Spring Playoffs",
           "pool": "Current Form",
+          "team": "Natus Vincere",
           "games": 4
         },
         {
           "id": "LEC/2026 Season/Spring Season",
           "label": "LEC 2026 Spring",
           "pool": "Current Form",
+          "team": "Natus Vincere",
           "games": 23
         }
       ],
@@ -7987,12 +8279,14 @@
           "id": "LCP/2026 Season/Split 2 Playoffs",
           "label": "LCP 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "Fukuoka SoftBank HAWKS gaming",
           "games": 3
         },
         {
           "id": "LCP/2026 Season/Split 2",
           "label": "LCP 2026 Split 2",
           "pool": "Current Form",
+          "team": "Fukuoka SoftBank HAWKS gaming",
           "games": 17
         }
       ],
@@ -8047,12 +8341,14 @@
           "id": "LCP/2026 Season/Split 2 Playoffs",
           "label": "LCP 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "Deep Cross Gaming",
           "games": 12
         },
         {
           "id": "LCP/2026 Season/Split 2",
           "label": "LCP 2026 Split 2",
           "pool": "Current Form",
+          "team": "Deep Cross Gaming",
           "games": 18
         }
       ],
@@ -8107,6 +8403,7 @@
           "id": "LTA South/2025 Season/Split 3",
           "label": "LTA South 2025 Split 3",
           "pool": "Americas",
+          "team": "Leviatan",
           "games": 15
         }
       ],
@@ -8161,6 +8458,7 @@
           "id": "LTA South/2025 Season/Split 3",
           "label": "LTA South 2025 Split 3",
           "pool": "Americas",
+          "team": "FURIA",
           "games": 14
         }
       ],
@@ -8219,18 +8517,21 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "FlyQuest",
           "games": 8
         },
         {
           "id": "2026 First Stand",
           "label": "First Stand 2026",
           "pool": "International",
+          "team": "LYON",
           "games": 12
         },
         {
           "id": "LTA North/2025 Season/Split 3",
           "label": "LTA North 2025 Split 3",
           "pool": "Americas",
+          "team": "FlyQuest",
           "games": 17
         }
       ],
@@ -8285,12 +8586,14 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "FlyQuest",
           "games": 8
         },
         {
           "id": "LTA North/2025 Season/Split 3",
           "label": "LTA North 2025 Split 3",
           "pool": "Americas",
+          "team": "FlyQuest",
           "games": 17
         }
       ],
@@ -8345,12 +8648,14 @@
           "id": "LCK/2026 Season/Rounds 1-2",
           "label": "LCK 2026 Rounds 1-2",
           "pool": "Current Form",
+          "team": "Dplus Kia",
           "games": 42
         },
         {
           "id": "LCK/2026 Season/Cup",
           "label": "LCK Cup 2026",
           "pool": "Current Form",
+          "team": "Dplus Kia",
           "games": 35
         }
       ],
@@ -8405,12 +8710,14 @@
           "id": "LCK/2026 Season/Rounds 1-2",
           "label": "LCK 2026 Rounds 1-2",
           "pool": "Current Form",
+          "team": "DN SOOPers",
           "games": 37
         },
         {
           "id": "LCK/2026 Season/Cup",
           "label": "LCK Cup 2026",
           "pool": "Current Form",
+          "team": "DN SOOPers",
           "games": 33
         }
       ],
@@ -8465,12 +8772,14 @@
           "id": "LPL/2026 Season/Split 2 Playoffs",
           "label": "LPL 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "Team WE",
           "games": 12
         },
         {
           "id": "LPL/2026 Season/Split 2",
           "label": "LPL 2026 Split 2",
           "pool": "Current Form",
+          "team": "Team WE",
           "games": 33
         }
       ],
@@ -8525,12 +8834,14 @@
           "id": "LPL/2026 Season/Split 2 Playoffs",
           "label": "LPL 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "Invictus Gaming",
           "games": 3
         },
         {
           "id": "LPL/2026 Season/Split 2",
           "label": "LPL 2026 Split 2",
           "pool": "Current Form",
+          "team": "Invictus Gaming",
           "games": 35
         }
       ],
@@ -8585,6 +8896,7 @@
           "id": "LPL/2026 Season/Split 2",
           "label": "LPL 2026 Split 2",
           "pool": "Current Form",
+          "team": "Ultra Prime",
           "games": 12
         }
       ],
@@ -8639,12 +8951,14 @@
           "id": "LEC/2026 Season/Spring Playoffs",
           "label": "LEC 2026 Spring Playoffs",
           "pool": "Current Form",
+          "team": "Karmine Corp",
           "games": 11
         },
         {
           "id": "LEC/2026 Season/Spring Season",
           "label": "LEC 2026 Spring",
           "pool": "Current Form",
+          "team": "Karmine Corp",
           "games": 23
         }
       ],
@@ -8699,12 +9013,14 @@
           "id": "LCP/2026 Season/Split 2 Playoffs",
           "label": "LCP 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "MVK Esports",
           "games": 11
         },
         {
           "id": "LCP/2026 Season/Split 2",
           "label": "LCP 2026 Split 2",
           "pool": "Current Form",
+          "team": "MVK Esports",
           "games": 17
         }
       ],
@@ -8759,12 +9075,14 @@
           "id": "LCP/2026 Season/Split 2 Playoffs",
           "label": "LCP 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "MVK Esports",
           "games": 11
         },
         {
           "id": "LCP/2026 Season/Split 2",
           "label": "LCP 2026 Split 2",
           "pool": "Current Form",
+          "team": "MVK Esports",
           "games": 3
         }
       ],
@@ -8819,6 +9137,7 @@
           "id": "LTA South/2025 Season/Split 3",
           "label": "LTA South 2025 Split 3",
           "pool": "Americas",
+          "team": "LOUD",
           "games": 19
         }
       ],
@@ -8873,18 +9192,21 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "Anyone's Legend",
           "games": 10
         },
         {
           "id": "LPL/2026 Season/Split 2 Playoffs",
           "label": "LPL 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "Anyone's Legend",
           "games": 9
         },
         {
           "id": "LPL/2026 Season/Split 2",
           "label": "LPL 2026 Split 2",
           "pool": "Current Form",
+          "team": "Anyone's Legend",
           "games": 31
         }
       ],
@@ -8943,24 +9265,28 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "CTBC Flying Oyster",
           "games": 12
         },
         {
           "id": "2026 First Stand",
           "label": "First Stand 2026",
           "pool": "International",
+          "team": "JD Gaming",
           "games": 13
         },
         {
           "id": "LPL/2026 Season/Split 2 Playoffs",
           "label": "LPL 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "JD Gaming",
           "games": 8
         },
         {
           "id": "LPL/2026 Season/Split 2",
           "label": "LPL 2026 Split 2",
           "pool": "Current Form",
+          "team": "JD Gaming",
           "games": 35
         }
       ],
@@ -9015,12 +9341,14 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "Vivo Keyd Stars",
           "games": 7
         },
         {
           "id": "LTA South/2025 Season/Split 3",
           "label": "LTA South 2025 Split 3",
           "pool": "Americas",
+          "team": "Vivo Keyd Stars",
           "games": 18
         }
       ],
@@ -9075,12 +9403,14 @@
           "id": "LCK/2026 Season/Rounds 1-2",
           "label": "LCK 2026 Rounds 1-2",
           "pool": "Current Form",
+          "team": "HANJIN BRION",
           "games": 40
         },
         {
           "id": "LCK/2026 Season/Cup",
           "label": "LCK Cup 2026",
           "pool": "Current Form",
+          "team": "HANJIN BRION",
           "games": 19
         }
       ],
@@ -9135,12 +9465,14 @@
           "id": "LPL/2026 Season/Split 2 Playoffs",
           "label": "LPL 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "ThunderTalk Gaming",
           "games": 12
         },
         {
           "id": "LPL/2026 Season/Split 2",
           "label": "LPL 2026 Split 2",
           "pool": "Current Form",
+          "team": "ThunderTalk Gaming",
           "games": 14
         }
       ],
@@ -9195,12 +9527,14 @@
           "id": "LEC/2026 Season/Spring Playoffs",
           "label": "LEC 2026 Spring Playoffs",
           "pool": "Current Form",
+          "team": "Team Vitality",
           "games": 6
         },
         {
           "id": "LEC/2026 Season/Spring Season",
           "label": "LEC 2026 Spring",
           "pool": "Current Form",
+          "team": "Team Vitality",
           "games": 24
         }
       ],
@@ -9255,6 +9589,7 @@
           "id": "LTA North/2025 Season/Split 3",
           "label": "LTA North 2025 Split 3",
           "pool": "Americas",
+          "team": "Shopify Rebellion",
           "games": 20
         }
       ],
@@ -9309,6 +9644,7 @@
           "id": "LTA South/2025 Season/Split 3",
           "label": "LTA South 2025 Split 3",
           "pool": "Americas",
+          "team": "Isurus",
           "games": 13
         }
       ],
@@ -9363,6 +9699,7 @@
           "id": "LTA South/2025 Season/Split 3",
           "label": "LTA South 2025 Split 3",
           "pool": "Americas",
+          "team": "RED Canids",
           "games": 27
         }
       ],
@@ -9417,18 +9754,21 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "Movistar KOI",
           "games": 10
         },
         {
           "id": "LEC/2026 Season/Spring Playoffs",
           "label": "LEC 2026 Spring Playoffs",
           "pool": "Current Form",
+          "team": "Movistar KOI",
           "games": 8
         },
         {
           "id": "LEC/2026 Season/Spring Season",
           "label": "LEC 2026 Spring",
           "pool": "Current Form",
+          "team": "Movistar KOI",
           "games": 23
         }
       ],
@@ -9487,12 +9827,14 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "Top Esports",
           "games": 16
         },
         {
           "id": "LPL/2026 Season/Split 2",
           "label": "LPL 2026 Split 2",
           "pool": "Current Form",
+          "team": "Weibo Gaming",
           "games": 27
         }
       ],
@@ -9547,24 +9889,28 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "G2 Esports",
           "games": 10
         },
         {
           "id": "2026 First Stand",
           "label": "First Stand 2026",
           "pool": "International",
+          "team": "G2 Esports",
           "games": 16
         },
         {
           "id": "LEC/2026 Season/Spring Playoffs",
           "label": "LEC 2026 Spring Playoffs",
           "pool": "Current Form",
+          "team": "G2 Esports",
           "games": 9
         },
         {
           "id": "LEC/2026 Season/Spring Season",
           "label": "LEC 2026 Spring",
           "pool": "Current Form",
+          "team": "G2 Esports",
           "games": 21
         }
       ],
@@ -9623,18 +9969,21 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "KT Rolster",
           "games": 16
         },
         {
           "id": "LCK/2026 Season/Rounds 1-2",
           "label": "LCK 2026 Rounds 1-2",
           "pool": "Current Form",
+          "team": "DN SOOPers",
           "games": 18
         },
         {
           "id": "LCK/2026 Season/Cup",
           "label": "LCK Cup 2026",
           "pool": "Current Form",
+          "team": "DN SOOPers",
           "games": 26
         }
       ],
@@ -9693,24 +10042,28 @@
           "id": "2026 First Stand",
           "label": "First Stand 2026",
           "pool": "International",
+          "team": "BNK FEARX",
           "games": 11
         },
         {
           "id": "LCK/2026 Season/Rounds 1-2",
           "label": "LCK 2026 Rounds 1-2",
           "pool": "Current Form",
-          "games": 17
+          "team": "Nongshim RedForce",
+          "games": 21
         },
         {
           "id": "LCK/2026 Season/Rounds 1-2",
           "label": "LCK 2026 Rounds 1-2",
           "pool": "Current Form",
-          "games": 21
+          "team": "BNK FEARX",
+          "games": 17
         },
         {
           "id": "LCK/2026 Season/Cup",
           "label": "LCK Cup 2026",
           "pool": "Current Form",
+          "team": "BNK FEARX",
           "games": 33
         }
       ],
@@ -9765,12 +10118,14 @@
           "id": "LPL/2026 Season/Split 2 Playoffs",
           "label": "LPL 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "Invictus Gaming",
           "games": 3
         },
         {
           "id": "LPL/2026 Season/Split 2",
           "label": "LPL 2026 Split 2",
           "pool": "Current Form",
+          "team": "Invictus Gaming",
           "games": 35
         }
       ],
@@ -9825,12 +10180,14 @@
           "id": "LPL/2026 Season/Split 2 Playoffs",
           "label": "LPL 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "ThunderTalk Gaming",
           "games": 12
         },
         {
           "id": "LPL/2026 Season/Split 2",
           "label": "LPL 2026 Split 2",
           "pool": "Current Form",
+          "team": "ThunderTalk Gaming",
           "games": 14
         }
       ],
@@ -9885,12 +10242,14 @@
           "id": "LCP/2026 Season/Split 2 Playoffs",
           "label": "LCP 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "Fukuoka SoftBank HAWKS gaming",
           "games": 3
         },
         {
           "id": "LCP/2026 Season/Split 2",
           "label": "LCP 2026 Split 2",
           "pool": "Current Form",
+          "team": "Fukuoka SoftBank HAWKS gaming",
           "games": 17
         }
       ],
@@ -9945,6 +10304,7 @@
           "id": "LTA North/2025 Season/Split 3",
           "label": "LTA North 2025 Split 3",
           "pool": "Americas",
+          "team": "Cloud9",
           "games": 21
         }
       ],
@@ -9999,6 +10359,7 @@
           "id": "LTA South/2025 Season/Split 3",
           "label": "LTA South 2025 Split 3",
           "pool": "Americas",
+          "team": "paiN Gaming",
           "games": 18
         }
       ],
@@ -10053,18 +10414,21 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "Top Esports",
           "games": 16
         },
         {
           "id": "LPL/2026 Season/Split 2 Playoffs",
           "label": "LPL 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "Top Esports",
           "games": 7
         },
         {
           "id": "LPL/2026 Season/Split 2",
           "label": "LPL 2026 Split 2",
           "pool": "Current Form",
+          "team": "Top Esports",
           "games": 30
         }
       ],
@@ -10119,18 +10483,21 @@
           "id": "2026 First Stand",
           "label": "First Stand 2026",
           "pool": "International",
+          "team": "BNK FEARX",
           "games": 11
         },
         {
           "id": "LCK/2026 Season/Rounds 1-2",
           "label": "LCK 2026 Rounds 1-2",
           "pool": "Current Form",
+          "team": "BNK FEARX",
           "games": 39
         },
         {
           "id": "LCK/2026 Season/Cup",
           "label": "LCK Cup 2026",
           "pool": "Current Form",
+          "team": "BNK FEARX",
           "games": 33
         }
       ],
@@ -10185,18 +10552,21 @@
           "id": "2026 First Stand",
           "label": "First Stand 2026",
           "pool": "International",
+          "team": "BNK FEARX",
           "games": 11
         },
         {
           "id": "LCK/2026 Season/Rounds 1-2",
           "label": "LCK 2026 Rounds 1-2",
           "pool": "Current Form",
+          "team": "BNK FEARX",
           "games": 29
         },
         {
           "id": "LCK/2026 Season/Cup",
           "label": "LCK Cup 2026",
           "pool": "Current Form",
+          "team": "BNK FEARX",
           "games": 33
         }
       ],
@@ -10251,18 +10621,21 @@
           "id": "2026 First Stand",
           "label": "First Stand 2026",
           "pool": "International",
+          "team": "JD Gaming",
           "games": 13
         },
         {
           "id": "LPL/2026 Season/Split 2 Playoffs",
           "label": "LPL 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "JD Gaming",
           "games": 8
         },
         {
           "id": "LPL/2026 Season/Split 2",
           "label": "LPL 2026 Split 2",
           "pool": "Current Form",
+          "team": "JD Gaming",
           "games": 35
         }
       ],
@@ -10317,12 +10690,14 @@
           "id": "LCK/2026 Season/Rounds 1-2",
           "label": "LCK 2026 Rounds 1-2",
           "pool": "Current Form",
+          "team": "Dplus Kia",
           "games": 42
         },
         {
           "id": "LCK/2026 Season/Cup",
           "label": "LCK Cup 2026",
           "pool": "Current Form",
+          "team": "Dplus Kia",
           "games": 35
         }
       ],
@@ -10377,12 +10752,14 @@
           "id": "LCP/2026 Season/Split 2 Playoffs",
           "label": "LCP 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "Fukuoka SoftBank HAWKS gaming",
           "games": 3
         },
         {
           "id": "LCP/2026 Season/Split 2",
           "label": "LCP 2026 Split 2",
           "pool": "Current Form",
+          "team": "Fukuoka SoftBank HAWKS gaming",
           "games": 17
         }
       ],
@@ -10437,6 +10814,7 @@
           "id": "LTA North/2025 Season/Split 3",
           "label": "LTA North 2025 Split 3",
           "pool": "Americas",
+          "team": "Disguised",
           "games": 17
         }
       ],
@@ -10491,6 +10869,7 @@
           "id": "LTA North/2025 Season/Split 3",
           "label": "LTA North 2025 Split 3",
           "pool": "Americas",
+          "team": "Disguised",
           "games": 17
         }
       ],
@@ -10545,6 +10924,7 @@
           "id": "LTA South/2025 Season/Split 3",
           "label": "LTA South 2025 Split 3",
           "pool": "Americas",
+          "team": "FURIA",
           "games": 14
         }
       ],
@@ -10599,6 +10979,7 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "PSG Talon",
           "games": 5
         }
       ],
@@ -10653,12 +11034,14 @@
           "id": "2026 First Stand",
           "label": "First Stand 2026",
           "pool": "International",
+          "team": "LYON",
           "games": 12
         },
         {
           "id": "LTA North/2025 Season/Split 3",
           "label": "LTA North 2025 Split 3",
           "pool": "Americas",
+          "team": "LYON",
           "games": 11
         }
       ],
@@ -10713,12 +11096,14 @@
           "id": "LCK/2026 Season/Rounds 1-2",
           "label": "LCK 2026 Rounds 1-2",
           "pool": "Current Form",
+          "team": "Kiwoom DRX",
           "games": 44
         },
         {
           "id": "LCK/2026 Season/Cup",
           "label": "LCK Cup 2026",
           "pool": "Current Form",
+          "team": "Kiwoom DRX",
           "games": 33
         }
       ],
@@ -10773,12 +11158,14 @@
           "id": "LPL/2026 Season/Split 2 Playoffs",
           "label": "LPL 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "Ninjas in Pyjamas",
           "games": 5
         },
         {
           "id": "LPL/2026 Season/Split 2",
           "label": "LPL 2026 Split 2",
           "pool": "Current Form",
+          "team": "Ninjas in Pyjamas",
           "games": 33
         }
       ],
@@ -10833,6 +11220,7 @@
           "id": "LEC/2026 Season/Spring Season",
           "label": "LEC 2026 Spring",
           "pool": "Current Form",
+          "team": "Fnatic",
           "games": 23
         }
       ],
@@ -10887,6 +11275,7 @@
           "id": "LTA North/2025 Season/Split 3",
           "label": "LTA North 2025 Split 3",
           "pool": "Americas",
+          "team": "Team Liquid",
           "games": 13
         }
       ],
@@ -10941,6 +11330,7 @@
           "id": "LTA South/2025 Season/Split 3",
           "label": "LTA South 2025 Split 3",
           "pool": "Americas",
+          "team": "FURIA",
           "games": 14
         }
       ],
@@ -10995,24 +11385,28 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "G2 Esports",
           "games": 10
         },
         {
           "id": "2026 First Stand",
           "label": "First Stand 2026",
           "pool": "International",
+          "team": "G2 Esports",
           "games": 16
         },
         {
           "id": "LEC/2026 Season/Spring Playoffs",
           "label": "LEC 2026 Spring Playoffs",
           "pool": "Current Form",
+          "team": "G2 Esports",
           "games": 9
         },
         {
           "id": "LEC/2026 Season/Spring Season",
           "label": "LEC 2026 Spring",
           "pool": "Current Form",
+          "team": "G2 Esports",
           "games": 21
         }
       ],
@@ -11067,24 +11461,28 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "Team Secret Whales",
           "games": 6
         },
         {
           "id": "2026 First Stand",
           "label": "First Stand 2026",
           "pool": "International",
+          "team": "Team Secret Whales",
           "games": 6
         },
         {
           "id": "LCP/2026 Season/Split 2 Playoffs",
           "label": "LCP 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "Team Secret Whales",
           "games": 8
         },
         {
           "id": "LCP/2026 Season/Split 2",
           "label": "LCP 2026 Split 2",
           "pool": "Current Form",
+          "team": "Team Secret Whales",
           "games": 17
         }
       ],
@@ -11139,12 +11537,14 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "100 Thieves",
           "games": 5
         },
         {
           "id": "LTA North/2025 Season/Split 3",
           "label": "LTA North 2025 Split 3",
           "pool": "Americas",
+          "team": "100 Thieves",
           "games": 26
         }
       ],
@@ -11203,12 +11603,14 @@
           "id": "LCK/2026 Season/Rounds 1-2",
           "label": "LCK 2026 Rounds 1-2",
           "pool": "Current Form",
+          "team": "HANJIN BRION",
           "games": 16
         },
         {
           "id": "LTA North/2025 Season/Split 3",
           "label": "LTA North 2025 Split 3",
           "pool": "Americas",
+          "team": "Cloud9",
           "games": 21
         }
       ],
@@ -11263,12 +11665,14 @@
           "id": "LCK/2026 Season/Rounds 1-2",
           "label": "LCK 2026 Rounds 1-2",
           "pool": "Current Form",
+          "team": "DN SOOPers",
           "games": 35
         },
         {
           "id": "LCK/2026 Season/Cup",
           "label": "LCK Cup 2026",
           "pool": "Current Form",
+          "team": "DN SOOPers",
           "games": 33
         }
       ],
@@ -11323,12 +11727,14 @@
           "id": "LPL/2026 Season/Split 2 Playoffs",
           "label": "LPL 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "Ninjas in Pyjamas",
           "games": 5
         },
         {
           "id": "LPL/2026 Season/Split 2",
           "label": "LPL 2026 Split 2",
           "pool": "Current Form",
+          "team": "Ninjas in Pyjamas",
           "games": 33
         }
       ],
@@ -11383,12 +11789,14 @@
           "id": "LPL/2026 Season/Split 2 Playoffs",
           "label": "LPL 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "Team WE",
           "games": 12
         },
         {
           "id": "LPL/2026 Season/Split 2",
           "label": "LPL 2026 Split 2",
           "pool": "Current Form",
+          "team": "Team WE",
           "games": 29
         }
       ],
@@ -11443,12 +11851,14 @@
           "id": "LPL/2026 Season/Split 2 Playoffs",
           "label": "LPL 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "Weibo Gaming",
           "games": 5
         },
         {
           "id": "LPL/2026 Season/Split 2",
           "label": "LPL 2026 Split 2",
           "pool": "Current Form",
+          "team": "Weibo Gaming",
           "games": 8
         }
       ],
@@ -11503,12 +11913,14 @@
           "id": "LPL/2026 Season/Split 2 Playoffs",
           "label": "LPL 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "Weibo Gaming",
           "games": 5
         },
         {
           "id": "LPL/2026 Season/Split 2",
           "label": "LPL 2026 Split 2",
           "pool": "Current Form",
+          "team": "Weibo Gaming",
           "games": 35
         }
       ],
@@ -11567,12 +11979,14 @@
           "id": "LPL/2026 Season/Split 2",
           "label": "LPL 2026 Split 2",
           "pool": "Current Form",
+          "team": "Ultra Prime",
           "games": 12
         },
         {
           "id": "LTA North/2025 Season/Split 3",
           "label": "LTA North 2025 Split 3",
           "pool": "Americas",
+          "team": "LYON",
           "games": 11
         }
       ],
@@ -11627,6 +12041,7 @@
           "id": "LTA North/2025 Season/Split 3",
           "label": "LTA North 2025 Split 3",
           "pool": "Americas",
+          "team": "Shopify Rebellion",
           "games": 20
         }
       ],
@@ -11681,6 +12096,7 @@
           "id": "LTA South/2025 Season/Split 3",
           "label": "LTA South 2025 Split 3",
           "pool": "Americas",
+          "team": "Isurus",
           "games": 13
         }
       ],
@@ -11735,6 +12151,7 @@
           "id": "LTA South/2025 Season/Split 3",
           "label": "LTA South 2025 Split 3",
           "pool": "Americas",
+          "team": "paiN Gaming",
           "games": 18
         }
       ],
@@ -11789,12 +12206,14 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "100 Thieves",
           "games": 5
         },
         {
           "id": "LTA North/2025 Season/Split 3",
           "label": "LTA North 2025 Split 3",
           "pool": "Americas",
+          "team": "100 Thieves",
           "games": 26
         }
       ],
@@ -11849,6 +12268,7 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "Hanwha Life Esports",
           "games": 9
         }
       ],
@@ -11907,12 +12327,14 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "PSG Talon",
           "games": 5
         },
         {
           "id": "LCP/2026 Season/Split 2",
           "label": "LCP 2026 Split 2",
           "pool": "Current Form",
+          "team": "DetonatioN FocusMe",
           "games": 18
         }
       ],
@@ -11967,18 +12389,21 @@
           "id": "2026 First Stand",
           "label": "First Stand 2026",
           "pool": "International",
+          "team": "BNK FEARX",
           "games": 11
         },
         {
           "id": "LCK/2026 Season/Rounds 1-2",
           "label": "LCK 2026 Rounds 1-2",
           "pool": "Current Form",
+          "team": "BNK FEARX",
           "games": 39
         },
         {
           "id": "LCK/2026 Season/Cup",
           "label": "LCK Cup 2026",
           "pool": "Current Form",
+          "team": "BNK FEARX",
           "games": 33
         }
       ],
@@ -12033,12 +12458,14 @@
           "id": "LCK/2026 Season/Rounds 1-2",
           "label": "LCK 2026 Rounds 1-2",
           "pool": "Current Form",
+          "team": "Nongshim RedForce",
           "games": 41
         },
         {
           "id": "LCK/2026 Season/Cup",
           "label": "LCK Cup 2026",
           "pool": "Current Form",
+          "team": "Nongshim RedForce",
           "games": 21
         }
       ],
@@ -12093,12 +12520,14 @@
           "id": "LPL/2026 Season/Split 2 Playoffs",
           "label": "LPL 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "LGD Gaming",
           "games": 16
         },
         {
           "id": "LPL/2026 Season/Split 2",
           "label": "LPL 2026 Split 2",
           "pool": "Current Form",
+          "team": "LGD Gaming",
           "games": 12
         }
       ],
@@ -12153,12 +12582,14 @@
           "id": "LPL/2026 Season/Split 2 Playoffs",
           "label": "LPL 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "Invictus Gaming",
           "games": 3
         },
         {
           "id": "LPL/2026 Season/Split 2",
           "label": "LPL 2026 Split 2",
           "pool": "Current Form",
+          "team": "Invictus Gaming",
           "games": 35
         }
       ],
@@ -12213,12 +12644,14 @@
           "id": "LPL/2026 Season/Split 2 Playoffs",
           "label": "LPL 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "Weibo Gaming",
           "games": 5
         },
         {
           "id": "LPL/2026 Season/Split 2",
           "label": "LPL 2026 Split 2",
           "pool": "Current Form",
+          "team": "Weibo Gaming",
           "games": 35
         }
       ],
@@ -12273,12 +12706,14 @@
           "id": "LPL/2026 Season/Split 2 Playoffs",
           "label": "LPL 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "EDward Gaming",
           "games": 11
         },
         {
           "id": "LPL/2026 Season/Split 2",
           "label": "LPL 2026 Split 2",
           "pool": "Current Form",
+          "team": "EDward Gaming",
           "games": 14
         }
       ],
@@ -12333,6 +12768,7 @@
           "id": "LPL/2026 Season/Split 2",
           "label": "LPL 2026 Split 2",
           "pool": "Current Form",
+          "team": "EDward Gaming",
           "games": 12
         }
       ],
@@ -12387,12 +12823,14 @@
           "id": "LEC/2026 Season/Spring Playoffs",
           "label": "LEC 2026 Spring Playoffs",
           "pool": "Current Form",
+          "team": "GiantX",
           "games": 6
         },
         {
           "id": "LEC/2026 Season/Spring Season",
           "label": "LEC 2026 Spring",
           "pool": "Current Form",
+          "team": "GiantX",
           "games": 22
         }
       ],
@@ -12447,6 +12885,7 @@
           "id": "LEC/2026 Season/Spring Season",
           "label": "LEC 2026 Spring",
           "pool": "Current Form",
+          "team": "SK Gaming",
           "games": 21
         }
       ],
@@ -12501,6 +12940,7 @@
           "id": "LCP/2026 Season/Split 2",
           "label": "LCP 2026 Split 2",
           "pool": "Current Form",
+          "team": "DetonatioN FocusMe",
           "games": 18
         }
       ],
@@ -12555,6 +12995,7 @@
           "id": "LTA South/2025 Season/Split 3",
           "label": "LTA South 2025 Split 3",
           "pool": "Americas",
+          "team": "paiN Gaming",
           "games": 18
         }
       ],
@@ -12609,18 +13050,21 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "Anyone's Legend",
           "games": 10
         },
         {
           "id": "LPL/2026 Season/Split 2 Playoffs",
           "label": "LPL 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "Anyone's Legend",
           "games": 9
         },
         {
           "id": "LPL/2026 Season/Split 2",
           "label": "LPL 2026 Split 2",
           "pool": "Current Form",
+          "team": "Anyone's Legend",
           "games": 31
         }
       ],
@@ -12675,18 +13119,21 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "Movistar KOI",
           "games": 10
         },
         {
           "id": "LEC/2026 Season/Spring Playoffs",
           "label": "LEC 2026 Spring Playoffs",
           "pool": "Current Form",
+          "team": "Movistar KOI",
           "games": 8
         },
         {
           "id": "LEC/2026 Season/Spring Season",
           "label": "LEC 2026 Spring",
           "pool": "Current Form",
+          "team": "Movistar KOI",
           "games": 23
         }
       ],
@@ -12741,12 +13188,14 @@
           "id": "LCK/2026 Season/Rounds 1-2",
           "label": "LCK 2026 Rounds 1-2",
           "pool": "Current Form",
+          "team": "Nongshim RedForce",
           "games": 41
         },
         {
           "id": "LCK/2026 Season/Cup",
           "label": "LCK Cup 2026",
           "pool": "Current Form",
+          "team": "Nongshim RedForce",
           "games": 21
         }
       ],
@@ -12801,12 +13250,14 @@
           "id": "LPL/2026 Season/Split 2 Playoffs",
           "label": "LPL 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "Ninjas in Pyjamas",
           "games": 5
         },
         {
           "id": "LPL/2026 Season/Split 2",
           "label": "LPL 2026 Split 2",
           "pool": "Current Form",
+          "team": "Ninjas in Pyjamas",
           "games": 33
         }
       ],
@@ -12861,12 +13312,14 @@
           "id": "LPL/2026 Season/Split 2 Playoffs",
           "label": "LPL 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "EDward Gaming",
           "games": 11
         },
         {
           "id": "LPL/2026 Season/Split 2",
           "label": "LPL 2026 Split 2",
           "pool": "Current Form",
+          "team": "EDward Gaming",
           "games": 14
         }
       ],
@@ -12921,12 +13374,14 @@
           "id": "LCP/2026 Season/Split 2 Playoffs",
           "label": "LCP 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "MVK Esports",
           "games": 11
         },
         {
           "id": "LCP/2026 Season/Split 2",
           "label": "LCP 2026 Split 2",
           "pool": "Current Form",
+          "team": "MVK Esports",
           "games": 17
         }
       ],
@@ -12981,6 +13436,7 @@
           "id": "LCP/2026 Season/Split 2",
           "label": "LCP 2026 Split 2",
           "pool": "Current Form",
+          "team": "CTBC Flying Oyster",
           "games": 5
         }
       ],
@@ -13035,6 +13491,7 @@
           "id": "2026 First Stand",
           "label": "First Stand 2026",
           "pool": "International",
+          "team": "LYON",
           "games": 12
         }
       ],
@@ -13089,6 +13546,7 @@
           "id": "2026 First Stand",
           "label": "First Stand 2026",
           "pool": "International",
+          "team": "LOUD",
           "games": 8
         }
       ],
@@ -13143,12 +13601,14 @@
           "id": "LCK/2026 Season/Rounds 1-2",
           "label": "LCK 2026 Rounds 1-2",
           "pool": "Current Form",
+          "team": "HANJIN BRION",
           "games": 40
         },
         {
           "id": "LCK/2026 Season/Cup",
           "label": "LCK Cup 2026",
           "pool": "Current Form",
+          "team": "HANJIN BRION",
           "games": 19
         }
       ],
@@ -13203,6 +13663,7 @@
           "id": "LCK/2026 Season/Rounds 1-2",
           "label": "LCK 2026 Rounds 1-2",
           "pool": "Current Form",
+          "team": "Nongshim RedForce",
           "games": 7
         }
       ],
@@ -13257,12 +13718,14 @@
           "id": "LPL/2026 Season/Split 2 Playoffs",
           "label": "LPL 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "Team WE",
           "games": 12
         },
         {
           "id": "LPL/2026 Season/Split 2",
           "label": "LPL 2026 Split 2",
           "pool": "Current Form",
+          "team": "Team WE",
           "games": 33
         }
       ],
@@ -13317,12 +13780,14 @@
           "id": "LPL/2026 Season/Split 2 Playoffs",
           "label": "LPL 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "Invictus Gaming",
           "games": 3
         },
         {
           "id": "LPL/2026 Season/Split 2",
           "label": "LPL 2026 Split 2",
           "pool": "Current Form",
+          "team": "Invictus Gaming",
           "games": 35
         }
       ],
@@ -13377,12 +13842,14 @@
           "id": "LPL/2026 Season/Split 2 Playoffs",
           "label": "LPL 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "LGD Gaming",
           "games": 16
         },
         {
           "id": "LPL/2026 Season/Split 2",
           "label": "LPL 2026 Split 2",
           "pool": "Current Form",
+          "team": "LGD Gaming",
           "games": 12
         }
       ],
@@ -13437,12 +13904,14 @@
           "id": "LPL/2026 Season/Split 2 Playoffs",
           "label": "LPL 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "LGD Gaming",
           "games": 16
         },
         {
           "id": "LPL/2026 Season/Split 2",
           "label": "LPL 2026 Split 2",
           "pool": "Current Form",
+          "team": "LGD Gaming",
           "games": 12
         }
       ],
@@ -13497,6 +13966,7 @@
           "id": "LPL/2026 Season/Split 2",
           "label": "LPL 2026 Split 2",
           "pool": "Current Form",
+          "team": "Oh My God",
           "games": 13
         }
       ],
@@ -13551,6 +14021,7 @@
           "id": "LEC/2026 Season/Spring Season",
           "label": "LEC 2026 Spring",
           "pool": "Current Form",
+          "team": "Shifters",
           "games": 22
         }
       ],
@@ -13605,12 +14076,14 @@
           "id": "LCP/2026 Season/Split 2 Playoffs",
           "label": "LCP 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "Deep Cross Gaming",
           "games": 12
         },
         {
           "id": "LCP/2026 Season/Split 2",
           "label": "LCP 2026 Split 2",
           "pool": "Current Form",
+          "team": "Deep Cross Gaming",
           "games": 18
         }
       ],
@@ -13665,12 +14138,14 @@
           "id": "LCP/2026 Season/Split 2 Playoffs",
           "label": "LCP 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "CTBC Flying Oyster",
           "games": 5
         },
         {
           "id": "LCP/2026 Season/Split 2",
           "label": "LCP 2026 Split 2",
           "pool": "Current Form",
+          "team": "CTBC Flying Oyster",
           "games": 13
         }
       ],
@@ -13725,6 +14200,7 @@
           "id": "LTA North/2025 Season/Split 3",
           "label": "LTA North 2025 Split 3",
           "pool": "Americas",
+          "team": "Shopify Rebellion",
           "games": 20
         }
       ],
@@ -13779,6 +14255,7 @@
           "id": "LTA North/2025 Season/Split 3",
           "label": "LTA North 2025 Split 3",
           "pool": "Americas",
+          "team": "Shopify Rebellion",
           "games": 20
         }
       ],
@@ -13833,6 +14310,7 @@
           "id": "LTA North/2025 Season/Split 3",
           "label": "LTA North 2025 Split 3",
           "pool": "Americas",
+          "team": "LYON",
           "games": 9
         }
       ],
@@ -13887,6 +14365,7 @@
           "id": "LTA South/2025 Season/Split 3",
           "label": "LTA South 2025 Split 3",
           "pool": "Americas",
+          "team": "Fluxo W7M",
           "games": 10
         }
       ],
@@ -13941,12 +14420,14 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "Fnatic",
           "games": 5
         },
         {
           "id": "LEC/2026 Season/Spring Season",
           "label": "LEC 2026 Spring",
           "pool": "Current Form",
+          "team": "Fnatic",
           "games": 23
         }
       ],
@@ -14001,12 +14482,14 @@
           "id": "LPL/2026 Season/Split 2 Playoffs",
           "label": "LPL 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "Invictus Gaming",
           "games": 1
         },
         {
           "id": "LPL/2026 Season/Split 2",
           "label": "LPL 2026 Split 2",
           "pool": "Current Form",
+          "team": "Invictus Gaming",
           "games": 19
         }
       ],
@@ -14061,12 +14544,14 @@
           "id": "LEC/2026 Season/Spring Playoffs",
           "label": "LEC 2026 Spring Playoffs",
           "pool": "Current Form",
+          "team": "Team Vitality",
           "games": 6
         },
         {
           "id": "LEC/2026 Season/Spring Season",
           "label": "LEC 2026 Spring",
           "pool": "Current Form",
+          "team": "Team Vitality",
           "games": 24
         }
       ],
@@ -14121,6 +14606,7 @@
           "id": "LTA South/2025 Season/Split 3",
           "label": "LTA South 2025 Split 3",
           "pool": "Americas",
+          "team": "RED Canids",
           "games": 27
         }
       ],
@@ -14175,6 +14661,7 @@
           "id": "LPL/2026 Season/Split 2",
           "label": "LPL 2026 Split 2",
           "pool": "Current Form",
+          "team": "Oh My God",
           "games": 6
         }
       ],
@@ -14229,12 +14716,14 @@
           "id": "LEC/2026 Season/Spring Playoffs",
           "label": "LEC 2026 Spring Playoffs",
           "pool": "Current Form",
+          "team": "GiantX",
           "games": 6
         },
         {
           "id": "LEC/2026 Season/Spring Season",
           "label": "LEC 2026 Spring",
           "pool": "Current Form",
+          "team": "GiantX",
           "games": 22
         }
       ],
@@ -14289,6 +14778,7 @@
           "id": "LCP/2026 Season/Split 2",
           "label": "LCP 2026 Split 2",
           "pool": "Current Form",
+          "team": "MVK Esports",
           "games": 14
         }
       ],
@@ -14343,6 +14833,7 @@
           "id": "LTA South/2025 Season/Split 3",
           "label": "LTA South 2025 Split 3",
           "pool": "Americas",
+          "team": "FURIA",
           "games": 14
         }
       ],
@@ -14397,6 +14888,7 @@
           "id": "LTA South/2025 Season/Split 3",
           "label": "LTA South 2025 Split 3",
           "pool": "Americas",
+          "team": "Leviatan",
           "games": 15
         }
       ],
@@ -14451,6 +14943,7 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "PSG Talon",
           "games": 5
         }
       ],
@@ -14509,18 +15002,21 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "Fnatic",
           "games": 5
         },
         {
           "id": "LEC/2026 Season/Spring Playoffs",
           "label": "LEC 2026 Spring Playoffs",
           "pool": "Current Form",
+          "team": "Natus Vincere",
           "games": 4
         },
         {
           "id": "LEC/2026 Season/Spring Season",
           "label": "LEC 2026 Spring",
           "pool": "Current Form",
+          "team": "Natus Vincere",
           "games": 23
         }
       ],
@@ -14579,18 +15075,21 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "Vivo Keyd Stars",
           "games": 7
         },
         {
           "id": "LEC/2026 Season/Spring Season",
           "label": "LEC 2026 Spring",
           "pool": "Current Form",
+          "team": "Shifters",
           "games": 22
         },
         {
           "id": "LTA South/2025 Season/Split 3",
           "label": "LTA South 2025 Split 3",
           "pool": "Americas",
+          "team": "Vivo Keyd Stars",
           "games": 16
         }
       ],
@@ -14645,12 +15144,14 @@
           "id": "LCK/2026 Season/Rounds 1-2",
           "label": "LCK 2026 Rounds 1-2",
           "pool": "Current Form",
+          "team": "DN SOOPers",
           "games": 37
         },
         {
           "id": "LCK/2026 Season/Cup",
           "label": "LCK Cup 2026",
           "pool": "Current Form",
+          "team": "DN SOOPers",
           "games": 33
         }
       ],
@@ -14709,18 +15210,21 @@
           "id": "LCK/2026 Season/Rounds 1-2",
           "label": "LCK 2026 Rounds 1-2",
           "pool": "Current Form",
+          "team": "HANJIN BRION",
           "games": 24
         },
         {
           "id": "LCK/2026 Season/Cup",
           "label": "LCK Cup 2026",
           "pool": "Current Form",
+          "team": "HANJIN BRION",
           "games": 19
         },
         {
           "id": "LTA South/2025 Season/Split 3",
           "label": "LTA South 2025 Split 3",
           "pool": "Americas",
+          "team": "paiN Gaming",
           "games": 18
         }
       ],
@@ -14775,6 +15279,7 @@
           "id": "LEC/2026 Season/Spring Season",
           "label": "LEC 2026 Spring",
           "pool": "Current Form",
+          "team": "SK Gaming",
           "games": 21
         }
       ],
@@ -14829,6 +15334,7 @@
           "id": "LEC/2026 Season/Spring Season",
           "label": "LEC 2026 Spring",
           "pool": "Current Form",
+          "team": "Team Heretics",
           "games": 20
         }
       ],
@@ -14883,6 +15389,7 @@
           "id": "LCP/2026 Season/Split 2",
           "label": "LCP 2026 Split 2",
           "pool": "Current Form",
+          "team": "DetonatioN FocusMe",
           "games": 18
         }
       ],
@@ -14937,6 +15444,7 @@
           "id": "LTA North/2025 Season/Split 3",
           "label": "LTA North 2025 Split 3",
           "pool": "Americas",
+          "team": "Disguised",
           "games": 17
         }
       ],
@@ -14991,6 +15499,7 @@
           "id": "LTA North/2025 Season/Split 3",
           "label": "LTA North 2025 Split 3",
           "pool": "Americas",
+          "team": "Dignitas",
           "games": 11
         }
       ],
@@ -15045,6 +15554,7 @@
           "id": "LTA South/2025 Season/Split 3",
           "label": "LTA South 2025 Split 3",
           "pool": "Americas",
+          "team": "Leviatan",
           "games": 15
         }
       ],
@@ -15099,6 +15609,7 @@
           "id": "LTA South/2025 Season/Split 3",
           "label": "LTA South 2025 Split 3",
           "pool": "Americas",
+          "team": "Leviatan",
           "games": 15
         }
       ],
@@ -15153,6 +15664,7 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "CTBC Flying Oyster",
           "games": 5
         }
       ],
@@ -15207,18 +15719,21 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "CTBC Flying Oyster",
           "games": 7
         },
         {
           "id": "LCP/2026 Season/Split 2 Playoffs",
           "label": "LCP 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "CTBC Flying Oyster",
           "games": 5
         },
         {
           "id": "LCP/2026 Season/Split 2",
           "label": "LCP 2026 Split 2",
           "pool": "Current Form",
+          "team": "CTBC Flying Oyster",
           "games": 18
         }
       ],
@@ -15273,12 +15788,14 @@
           "id": "LPL/2026 Season/Split 2 Playoffs",
           "label": "LPL 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "Team WE",
           "games": 12
         },
         {
           "id": "LPL/2026 Season/Split 2",
           "label": "LPL 2026 Split 2",
           "pool": "Current Form",
+          "team": "Team WE",
           "games": 33
         }
       ],
@@ -15333,6 +15850,7 @@
           "id": "LEC/2026 Season/Spring Season",
           "label": "LEC 2026 Spring",
           "pool": "Current Form",
+          "team": "Shifters",
           "games": 22
         }
       ],
@@ -15387,6 +15905,7 @@
           "id": "LEC/2026 Season/Spring Season",
           "label": "LEC 2026 Spring",
           "pool": "Current Form",
+          "team": "Team Heretics",
           "games": 20
         }
       ],
@@ -15445,12 +15964,14 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "Fnatic",
           "games": 5
         },
         {
           "id": "LEC/2026 Season/Spring Season",
           "label": "LEC 2026 Spring",
           "pool": "Current Form",
+          "team": "SK Gaming",
           "games": 21
         }
       ],
@@ -15505,6 +16026,7 @@
           "id": "2026 First Stand",
           "label": "First Stand 2026",
           "pool": "International",
+          "team": "LOUD",
           "games": 8
         }
       ],
@@ -15559,12 +16081,14 @@
           "id": "LCK/2026 Season/Rounds 1-2",
           "label": "LCK 2026 Rounds 1-2",
           "pool": "Current Form",
+          "team": "Nongshim RedForce",
           "games": 34
         },
         {
           "id": "LCK/2026 Season/Cup",
           "label": "LCK Cup 2026",
           "pool": "Current Form",
+          "team": "Nongshim RedForce",
           "games": 21
         }
       ],
@@ -15619,12 +16143,14 @@
           "id": "LPL/2026 Season/Split 2 Playoffs",
           "label": "LPL 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "Invictus Gaming",
           "games": 2
         },
         {
           "id": "LPL/2026 Season/Split 2",
           "label": "LPL 2026 Split 2",
           "pool": "Current Form",
+          "team": "Invictus Gaming",
           "games": 16
         }
       ],
@@ -15683,13 +16209,15 @@
           "id": "LEC/2026 Season/Spring Season",
           "label": "LEC 2026 Spring",
           "pool": "Current Form",
-          "games": 14
+          "team": "Shifters",
+          "games": 5
         },
         {
           "id": "LEC/2026 Season/Spring Season",
           "label": "LEC 2026 Spring",
           "pool": "Current Form",
-          "games": 5
+          "team": "Team Heretics",
+          "games": 14
         }
       ],
       "gp": 19,
@@ -15743,12 +16271,14 @@
           "id": "LCP/2026 Season/Split 2 Playoffs",
           "label": "LCP 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "Fukuoka SoftBank HAWKS gaming",
           "games": 3
         },
         {
           "id": "LCP/2026 Season/Split 2",
           "label": "LCP 2026 Split 2",
           "pool": "Current Form",
+          "team": "Fukuoka SoftBank HAWKS gaming",
           "games": 17
         }
       ],
@@ -15803,6 +16333,7 @@
           "id": "LCP/2026 Season/Split 2",
           "label": "LCP 2026 Split 2",
           "pool": "Current Form",
+          "team": "Ground Zero Gaming",
           "games": 15
         }
       ],
@@ -15857,6 +16388,7 @@
           "id": "LCP/2026 Season/Split 2",
           "label": "LCP 2026 Split 2",
           "pool": "Current Form",
+          "team": "Ground Zero Gaming",
           "games": 15
         }
       ],
@@ -15911,6 +16443,7 @@
           "id": "LTA North/2025 Season/Split 3",
           "label": "LTA North 2025 Split 3",
           "pool": "Americas",
+          "team": "LYON",
           "games": 11
         }
       ],
@@ -15965,6 +16498,7 @@
           "id": "LTA South/2025 Season/Split 3",
           "label": "LTA South 2025 Split 3",
           "pool": "Americas",
+          "team": "Isurus",
           "games": 13
         }
       ],
@@ -16019,12 +16553,14 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "100 Thieves",
           "games": 5
         },
         {
           "id": "LTA North/2025 Season/Split 3",
           "label": "LTA North 2025 Split 3",
           "pool": "Americas",
+          "team": "100 Thieves",
           "games": 26
         }
       ],
@@ -16079,12 +16615,14 @@
           "id": "LPL/2026 Season/Split 2 Playoffs",
           "label": "LPL 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "Team WE",
           "games": 12
         },
         {
           "id": "LPL/2026 Season/Split 2",
           "label": "LPL 2026 Split 2",
           "pool": "Current Form",
+          "team": "Team WE",
           "games": 33
         }
       ],
@@ -16139,6 +16677,7 @@
           "id": "LPL/2026 Season/Split 2",
           "label": "LPL 2026 Split 2",
           "pool": "Current Form",
+          "team": "Oh My God",
           "games": 7
         }
       ],
@@ -16193,6 +16732,7 @@
           "id": "LPL/2026 Season/Split 2",
           "label": "LPL 2026 Split 2",
           "pool": "Current Form",
+          "team": "Ultra Prime",
           "games": 12
         }
       ],
@@ -16247,12 +16787,14 @@
           "id": "LEC/2026 Season/Spring Playoffs",
           "label": "LEC 2026 Spring Playoffs",
           "pool": "Current Form",
+          "team": "Natus Vincere",
           "games": 4
         },
         {
           "id": "LEC/2026 Season/Spring Season",
           "label": "LEC 2026 Spring",
           "pool": "Current Form",
+          "team": "Natus Vincere",
           "games": 23
         }
       ],
@@ -16307,6 +16849,7 @@
           "id": "LEC/2026 Season/Spring Season",
           "label": "LEC 2026 Spring",
           "pool": "Current Form",
+          "team": "Fnatic",
           "games": 23
         }
       ],
@@ -16361,6 +16904,7 @@
           "id": "LEC/2026 Season/Spring Season",
           "label": "LEC 2026 Spring",
           "pool": "Current Form",
+          "team": "SK Gaming",
           "games": 21
         }
       ],
@@ -16415,18 +16959,21 @@
           "id": "LCP/2026 Season/Split 2 Playoffs",
           "label": "LCP 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "MVK Esports",
           "games": 10
         },
         {
           "id": "LCP/2026 Season/Split 2",
           "label": "LCP 2026 Split 2",
           "pool": "Current Form",
+          "team": "MVK Esports",
           "games": 4
         },
         {
           "id": "LCP/2026 Season/Split 2",
           "label": "LCP 2026 Split 2",
           "pool": "Current Form",
+          "team": "MVK Esports",
           "games": 1
         }
       ],
@@ -16481,6 +17028,7 @@
           "id": "LTA South/2025 Season/Split 3",
           "label": "LTA South 2025 Split 3",
           "pool": "Americas",
+          "team": "Fluxo W7M",
           "games": 10
         }
       ],
@@ -16539,18 +17087,21 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "KT Rolster",
           "games": 16
         },
         {
           "id": "LCK/2026 Season/Rounds 1-2",
           "label": "LCK 2026 Rounds 1-2",
           "pool": "Current Form",
+          "team": "DN SOOPers",
           "games": 33
         },
         {
           "id": "LCK/2026 Season/Cup",
           "label": "LCK Cup 2026",
           "pool": "Current Form",
+          "team": "DN SOOPers",
           "games": 33
         }
       ],
@@ -16605,6 +17156,7 @@
           "id": "LCK/2026 Season/Rounds 1-2",
           "label": "LCK 2026 Rounds 1-2",
           "pool": "Current Form",
+          "team": "BNK FEARX",
           "games": 10
         }
       ],
@@ -16659,6 +17211,7 @@
           "id": "LCK/2026 Season/Rounds 1-2",
           "label": "LCK 2026 Rounds 1-2",
           "pool": "Current Form",
+          "team": "Kiwoom DRX",
           "games": 39
         }
       ],
@@ -16713,6 +17266,7 @@
           "id": "LTA South/2025 Season/Split 3",
           "label": "LTA South 2025 Split 3",
           "pool": "Americas",
+          "team": "Fluxo W7M",
           "games": 10
         }
       ],
@@ -16767,6 +17321,7 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "PSG Talon",
           "games": 5
         }
       ],
@@ -16825,12 +17380,14 @@
           "id": "2026 First Stand",
           "label": "First Stand 2026",
           "pool": "International",
+          "team": "LYON",
           "games": 12
         },
         {
           "id": "LTA North/2025 Season/Split 3",
           "label": "LTA North 2025 Split 3",
           "pool": "Americas",
+          "team": "Dignitas",
           "games": 11
         }
       ],
@@ -16885,12 +17442,14 @@
           "id": "2026 First Stand",
           "label": "First Stand 2026",
           "pool": "International",
+          "team": "LOUD",
           "games": 8
         },
         {
           "id": "LTA South/2025 Season/Split 3",
           "label": "LTA South 2025 Split 3",
           "pool": "Americas",
+          "team": "LOUD",
           "games": 19
         }
       ],
@@ -16945,12 +17504,14 @@
           "id": "LPL/2026 Season/Split 2 Playoffs",
           "label": "LPL 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "LGD Gaming",
           "games": 16
         },
         {
           "id": "LPL/2026 Season/Split 2",
           "label": "LPL 2026 Split 2",
           "pool": "Current Form",
+          "team": "LGD Gaming",
           "games": 12
         }
       ],
@@ -17005,12 +17566,14 @@
           "id": "LCP/2026 Season/Split 2 Playoffs",
           "label": "LCP 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "CTBC Flying Oyster",
           "games": 5
         },
         {
           "id": "LCP/2026 Season/Split 2",
           "label": "LCP 2026 Split 2",
           "pool": "Current Form",
+          "team": "CTBC Flying Oyster",
           "games": 13
         }
       ],
@@ -17065,6 +17628,7 @@
           "id": "LTA North/2025 Season/Split 3",
           "label": "LTA North 2025 Split 3",
           "pool": "Americas",
+          "team": "Team Liquid",
           "games": 13
         }
       ],
@@ -17119,6 +17683,7 @@
           "id": "LTA North/2025 Season/Split 3",
           "label": "LTA North 2025 Split 3",
           "pool": "Americas",
+          "team": "Dignitas",
           "games": 11
         }
       ],
@@ -17173,6 +17738,7 @@
           "id": "LTA North/2025 Season/Split 3",
           "label": "LTA North 2025 Split 3",
           "pool": "Americas",
+          "team": "Team Liquid",
           "games": 13
         }
       ],
@@ -17227,6 +17793,7 @@
           "id": "LTA South/2025 Season/Split 3",
           "label": "LTA South 2025 Split 3",
           "pool": "Americas",
+          "team": "Isurus",
           "games": 13
         }
       ],
@@ -17285,18 +17852,21 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "100 Thieves",
           "games": 5
         },
         {
           "id": "2026 First Stand",
           "label": "First Stand 2026",
           "pool": "International",
+          "team": "LYON",
           "games": 12
         },
         {
           "id": "LTA North/2025 Season/Split 3",
           "label": "LTA North 2025 Split 3",
           "pool": "Americas",
+          "team": "100 Thieves",
           "games": 22
         }
       ],
@@ -17351,6 +17921,7 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "Fnatic",
           "games": 5
         }
       ],
@@ -17405,6 +17976,7 @@
           "id": "LCK/2026 Season/Rounds 1-2",
           "label": "LCK 2026 Rounds 1-2",
           "pool": "Current Form",
+          "team": "DN SOOPers",
           "games": 8
         }
       ],
@@ -17459,12 +18031,14 @@
           "id": "LEC/2026 Season/Spring Playoffs",
           "label": "LEC 2026 Spring Playoffs",
           "pool": "Current Form",
+          "team": "Natus Vincere",
           "games": 4
         },
         {
           "id": "LEC/2026 Season/Spring Season",
           "label": "LEC 2026 Spring",
           "pool": "Current Form",
+          "team": "Natus Vincere",
           "games": 23
         }
       ],
@@ -17519,12 +18093,14 @@
           "id": "LEC/2026 Season/Spring Playoffs",
           "label": "LEC 2026 Spring Playoffs",
           "pool": "Current Form",
+          "team": "GiantX",
           "games": 6
         },
         {
           "id": "LEC/2026 Season/Spring Season",
           "label": "LEC 2026 Spring",
           "pool": "Current Form",
+          "team": "GiantX",
           "games": 22
         }
       ],
@@ -17579,6 +18155,7 @@
           "id": "LTA North/2025 Season/Split 3",
           "label": "LTA North 2025 Split 3",
           "pool": "Americas",
+          "team": "Team Liquid",
           "games": 13
         }
       ],
@@ -17633,6 +18210,7 @@
           "id": "LTA North/2025 Season/Split 3",
           "label": "LTA North 2025 Split 3",
           "pool": "Americas",
+          "team": "Dignitas",
           "games": 11
         }
       ],
@@ -17687,12 +18265,14 @@
           "id": "LCK/2026 Season/Rounds 1-2",
           "label": "LCK 2026 Rounds 1-2",
           "pool": "Current Form",
+          "team": "Kiwoom DRX",
           "games": 44
         },
         {
           "id": "LCK/2026 Season/Cup",
           "label": "LCK Cup 2026",
           "pool": "Current Form",
+          "team": "Kiwoom DRX",
           "games": 33
         }
       ],
@@ -17747,12 +18327,14 @@
           "id": "LPL/2026 Season/Split 2 Playoffs",
           "label": "LPL 2026 Split 2 Playoffs",
           "pool": "Current Form",
+          "team": "EDward Gaming",
           "games": 11
         },
         {
           "id": "LPL/2026 Season/Split 2",
           "label": "LPL 2026 Split 2",
           "pool": "Current Form",
+          "team": "EDward Gaming",
           "games": 2
         }
       ],
@@ -17807,6 +18389,7 @@
           "id": "LPL/2026 Season/Split 2",
           "label": "LPL 2026 Split 2",
           "pool": "Current Form",
+          "team": "Oh My God",
           "games": 13
         }
       ],
@@ -17861,6 +18444,7 @@
           "id": "LTA North/2025 Season/Split 3",
           "label": "LTA North 2025 Split 3",
           "pool": "Americas",
+          "team": "LYON",
           "games": 11
         }
       ],
@@ -17915,6 +18499,7 @@
           "id": "LTA North/2025 Season/Split 3",
           "label": "LTA North 2025 Split 3",
           "pool": "Americas",
+          "team": "Dignitas",
           "games": 11
         }
       ],
@@ -17969,6 +18554,7 @@
           "id": "LEC/2026 Season/Spring Season",
           "label": "LEC 2026 Spring",
           "pool": "Current Form",
+          "team": "Team Heretics",
           "games": 20
         }
       ],
@@ -18023,6 +18609,7 @@
           "id": "LTA South/2025 Season/Split 3",
           "label": "LTA South 2025 Split 3",
           "pool": "Americas",
+          "team": "Fluxo W7M",
           "games": 10
         }
       ],
@@ -18077,6 +18664,7 @@
           "id": "LCK/2026 Season/Cup",
           "label": "LCK Cup 2026",
           "pool": "Current Form",
+          "team": "KT Rolster",
           "games": 11
         }
       ],
@@ -18131,6 +18719,7 @@
           "id": "LCP/2026 Season/Split 2",
           "label": "LCP 2026 Split 2",
           "pool": "Current Form",
+          "team": "DetonatioN FocusMe",
           "games": 18
         }
       ],
@@ -18185,6 +18774,7 @@
           "id": "LCP/2026 Season/Split 2",
           "label": "LCP 2026 Split 2",
           "pool": "Current Form",
+          "team": "CTBC Flying Oyster",
           "games": 5
         }
       ],
@@ -18239,6 +18829,7 @@
           "id": "LPL/2026 Season/Split 2",
           "label": "LPL 2026 Split 2",
           "pool": "Current Form",
+          "team": "Oh My God",
           "games": 9
         }
       ],
@@ -18293,6 +18884,7 @@
           "id": "LCP/2026 Season/Split 2",
           "label": "LCP 2026 Split 2",
           "pool": "Current Form",
+          "team": "Ground Zero Gaming",
           "games": 15
         }
       ],
@@ -18347,6 +18939,7 @@
           "id": "LEC/2026 Season/Spring Season",
           "label": "LEC 2026 Spring",
           "pool": "Current Form",
+          "team": "Team Heretics",
           "games": 20
         }
       ],
@@ -18401,6 +18994,7 @@
           "id": "LTA South/2025 Season/Split 3",
           "label": "LTA South 2025 Split 3",
           "pool": "Americas",
+          "team": "FURIA",
           "games": 14
         }
       ],
@@ -18455,6 +19049,7 @@
           "id": "LCK/2026 Season/Cup",
           "label": "LCK Cup 2026",
           "pool": "Current Form",
+          "team": "KT Rolster",
           "games": 6
         }
       ],
@@ -18509,6 +19104,7 @@
           "id": "LEC/2026 Season/Spring Season",
           "label": "LEC 2026 Spring",
           "pool": "Current Form",
+          "team": "Shifters",
           "games": 17
         }
       ],
@@ -18563,6 +19159,7 @@
           "id": "LCP/2026 Season/Split 2",
           "label": "LCP 2026 Split 2",
           "pool": "Current Form",
+          "team": "Ground Zero Gaming",
           "games": 15
         }
       ],
@@ -18617,6 +19214,7 @@
           "id": "LEC/2026 Season/Spring Season",
           "label": "LEC 2026 Spring",
           "pool": "Current Form",
+          "team": "Team Heretics",
           "games": 6
         }
       ],
@@ -18671,6 +19269,7 @@
           "id": "LTA South/2025 Season/Split 3",
           "label": "LTA South 2025 Split 3",
           "pool": "Americas",
+          "team": "Fluxo W7M",
           "games": 10
         }
       ],
@@ -18725,6 +19324,7 @@
           "id": "LTA South/2025 Season/Split 3",
           "label": "LTA South 2025 Split 3",
           "pool": "Americas",
+          "team": "Isurus",
           "games": 8
         }
       ],
@@ -18779,6 +19379,7 @@
           "id": "2025 Season World Championship/Main Event",
           "label": "Worlds 2025 Main Event",
           "pool": "Worlds",
+          "team": "PSG Talon",
           "games": 5
         }
       ],
@@ -18833,6 +19434,7 @@
           "id": "2026 First Stand",
           "label": "First Stand 2026",
           "pool": "International",
+          "team": "LOUD",
           "games": 8
         }
       ],
@@ -18887,6 +19489,7 @@
           "id": "2026 First Stand",
           "label": "First Stand 2026",
           "pool": "International",
+          "team": "LOUD",
           "games": 8
         }
       ],
@@ -18941,12 +19544,14 @@
           "id": "LCK/2026 Season/Rounds 1-2",
           "label": "LCK 2026 Rounds 1-2",
           "pool": "Current Form",
+          "team": "DN SOOPers",
           "games": 11
         },
         {
           "id": "LCK/2026 Season/Cup",
           "label": "LCK Cup 2026",
           "pool": "Current Form",
+          "team": "DN SOOPers",
           "games": 7
         }
       ],
@@ -19001,6 +19606,7 @@
           "id": "LCP/2026 Season/Split 2",
           "label": "LCP 2026 Split 2",
           "pool": "Current Form",
+          "team": "DetonatioN FocusMe",
           "games": 18
         }
       ],
