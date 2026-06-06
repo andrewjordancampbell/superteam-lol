@@ -29,6 +29,8 @@ Our first prototype exposed too much: full search, filters, sorting, autodraft, 
 
 The newer reference bar from 7a0 and 38-0 adds another product lesson: the game can feel premium before the first roll if the first screen has a strong challenge identity, a visible board, and only a few high-leverage settings.
 
+The current RoadTo38 / 38-0.app PL pass reinforces the same lesson: keep the action to spin, team/timeframe, one player choice, optional ratings, and a visible pitch/board. RoadTo38 is adding accounts, history, rankings, friends, and achievements; those are retention layers, not the thing that makes the first session work.
+
 ## Product Direction
 
 Build a five-roll LoL esports game:
@@ -37,10 +39,26 @@ Build a five-roll LoL esports game:
 - Open with a Superteam match lobby, not a stats dashboard.
 - Let difficulty control rerolls and scouting control visible ratings.
 - Each round rolls a team plus tournament/timeframe.
-- The player gets the available pros from that rolled roster.
+- The player gets the best available candidate for each still-open role from that rolled roster.
 - Pick one pro, lock that role, advance.
 - Classic mode shows stats. Blind mode hides stats for the knowledge test.
 - After five picks, show the Worlds projection.
+
+## Model Direction
+
+The score should feel like a sports sim, not a raw average. The projection now blends:
+
+- talent and carry ceiling;
+- roster floor;
+- jungle/support map control;
+- lane pressure;
+- teamfight profile;
+- current form;
+- Worlds/international reps;
+- sample stability;
+- role-pair and team/timeframe synergy.
+
+Complete rosters can receive a small championship ceiling bonus when elite talent, carry ceiling, Worlds reps, and coordination all line up. This makes "win Worlds" possible without making random drafts feel inflated.
 
 ## Monetization Direction
 

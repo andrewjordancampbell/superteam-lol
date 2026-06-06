@@ -33,6 +33,13 @@
 - [x] Rename the public brand to Superteam.
 - [x] Add a compact Summoner's Rift roster map to the in-game draft panel.
 - [x] Refresh visual evidence screenshots after the lobby upgrade.
+- [x] Re-benchmark current RoadTo38 and `38-0.app/game` PL references.
+- [x] Replace the CSS-only fake Rift board with Riot Data Dragon's Summoner's Rift map asset.
+- [x] Tighten spins to the best available candidate per open role from the rolled team/timeframe.
+- [x] Upgrade the projection model with current form, stability, role-pair synergy, team/timeframe stacks, and a championship ceiling bonus.
+- [x] Add model-read notes to explain why the projection moved.
+- [x] Replace completed-run question-mark roll cards with final score/title odds cards.
+- [x] Refresh visual evidence screenshots after the Rift/model/UX upgrade.
 
 ## Later
 
@@ -40,5 +47,5 @@
 - [ ] Add social-card export for drafted rosters.
 - [ ] Add daily seeded challenge mode.
 - [ ] Add leaderboard/history only after the local loop proves replay value.
-- [ ] Deploy to Cloudflare Pages after Andrew approves a live publish.
+- [ ] Deploy to Cloudflare Pages after Andrew can approve Wrangler from the Mac browser.
 - [ ] Revisit the rating formula with more domain tuning after hands-on use.

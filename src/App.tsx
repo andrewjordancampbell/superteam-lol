@@ -50,6 +50,8 @@ const roleAbbrevs = {
   Support: 'SUP',
 }
 
+const riftMapSrc = `${import.meta.env.BASE_URL}assets/summoners-rift-map11.png`
+
 function shuffled<T>(items: T[]) {
   return [...items].sort(() => Math.random() - 0.5)
 }
@@ -74,14 +76,10 @@ function tournamentEntry(player: Player, tournamentId: string) {
 function DraftMap({ draft, preview = false }: { draft?: Draft; preview?: boolean }) {
   return (
     <div className={`draft-map ${preview ? 'draft-map-preview' : ''}`} aria-label="Summoner's Rift draft map">
-      <span className="map-base map-blue-base" />
-      <span className="map-base map-red-base" />
-      <span className="map-lane map-lane-top" />
-      <span className="map-lane map-lane-mid" />
-      <span className="map-lane map-lane-bot" />
-      <span className="map-river" />
-      <span className="map-objective map-baron" />
-      <span className="map-objective map-dragon" />
+      <img className="draft-map-image" src={riftMapSrc} alt="" />
+      <span className="draft-map-scrim" />
+      <span className="map-objective map-baron">B</span>
+      <span className="map-objective map-dragon">D</span>
 
       {roles.map((role) => {
         const player = draft?.[role]
@@ -119,8 +117,16 @@ function dealOffer(draft: Draft, players: Player[], data: ProsData): Offer | nul
       team,
       teamCode: roll.teamCode,
       teamLogo: roll.teamLogo,
-      candidates: roll.players.sort((a, b) => b.rating - a.rating || b.gp - a.gp),
+      candidates: roles
+        .filter((role) => openRoles.has(role))
+        .map((role) =>
+          roll.players
+            .filter((player) => player.role === role)
+            .sort((a, b) => b.rating - a.rating || b.weightedGames - a.weightedGames || b.gp - a.gp)[0],
+        )
+        .filter((player): player is Player => Boolean(player)),
     }))
+    .filter((roll) => roll.candidates.length > 0)
   })
 
   const roll = shuffled(eligible)[0]
@@ -332,16 +338,8 @@ function App() {
       <section className="playmat">
         <section className={`round-panel ${offer ? 'has-offer' : ''}`} aria-label="Current round">
           <div className="rift-backdrop" aria-hidden="true">
-            <span className="rift-base rift-blue-base" />
-            <span className="rift-base rift-red-base" />
-            <span className="rift-lane rift-lane-top" />
-            <span className="rift-lane rift-lane-mid" />
-            <span className="rift-lane rift-lane-bot" />
-            <span className="rift-river" />
-            <span className="rift-brush rift-brush-top" />
-            <span className="rift-brush rift-brush-bot" />
-            <span className="rift-objective rift-baron" />
-            <span className="rift-objective rift-dragon" />
+            <img className="rift-backdrop-image" src={riftMapSrc} alt="" />
+            <span className="rift-backdrop-scrim" />
           </div>
 
           <div className="round-kicker">
@@ -358,22 +356,35 @@ function App() {
             </button>
           </div>
 
-          <div className="roll-cards" aria-label="Current roll">
-            <div className={offer ? 'roll-team-card' : undefined}>
-              {offer?.teamLogo ? (
-                <img className="team-logo" src={offer.teamLogo} alt="" />
-              ) : offer ? (
-                <span className="team-fallback">{initials(offer.team)}</span>
-              ) : null}
-              <span>Team</span>
-              <strong>{offer ? offer.team : '?'}</strong>
-              {offer?.teamCode ? <em>{offer.teamCode}</em> : null}
+          {runComplete ? (
+            <div className="roll-cards result-cards" aria-label="Final projection">
+              <div>
+                <span>Final score</span>
+                <strong>{projection.score}</strong>
+              </div>
+              <div>
+                <span>Title odds</span>
+                <strong>{projection.titleOdds}%</strong>
+              </div>
             </div>
-            <div>
-              <span>Timeframe</span>
-              <strong>{offer ? offer.timeframe : '?'}</strong>
+          ) : (
+            <div className="roll-cards" aria-label="Current roll">
+              <div className={offer ? 'roll-team-card' : undefined}>
+                {offer?.teamLogo ? (
+                  <img className="team-logo" src={offer.teamLogo} alt="" />
+                ) : offer ? (
+                  <span className="team-fallback">{initials(offer.team)}</span>
+                ) : null}
+                <span>Team</span>
+                <strong>{offer ? offer.team : '?'}</strong>
+                {offer?.teamCode ? <em>{offer.teamCode}</em> : null}
+              </div>
+              <div>
+                <span>Timeframe</span>
+                <strong>{offer ? offer.timeframe : '?'}</strong>
+              </div>
             </div>
-          </div>
+          )}
 
           <div className="draw-copy">
             <span>{runComplete ? 'Final result' : offer ? offer.pool : 'Roll the draw'}</span>
@@ -485,6 +496,13 @@ function App() {
                 <span>{item.label}</span>
                 <strong>{item.value}</strong>
               </div>
+            ))}
+          </div>
+
+          <div className="model-read" aria-label="Model read">
+            <span>Model read</span>
+            {projection.modelNotes.map((note) => (
+              <p key={note}>{note}</p>
             ))}
           </div>
         </aside>

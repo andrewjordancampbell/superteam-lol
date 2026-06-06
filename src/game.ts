@@ -85,6 +85,7 @@ export type Projection = {
   titleOdds: number
   result: string
   filled: number
+  modelNotes: string[]
   breakdown: Array<{
     label: string
     value: number
@@ -139,8 +140,31 @@ function rosterTeam(player: Player) {
   return player.draftTeam ?? player.team
 }
 
+function draftedTournament(player: Player) {
+  if (!player.draftTimeframe) return undefined
+  return player.tournaments.find((tournament) => tournament.label === player.draftTimeframe)
+}
+
 function worldsExperience(player: Player) {
-  return player.tournaments.some((tournament) => tournament.pool === 'Worlds') ? 100 : 45
+  const drafted = draftedTournament(player)
+  if (drafted?.pool === 'Worlds') return 100
+  if (drafted?.pool === 'International') return 82
+  if (player.tournaments.some((tournament) => tournament.pool === 'Worlds')) return 88
+  if (player.tournaments.some((tournament) => tournament.pool === 'International')) return 72
+  return 48
+}
+
+function formScore(player: Player) {
+  const drafted = draftedTournament(player)
+  if (drafted?.label.includes('2026')) return 96
+  if (drafted?.pool === 'Worlds') return 90
+  if (player.tournaments.some((tournament) => tournament.label.includes('2026'))) return 84
+  return 70
+}
+
+function stabilityScore(player: Player) {
+  const sampleTrust = clamp((player.weightedGames / 48) * 100, 44, 100)
+  return average([player.percentiles.safety, sampleTrust], 60)
 }
 
 export function projectRoster(draft: Draft): Projection {
@@ -153,11 +177,13 @@ export function projectRoster(draft: Draft): Projection {
       titleOdds: 0,
       result: 'Draft a roster',
       filled,
+      modelNotes: ['Spin a team and timeframe to start the model.'],
       breakdown: [
         { label: 'Talent', value: 0 },
-        { label: 'Carry ceiling', value: 0 },
-        { label: 'Map control', value: 0 },
-        { label: 'Lane pressure', value: 0 },
+        { label: 'Carry', value: 0 },
+        { label: 'Control', value: 0 },
+        { label: 'Lane', value: 0 },
+        { label: 'Synergy', value: 0 },
         { label: 'Worlds reps', value: 0 },
       ],
     }
@@ -173,6 +199,8 @@ export function projectRoster(draft: Draft): Projection {
   const teams = selected.map(rosterTeam)
   const maxTeamCount = Math.max(...teams.map((team) => teams.filter((candidate) => candidate === team).length))
   const uniqueTeams = new Set(teams).size
+  const timeframes = selected.map((player) => player.draftTimeframe).filter(Boolean)
+  const maxTimeframeCount = Math.max(0, ...timeframes.map((timeframe) => timeframes.filter((candidate) => candidate === timeframe).length))
 
   const talent = average(ratings, 50)
   const carryCeiling = average(sortedRatings.slice(0, Math.min(2, sortedRatings.length)), talent)
@@ -195,26 +223,44 @@ export function projectRoster(draft: Draft): Projection {
     talent,
   )
   const worldsReps = average(selected.map(worldsExperience), 50)
+  const currentForm = average(selected.map(formScore), 75)
+  const stability = average(selected.map(stabilityScore), talent)
 
-  let coordination = 0
-  if (sameTeam(jungle, mid)) coordination += 3
-  if (sameTeam(bot, support)) coordination += 3
-  if (sameTeam(topSide, jungle)) coordination += 1.5
-  if (maxTeamCount >= 3) coordination += 2
-  if (uniqueTeams === selected.length && selected.length >= 4) coordination -= 1.5
+  let synergy = 58
+  if (sameTeam(jungle, mid)) synergy += 11
+  if (sameTeam(bot, support)) synergy += 13
+  if (sameTeam(topSide, jungle)) synergy += 7
+  if (maxTeamCount >= 3) synergy += 8
+  else if (maxTeamCount === 2) synergy += 4
+  if (maxTimeframeCount >= 3) synergy += 5
+  if (uniqueTeams === selected.length && selected.length >= 4) synergy -= 8
+  synergy = clamp(synergy, 35, 100)
 
   const rawScore =
-    talent * 0.36 +
-    carryCeiling * 0.14 +
-    rosterFloor * 0.12 +
+    talent * 0.24 +
+    carryCeiling * 0.13 +
+    rosterFloor * 0.1 +
     mapControl * 0.12 +
-    lanePressure * 0.1 +
-    teamfight * 0.1 +
-    worldsReps * 0.06 +
-    coordination
+    lanePressure * 0.09 +
+    teamfight * 0.08 +
+    currentForm * 0.07 +
+    worldsReps * 0.05 +
+    stability * 0.05 +
+    synergy * 0.07
 
+  const championshipBonus =
+    filled === roles.length
+      ? clamp(
+          (talent - 82) * 0.18 +
+            (carryCeiling - 86) * 0.15 +
+            (worldsReps - 72) * 0.08 +
+            (synergy - 66) * 0.1,
+          0,
+          6,
+        )
+      : 0
   const completeness = filled / roles.length
-  const score = Math.round(clamp(rawScore * completeness + 45 * (1 - completeness), 0, 99))
+  const score = Math.round(clamp((rawScore + championshipBonus) * completeness + 45 * (1 - completeness), 0, 99))
   const titleOdds =
     filled < roles.length
       ? Math.round(clamp((score - 40) * 0.45, 0, 32))
@@ -227,16 +273,30 @@ export function projectRoster(draft: Draft): Projection {
   else if (score >= 70) result = 'Knockout roster'
   else if (filled < roles.length) result = `${filled}/5 locked`
 
+  const modelNotes = [
+    championshipBonus >= 4 ? 'Championship ceiling bonus is active.' : null,
+    carryCeiling >= 88 ? 'Elite carry ceiling can steal knockout games.' : null,
+    mapControl >= 80 ? 'Jungle/support control grades as a real strength.' : null,
+    sameTeam(bot, support) ? 'Bot/support pair gets a chemistry bump.' : null,
+    sameTeam(jungle, mid) ? 'Jungle/mid pair gets a chemistry bump.' : null,
+    maxTeamCount >= 3 ? 'Three-player team stack improves coordination.' : null,
+    worldsReps < 62 ? 'Low Worlds reps keep the title projection cautious.' : null,
+    stability < 66 ? 'Volatile samples add risk to the model.' : null,
+    filled < roles.length ? 'Projection gets stricter as the roster fills.' : null,
+  ].filter((note): note is string => Boolean(note))
+
   return {
     score,
     titleOdds,
     result,
     filled,
+    modelNotes: modelNotes.length > 0 ? modelNotes.slice(0, 3) : ['Balanced profile with no standout weakness yet.'],
     breakdown: [
       { label: 'Talent', value: Math.round(talent) },
-      { label: 'Carry ceiling', value: Math.round(carryCeiling) },
-      { label: 'Map control', value: Math.round(mapControl) },
-      { label: 'Lane pressure', value: Math.round(lanePressure) },
+      { label: 'Carry', value: Math.round(carryCeiling) },
+      { label: 'Control', value: Math.round(mapControl) },
+      { label: 'Lane', value: Math.round(lanePressure) },
+      { label: 'Synergy', value: Math.round(synergy) },
       { label: 'Worlds reps', value: Math.round(worldsReps) },
     ],
   }

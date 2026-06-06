@@ -6,6 +6,8 @@ The app gives you five rolls to draft a Worlds roster from pro player stats. Eac
 
 The first screen is a match lobby with a Superteam identity, difficulty selection, scouting mode, and a Summoner's Rift draft map. Stats mode shows player ratings and mini-stats. Blind mode hides them so the pick is based on esports memory and taste.
 
+The in-game model blends talent, carry ceiling, roster floor, map control, lane pressure, current form, Worlds reps, stability, and role/team synergy. Completed elite rosters can hit the World Champion band, and the roster panel shows short model-read notes explaining the projection.
+
 ## Local Setup
 
 ```bash
@@ -57,7 +59,7 @@ npm run deploy:github
 
 ## Data
 
-The local dataset is generated into `public/data/pros.json` from Oracle's Elixir aggregated player stats via `scripts/build-pro-data.mjs`. The builder also enriches the snapshot with hosted LoL Esports team logos and player portraits when available.
+The local dataset is generated into `public/data/pros.json` from Oracle's Elixir aggregated player stats via `scripts/build-pro-data.mjs`. The builder also enriches the snapshot with hosted LoL Esports team logos and player portraits when available. The Summoner's Rift board uses Riot Data Dragon `map11.png`.
 
 Current generated snapshot:
 

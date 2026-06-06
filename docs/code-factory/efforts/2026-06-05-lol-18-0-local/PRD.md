@@ -27,10 +27,11 @@ Andrew wants an 82-0 style game for League of Legends esports, focused on winnin
 - One central spin panel that deals a team plus timeframe.
 - Team logo treatment on the active roll.
 - Stats/Blind toggle: Classic shows player stats; Blind hides the stat grid and ratings context.
-- One-click player choice cards with player portraits for available roles from the rolled roster.
-- Draft board with a compact Summoner's Rift map plus five locked role slots: Top, Jungle, Mid, Bot, Support.
+- One-click player choice cards with player portraits for the best available candidate in each open role from the rolled roster.
+- Draft board with the Riot Data Dragon Summoner's Rift map plus five locked role slots: Top, Jungle, Mid, Bot, Support.
 - Difficulty controls rerolls: Easy has two, Normal has one, Hard has none.
-- Abstract Summoner's Rift treatment in the central play surface: lanes, river, bases, brush, and objectives without adding gameplay controls.
+- Muted Summoner's Rift treatment in the central play surface without adding gameplay controls.
+- Model readout that explains why the projection moved: carry ceiling, map control, role-pair synergy, team stacks, Worlds reps, sample risk, and championship ceiling.
 - Conspicuous Riot fan-project notice in the footer.
 
 ## Data Source
@@ -39,9 +40,11 @@ The prototype uses Oracle's Elixir aggregated player stats from `https://oe.data
 
 The current local snapshot was generated on `2026-06-06T03:42:40.413Z` and contains 317 players across 12 tournament selections. Player entries preserve their actual team for each tournament/timeframe so the roll is truly team + timeframe. Asset coverage is 301 player portraits and 59 team logos.
 
+The Rift map uses Riot Data Dragon `map11.png` from the current `16.11.1` asset set.
+
 ## Deployment Shape
 
-The app is a Vite React static build. Cloudflare Pages can serve `dist/` after running `npm run build`. Runtime does not require API keys, a backend, a database, auth, or server functions.
+The app is a Vite React static build. GitHub Pages is live at `https://andrewjordancampbell.github.io/superteam-lol/`; Cloudflare Pages can also serve `dist/` after running `npm run build`. Runtime does not require API keys, a backend, a database, auth, or server functions.
 
 Launch prep includes:
 
